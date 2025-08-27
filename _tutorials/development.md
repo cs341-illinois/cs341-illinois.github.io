@@ -11,7 +11,9 @@ In this course, we use Virtual Machines (VMs) for all our development. We will n
 
 ### Connecting to your VM
 
-For all registered students in the course, you will receive a VM in the CS Department’s VM Farm provisioned by EngrIT. When your VM is provisioned you should receive an email about your VM - these are typically sent in the morning of the first lab. If you registered late, please email the CS 341 Admin (you can find the email on our [staff page]({% link _pages/staff.html %})).
+For all registered students in the course, you will receive a VM in the CS Department’s VM Farm provisioned by EngrIT. VMs have a hostname similar to fa25-cs341-000.cs.illinois.edu (replace 'fa25' with the current semester and '000' with your VM number as a 3 digit number).
+
+When your VM is provisioned you should receive an email about your VM - these are typically sent in the morning of the first lab. If you registered late, please email the CS 341 Admin (you can find the email on our [staff page]({% link _pages/staff.html %})).
 
 Approximately 12-24 hours aftering registering for the course your VM host name should also be on this [page](https://csid-basic-apps.cs.illinois.edu/) - but note the ** VPN is needed **  if you're not on the campus network.
 
