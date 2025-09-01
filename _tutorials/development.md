@@ -61,7 +61,7 @@ Click on [the repository creator](https://edu.cs.illinois.edu/create-gh-repo/{{s
 
 ```console
 git config --global user.name "FIRST_NAME LAST_NAME"
-git config --global user.email NETID@example.com
+git config --global user.email example@example.com
 ```
 
 Make sure to replace `FIRST_NAME` and `LAST_NAME` and `NETID@example.com` with your information. For example:
@@ -100,6 +100,8 @@ There are three ways that we recommend for authenticating with GitHub
 
 You can learn more about what `gh` can do [here](https://cli.github.com/manual/).
 
+---
+
 #### Option 2: Using a Personal Access Token
 
 You can think of a personal access token as a password with limited privileges and an expiration date. To create a token, go to [Github settings](https://github.com/settings/tokens), and click **Generate new token (classic)**.
@@ -110,13 +112,18 @@ Once the token is generated (be sure to save it somewhere), you **must** further
 
 Finally, you can run `git clone` again and use your newly generated token in place of your password. If you're using VSCode, you may need to log out of Github in VSCode (Using **Accounts** button at bottom left) and log in again.
 
+---
+
 #### Option 3: Using [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-1. Create an SSH key on your VM. Currently, we recommend the EdDSA key algorithm. You can create an EdDSA key with the command `ssh-keygen -t ed25519 -a 100`. This command generates a private and public key in the directory `~/.ssh`, where `~` denotes your home directory. It will prompt you to enter a name for the file storing your private key, and will generate a .pub file for your public key. It's not necessary to enter a password for the key.
-2. Copy the ***public*** key to your clipboard. This is usually stored at a path like `~/.ssh/*.pub`, where `~` denotes your home directory. You can print out the public key to the terminal with the `cat` command.
-3. Log into your GitHub account, navigate to Settings->SSH Keys, and follow the prompts to add a new SSH key by pasting in the ***public*** key on your clipboard.
+> *Please keep in mind that if you use SSH key, you will need to use SSH protocol URLs (e.g. `git@github.com:<repo>`) when you pull from / push to Github, not HTTPS protocol URLs (e.g. `https://github.com/<repo>`)*.
 
-_Please keep in mind that if you use this method, you will need to use SSH protocol URLs (e.g. `git@github.com:<repo>`) when you pull from / push to Github, not HTTPS protocol URLs (e.g. `https://github.com/<repo>`)_.
+1. Create an SSH key on your VM. Currently, we recommend the EdDSA key algorithm. You can create an EdDSA key with the command `ssh-keygen -t ed25519` ([ref](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)). This command generates a private and public key in the directory `~/.ssh`, where `~` denotes your home directory. It will prompt you to enter a name for the file storing your private key, and will generate a `.pub` file for your public key. It's not necessary to enter a password for the key.
+2. Be sure to store the private and public key under `~/.ssh/` folder(need to use `ls -a` to show hidden ENOENT) with one of the default names(`id_rsa`, `ed25519`, etc) to enable `ssh` find it. Otherwise you need to use `ssh -i xxx` to indicate the key path.
+3. Copy the ***public*** key to your clipboard. This is usually stored at a path like `~/.ssh/*.pub`, where `~` denotes your home directory. You can print out the public key to the terminal with the `cat` command.
+4. Log into your GitHub account, navigate to Settings->SSH Keys, and follow the prompts to add a new SSH key by pasting in the ***public*** key on your clipboard ([ref](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account))
+5. Check your SSH key works by `ssh -T git@github.com -v` ([ref](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)).
+6. Configure SSO(single-sign-in) under <https://github.com/settings/keys> to `illinois-cs-coursework`. ![SSO](/images/development_md/SSO.webp)
 
 ### Fetching from `_release`
 
