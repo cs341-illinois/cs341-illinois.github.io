@@ -143,6 +143,8 @@ git push origin main
 
 Whenever you start an assignment, you will need to run `git pull release main` to retrieve the starter code for the assignment.
 
+You may enter `nano` or any desired text editor TUI after `pull` to let you decide the merge commit message content. You can edit it, directly close it or save it to continue the process.
+
 ## Install compiler and CS341 tools
 
 _Your VM should already be provisioned with the required tools. This section is for reference in case you need to reinstall specific tools, e.g. in the case where your VM must be reset_
@@ -183,7 +185,18 @@ You may find ssh-copy-id useful (A web search using Google/Duck Duck Go is usefu
 
 Have fun! In the worst case we can reset your VM back to its initial state.
 
-## Can't login or turn on your VM?
+## Troubleshooting
+
+### Git fetch 403 or access not grant
+
+> If you cannot figure it out, plz post in Ed with log/screenshoot of `GIT_TRACE=1 git clone xxxx` or `GIT_TRACE=1 git pull xxx`
+>
+
+If you are using SSH key, it's probably caused by you are using HTTPS protocol(like `https://github.com/illinois-cs-coursework/fa25_cs341_.release.git`). You need to use SSH protocol(like `git@github.com:illinois-cs-coursework/fa25_cs341_.release.git`).
+- If you are doing clone operation, simply replace the repository URL part.
+- IF you are doing `pull release` fetch part, using `git remote set-url release git@github.com:illinois-cs-coursework/fa25_cs341_.release.git`(replaced with actual URL).
+
+### Can't login or turn on your VM?
 
 If you can't connect -
 
@@ -196,7 +209,7 @@ If you can't connect -
 3. Check [EngrIT Annoucements](https://status.engineering.illinois.edu/announcements.asp) and slow loading [Status Page](https://status.engineering.illinois.edu/) and the class forum
 
 
-## Still have VM issues?
+### Still have VM issues?
 
 If you are sure that you follow the setup guidance correctly and you are on either the Campus VPN or the IllinoisNet WiFi but you still have VM issues (e.g. cannot access vc.cs.illinois.edu, cannot ssh into VM), then the fastest resolution will come from directly contacting EngrIT with your issue using their [form](https://go.illinois.edu/ewshelp). In the form, under the “Which lab(s) or remote resource(s) is your request about?”, you can type "CS VM Farm".
 
