@@ -204,7 +204,12 @@ If you can't connect -
 
 2. Not on the campus network? You will need to use the University VPN, [Cisco AnyConnect](https://answers.uillinois.edu/illinois/page.php?id=47507)
 
-3. Check the status of your VM on the [VSphere console](https://vc.cs.illinois.edu/) and start/restart it if necessary. The VMs are shutdown daily at 5am, or perhaps you created a fork-bomb while working on the Shell MP. 
+3. Check the status of your VM on the [VSphere console](https://vc.cs.illinois.edu/) and start/restart it if necessary. The VMs are shutdown daily at 5am, or perhaps you created a fork-bomb while working on the Shell MP. Note vc is useful to check the status of the VM but it is also possible to turn on your VM using ssh -
+
+```
+ssh linux.ews.illinois.edu cs-vm-poweron {{site.semester}}-cs341-???.cs.illinois.edu
+```
+Replace <em>???</em> with your VM number.
 
 3. Check [EngrIT Annoucements](https://status.engineering.illinois.edu/announcements.asp) and slow loading [Status Page](https://status.engineering.illinois.edu/) and the class forum
 
