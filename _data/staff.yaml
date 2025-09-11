@@ -54,11 +54,18 @@
   specialty: ""
   semesters: Fall 2023 - Spring 2024
 -
-  name: Dev Singh
-  netid: dsingh14
-  roles: Lab / Infrastructure
+  name: Aashvi Busa
+  netid: abusa2
+  roles: Infrastructure
   specialty: ""
-  semesters: Fall 2024 - Spring 2025
+  semesters: Fall 2025
+-
+-
+  name: Helena Ilic
+  netid: hilic2
+  roles: Infrastructure
+  specialty: ""
+  semesters: Fall 2025
 -
   name: Knud Anderson
   netid: kande30
@@ -132,12 +139,6 @@
   specialty: ""
   semesters: Spring 2025
 -
-  name: Yanni Zhuang 
-  netid: yanniz3
-  roles: Lab / Office Hours
-  specialty: ""
-  semesters: Spring 2025
--
   name: Quanhao Ng
   netid: qhng2
   roles: Lab / Office Hours
@@ -155,3 +156,9 @@
   roles: Lab / Office Hours
   specialty: ""
   semesters: Spring 2025
+-
+  name: Talika Gupta
+  netid: talikag2
+  roles: Lab / Office Hours
+  specialty: ""
+  semesters: Fall 2025
