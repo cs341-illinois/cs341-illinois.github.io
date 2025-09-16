@@ -8,6 +8,7 @@ labs:
       submissions:
         - title: Lab Assignment
           due_date: 2025-09-04 23:59
+          releaseDate: 2025-08-26
           graded_files:
           - submission.txt
       resources: true
@@ -21,6 +22,7 @@ labs:
       submissions:
         - title: Entire Assignment
           due_date: 2025-09-10 23:59
+          releaseDate: 2025-09-02
           graded_files:
           - part1-functions.c
           - part2-main.c
@@ -35,6 +37,7 @@ labs:
       submissions:
         - title: Entire Assignment
           due_date: 2025-09-17 23:59
+          releaseDate: 2025-09-09
           graded_files:
           - env.c
           - time.c
@@ -49,6 +52,7 @@ labs:
       submissions:
         - title: Entire Assignment
           due_date: 2025-02-19 23:59
+          releaseDate: 2025-09-16
           graded_files:
           - mini_memcheck.c
       resources: true
@@ -62,6 +66,7 @@ labs:
       submissions:
         - title: Entire Assignment
           due_date: 2025-02-26 23:59
+          releaseDate: 2025-09-23
           graded_files:
           - par_reduce.c
       resources: true
@@ -76,6 +81,7 @@ labs:
       submissions:
         - title: Entire Assignment
           due_date: 2025-03-05 23:59
+          releaseDate: 2025-09-30
           graded_files:
           - barrier.c
           - queue.c
@@ -91,6 +97,7 @@ labs:
       submissions:
         - title: Entire Assignment
           due_date: 2025-03-12 23:59
+          releaseDate: 2025-10-07
           graded_files:
           - libdrm.c
       resources: true
@@ -105,6 +112,7 @@ labs:
       submissions:
         - title: Entire Assignment
           due_date: 2025-03-26 23:59
+          releaseDate: 2025-10-14
           graded_files:
           - mmu.c
       resources: true
@@ -119,6 +127,7 @@ labs:
       submissions:
         - title: MapReduce
           due_date: 2025-04-02 23:59
+          releaseDate: 2025-10-21
           graded_files:
           - mapreduce.c
       resources: true
@@ -133,6 +142,7 @@ labs:
       submissions:
         - title: Entire Assignment
           due_date: 2025-04-09 23:59
+          releaseDate: 2025-10-28
           graded_files:
           - client.c
           - server.c
@@ -149,6 +159,7 @@ labs:
       submissions:
         - title: Entire Assignment
           due_date: 2025-04-16 23:59
+          releaseDate: 2025-11-04
           graded_files:
           - dd.c
       resources: true
@@ -163,6 +174,7 @@ labs:
       submissions:
         - title: Entire Assignment
           due_date: 2025-04-23 23:59
+          releaseDate: 2025-11-11
           graded_files:
           - lookup1.c
           - lookup2.c
@@ -178,6 +190,7 @@ labs:
       submissions:
         - title: Entire Assignment
           due_date: 2025-04-30 23:59
+          releaseDate: 2025-11-18
           graded_files:
           - libscheduler.c
       resources: true
@@ -192,6 +205,7 @@ labs:
       submissions:
         - title: Entire Assignment
           due_date: 1987-12-11 23:59
+          releaseDate: 1987-12-11
           graded_files:
           - kernel.c
       resources: true
@@ -207,6 +221,7 @@ mps:
       submissions:
         - title: Entire Assignment
           due_date: 2025-09-09 23:59
+          releaseDate: 2025-08-31
           graded_files:
           - camelCaser.c
           - camelCaser_tests.c
@@ -221,6 +236,7 @@ mps:
       submissions:
         - title: Entire Assignment
           due_date: 2025-09-15 23:59
+          releaseDate: 2025-09-07
           graded_files:
           - vector.c
           - sstring.c
@@ -235,10 +251,12 @@ mps:
       submissions:
         - title: Part 1
           due_date: 2025-09-22 23:59
+          releaseDate: 2025-09-14
           graded_files:
           - shell.c
         - title: Part 2
           due_date: 2025-09-29 23:59
+          releaseDate: 2025-09-21
           graded_files:
           - shell.c
       resources: true
@@ -251,11 +269,13 @@ mps:
       url: "malloc"
       submissions:
         - title: Part 1 # 18
-          due_date: 2025-03-03 23:59
+          due_date: 2025-10-06 23:59
+          releaseDate: 2025-09-28
           graded_files:
           - alloc.c
         - title: Part 2
-          due_date: 2025-03-10 23:59
+          due_date: 2025-10-13 23:59
+          releaseDate: 2025-10-05
           graded_files:
           - alloc.c
       resources: true
@@ -268,7 +288,8 @@ mps:
       url: "password_cracker"
       submissions:
         - title: Version 1 and 2
-          due_date: 2025-03-24 23:59
+          due_date: 2025-10-20 23:59
+          releaseDate: 2025-10-12
           graded_files:
           - cracker1.c
           - cracker2.c
@@ -282,11 +303,13 @@ mps:
       url: "parallel_make"
       submissions:
         - title: Part 1
-          due_date: 2025-03-31 23:59
+          due_date: 2025-10-27 23:59
+          releaseDate: 2025-10-19
           graded_files:
           - parmake.c
         - title: Part 2
-          due_date: 2025-04-07 23:59
+          due_date: 2025-11-03 23:59
+          releaseDate: 2025-10-26
           graded_files:
           - parmake.c
       resources: true
@@ -300,7 +323,8 @@ mps:
       url: "finding_filesystems"
       submissions:
         - title: Entire Assignment
-          due_date: 2025-04-14 23:59
+          due_date: 2025-11-10 23:59
+          releaseDate: 2025-11-02
           graded_files:
           - minixfs.c
       resources: true
@@ -313,20 +337,23 @@ mps:
       url: "networking_mp"
       submissions:
         - title: Part 1 The Client
-          due_date: 2025-04-21 23:59
+          due_date: 2025-11-17 23:59
+          releaseDate: 2025-11-09
           graded_files:
           - client.c
           - common.c
           - common.h
         - title: Part 2 The Server Part 1
-          due_date: 2025-04-28 23:59
+          due_date: 2025-11-24 23:59
+          releaseDate: 2025-11-16
           graded_files:
           - client.c
           - server.c
           - common.c
           - common.h
         - title: Part 3 The Server Part 2
-          due_date: 2025-05-05 23:59
+          due_date: 2025-12-01 23:59
+          releaseDate: 2025-11-23
           graded_files:
           - client.c
           - server.c
