@@ -211,6 +211,14 @@ void log(char *message) {
 ```
 The `DEBUG` macro is enabled in the `debug` build by passing the flag `-DDEBUG` to the compiler when compiling the `debug` build of an assignment (please report to staff if an assignment's `debug` build does not have the `-g` or `-DDEBUG` flags). The `#ifdef` statement is a preprocessor directive which includes a code snippet into the executable if the macro is enabled during compilation. Therefore, statements in `#ifdef DEBUG` blocks do not appear in `release` builds of assignments. This will prevent you from impacting the performance of `release` builds (if you need these logging prints in `release` builds, remove the `#ifdef` directive). Furthermore, this logging function prints to `stderr`. We typically do not check what's in `stderr`, so feel free to use that output stream to dump your logging messages.
 
+### Hint: `hexdump`!
+
+`hexdump` is a command-line utility that displays the contents of files in convenient ways. For example, you can read view the exact bytes of a file, formatted in hexadecimal (according to [ASCII](https://www.man7.org/linux/man-pages/man7/ascii.7.html)). If no file is specified, `hexdump` will read from `stdin`. Thus, by piping your program’s output into `hexdump -C`, you can see exactly what bytes are being written, including non-printable ASCII characters:
+
+```
+$ ./camelCaser | hexdump -C
+```
+
 ### `errno` knows what's up 
 
 Often, you'll see that system calls and library functions will return -1 and set `errno` upon execution failure. `errno` is a special global variable that stores the error codes for failures in function calls. Many system calls do not guarantee success and can fail at random, even `malloc`! Therefore, whenever you encounter bizarre failures, one thing to keep in mind is to check if a function/system call failed, and if so, determine why it failed. Attached below is a sample code snippet of reading `errno` using `perror`:
