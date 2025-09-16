@@ -3,7 +3,7 @@
   name: Lawrence Angrave
   netid: angrave
   roles: Captain, Lecturer, Teaching Professor
-  semesters: Fall 2006 - Spring 2008, Fall 2014 - Fall 2016, Spring 2018 - Spring 2025
+  semesters: Fall 2006 - Spring 2008, Fall 2014 - Fall 2016, Spring 2018 - Fall 2025
   specialty: Systems and CS Education
 -
   name: CS 341 Admin
@@ -18,41 +18,29 @@
   speciality: ""
   semesters: Fall 2023 - Spring 2024
 -
-  name: Maria Lusardi
-  netid: marial5
-  roles: Teaching Assistant
-  speciality: ""
-  semesters: Fall 2024 - Spring 2025
--
-  name: Jinghao Jia
-  netid: jinghao7
-  roles: Teaching Assistant
-  speciality: ""
-  semesters: Spring 2025
--
-  name: Rishabh Menezes
-  netid: menezes4
-  roles: Teaching Assistant, previously Course Assistant Lead
-  specialty: ""
-  semesters: Spring 2021 - Spring 2024
-- 
   name: Benjamin Reidys
   netid: breidys2
   roles: Teaching Assistant
   speciality: ""
-  semesters: Spring 2024 - Spring 2025
+  semesters: Spring 2024 - Fall 2025
 - 
   name: Christina Youn
   netid: youn13
   roles: Teaching Assistant
   speciality: ""
-  semesters: Spring 2024, Spring 2025
-- 
-  name: Ananth Madan
-  netid: ananthm3
-  roles: Lab / Office Hours / Infrastructure (previously Assignment Development)
+  semesters: Spring 2024, Fall 2025
+-
+  name: Talika Gupta
+  netid: talikag2
+  roles: Teaching Assistant
   specialty: ""
-  semesters: Fall 2023 - Spring 2024
+  semesters: Fall 2025
+-
+  name: Seokjoo Cho
+  netid: seokjoo3
+  roles: Teaching Assistant
+  specialty: ""
+  semesters: Fall 2025
 -
   name: Aashvi Busa
   netid: abusa2
@@ -70,94 +58,58 @@
   netid: kande30
   roles: Lab / Assignment Development
   specialty: ""
-  semesters: Fall 2024 - Spring 2025
+  semesters: Fall 2024 - Fall 2025
 -
   name: Akhil Bharanidhar
   netid: akhilnb2
   roles: Lab / Assignment Development
   specialty: ""
-  semesters: Fall 2024 - Spring 2025
--
-  name: Mark Kraay
-  netid: kraay2
-  roles: Lab / Front Facing
-  specialty: ""
-  semesters: Fall 2024 - Spring 2025
--
-  name: Eisha Peyyeti
-  netid: eishap2
-  roles: Lab / Honors
-  specialty: ""
-  semesters: Fall 2024 - Spring 2025
--
-  name: Alex Yang
-  netid: alexy3
-  roles: Lab / Honors
-  specialty: ""
-  semesters: Fall 2024 - Spring 2025
--
-  name: Timothy Gonazles 
-  netid: tdg3
-  roles: Lab / Infrastructure
-  specialty: ""
-  semesters: Fall 2024 - Spring 2025
--
-  name: Yifan Zhu
-  netid: yifan24
-  roles: Course Assistant Lead, previously Assignment Development
-  specialty: ""
-  semesters: Fall 2023 - Spring 2025
--
-  name: William Ou
-  netid: ou14
-  roles: Lab / Office Hours
-  specialty: ""
-  semesters: Spring 2024 - Spring 2025
--
-  name: Navid Tajkhorshid
-  netid: navidt
-  roles: Lab / Office Hours
-  specialty: ""
-  semesters: Spring 2025
+  semesters: Fall 2024 - Fall 2025
 -
   name: Caleb Beversdorf
   netid: cbeve2
   roles: Lab / Office Hours
   specialty: ""
-  semesters: Spring 2025
+  semesters: Fall 2025
 -
-  name: Anthony Smykalov
-  netid: as156
+  name: Naren Suresh
+  netid: narens4
   roles: Lab / Office Hours
   specialty: ""
-  semesters: Spring 2025
+  semesters: Fall 2025
 -
-  name: Bill Zhang
-  netid: billjz2
+  name: Aryan Sapre
+  netid: aryanns2
   roles: Lab / Office Hours
   specialty: ""
-  semesters: Spring 2025
+  semesters: Fall 2025
 -
-  name: Quanhao Ng
-  netid: qhng2
+  name: Somrishi Banerjee
+  netid: sb91
   roles: Lab / Office Hours
   specialty: ""
-  semesters: Spring 2025
+  semesters: Fall 2025
 -
-  name: Leor Porat
-  netid: porat2
+  name: Cygnus Qiu
+  netid: cygnusq2
   roles: Lab / Office Hours
   specialty: ""
-  semesters: Spring 2025
+  semesters: Fall 2025
 -
-  name: Ian Doherty
-  netid: ied2
+  name: Srikar Pisupati
+  netid: srikarp3
   roles: Lab / Office Hours
   specialty: ""
-  semesters: Spring 2025
+  semesters: Fall 2025
 -
-  name: Talika Gupta
-  netid: talikag2
+  name: Gavin Ebenezer
+  netid: gavinae2
+  roles: Lab / Office Hours
+  specialty: ""
+  semesters: Fall 2025
+-
+  name: Sherry Long
+  netid: sherryl4
   roles: Lab / Office Hours
   specialty: ""
   semesters: Fall 2025
