@@ -213,7 +213,7 @@ The `DEBUG` macro is enabled in the `debug` build by passing the flag `-DDEBUG` 
 
 ### Hint: `hexdump`!
 
-`hexdump` is a command-line utility that displays the contents of files in convenient ways. For example, you can read view the exact bytes of a file, formatted in hexadecimal (according to [ASCII](https://www.man7.org/linux/man-pages/man7/ascii.7.html)). If no file is specified, `hexdump` will read from `stdin`. Thus, by piping your program’s output into `hexdump -C`, you can see exactly what bytes are being written, including non-printable ASCII characters:
+`hexdump` is a command-line utility that displays the contents of files in convenient ways. For example, you can view the exact bytes of a file, formatted in hexadecimal (according to [ASCII](https://www.man7.org/linux/man-pages/man7/ascii.7.html)). If no file is specified, `hexdump` will read from `stdin`. Thus, by piping your program’s output into `hexdump -C`, you can see exactly what bytes are being written, including non-printable ASCII characters:
 
 ```
 $ ./camelCaser | hexdump -C
