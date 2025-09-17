@@ -37,16 +37,23 @@ An alternative to using the UIUC VPN is to SSH twice. You can first SSH into you
 Host 341-VM
   HostName sp25-cs341-<Your VM Number>.cs.illinois.edu
   User <NetID>
-  ProxyCommand ssh ews -W %h:%p
+  ProxyJump ews
 
 Host ews
   HostName linux.ews.illinois.edu
   User <NetID>
 ```
-If you want further information on what this is actually doing, you can read [this tutorial](ttps://www.cyberciti.biz/faq/linux-unix-ssh-proxycommand-passing-through-one-host-gateway-server/) on proxying.
+If you want further information on what this is actually doing, you can read [this tutorial](https://www.cyberciti.biz/faq/linux-unix-ssh-proxycommand-passing-through-one-host-gateway-server/) on proxying.
 
-Additionally, make sure your VM is on and running, which can be done [at the VM dashboard](https://vc.cs.illinois.edu/). Use this [page](https://csid-basic-apps.cs.illinois.edu/) to lookup your VM name if needed.  
-**Note: Both of the above links also require campus wifi or a VPN**
+Additionally, make sure your VM is on and running, which can be done [at the VM dashboard](https://vc.cs.illinois.edu/) or using the vmon VM (replace NETID and NNN with your netid and VM number) -
+```console
+ssh NETID@cs341-vmon.cs.illinois.edu cs-vm-poweron fa25-cs341-NNN.cs.illinois.edu
+```
+
+We also encourage you to learn about using ssh-copy-id (then also add something like "IdentityFile ~/.ssh/mykey_ed25519" to your .ssh/config to automatically authenticate using a specific key instead of a password)
+
+Use this [page](https://csid-basic-apps.cs.illinois.edu/) to lookup your VM name if needed.  
+**Note: Both of the above links and VMs also require campus wifi or a VPN**
 
 
 ## Creating your course repository
