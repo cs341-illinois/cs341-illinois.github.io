@@ -620,8 +620,16 @@ In case you are still confused about what exactly to store in history, here are 
 | `echo HISTORY_IS_HARD`| `echo HISTORY_IS_HARD`|
 | `echo pi:G-> && echo G/ker(phi)`| `echo pi:G-> && echo G/ker(phi)`|
 | `echo x; echo y`| `echo x; echo y`|
-| `jarvis, store this in history` |`jarvis, store this in history`| 
+| `jarvis, store this in history` |`jarvis, store this in history`|
+
+and what I should **NOT** store?
+| **Examples NOT to store** | **Section** |
+|--------------|-----------|
+| `#1` | [n-th command](#n) |
+| `!history` | [history command](#history-1) |
+| `!e` | [outside prefix command](#prefix) itself<br/>you still need to store the actual running command (**IF matched**) |
 
 ## Grading
 
 Note that Week 1 and Week 2 count as one week of MP grades respectively. See the overview for a list of features required for each week.
+
