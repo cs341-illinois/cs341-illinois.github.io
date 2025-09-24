@@ -66,13 +66,13 @@ labs:
       url: "teaching_threads"
       submissions:
         - title: Entire Assignment
-          due_date: 2025-02-26 23:59
+          due_date: 2025-10-01 23:59
           releaseDate: 2025-09-23
           graded_files:
           - par_reduce.c
       resources: true
       worksheet: true
-      visible: false
+      visible: true
       slides: https://docs.google.com/presentation/d/1zdh2QgI40KssmoIhcJqZJoxfVB8euOXyx8-H1lV0NhA/edit?usp=sharing
   -
       name: "Critical Concurrency"
