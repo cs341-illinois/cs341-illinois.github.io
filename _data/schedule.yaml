@@ -107,13 +107,13 @@ classes:
     resources: "See lecture on <a href = 'https://classtranscribe.illinois.edu/'>ClassTranscribe</a>"
     color: "#2196F3"
     number: 14
-  - title: "Critical Section Problem"
-    summary: "Incorrect attempts to solve the Critical Section Problem. Introduction to Condition Variables."
+  - title: "Condition Variables
+    summary: "Introduction to Condition Variables."
     review_chapter: 7
     resources: "See lecture on <a href = 'https://classtranscribe.illinois.edu/'>ClassTranscribe</a>."
     color: "#2196F3"
     number: 15
-  - title: "Condition Variables II"
+  - title: "Counting Semaphores. Scott Fisher Guest Lecture"
     summary: "Condition Variables. Implementing a semaphore using a Condition Variable."
     review_chapter: 7
     resources: "See lecture on <a href = 'https://classtranscribe.illinois.edu/'>ClassTranscribe</a>."
