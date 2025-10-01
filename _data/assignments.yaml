@@ -81,7 +81,7 @@ labs:
       url: "critical_concurrency"
       submissions:
         - title: Entire Assignment
-          due_date: 2025-03-05 23:59
+          due_date: 2025-10-08 23:59
           releaseDate: 2025-09-30
           graded_files:
           - barrier.c
@@ -89,7 +89,7 @@ labs:
           - semamore.c
       resources: true
       worksheet: true
-      visible: false
+      visible: true
   -
       name: "Deadlock Demolition"
       releaseDate: "Week 7"
