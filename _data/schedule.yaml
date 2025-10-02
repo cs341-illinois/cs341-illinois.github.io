@@ -107,7 +107,7 @@ classes:
     resources: "See lecture on <a href = 'https://classtranscribe.illinois.edu/'>ClassTranscribe</a>"
     color: "#2196F3"
     number: 14
-  - title: "Condition Variables
+  - title: "Condition Variables"
     summary: "Introduction to Condition Variables."
     review_chapter: 7
     resources: "See lecture on <a href = 'https://classtranscribe.illinois.edu/'>ClassTranscribe</a>."
@@ -311,3 +311,4 @@ classes:
 #   summary: "Bring your discussion questions"
 #   resources: ""
 #   color: "#509688"
+
