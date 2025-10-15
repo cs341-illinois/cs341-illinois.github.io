@@ -113,13 +113,13 @@ labs:
       url: "ideal_indirection"
       submissions:
         - title: Entire Assignment
-          due_date: 2025-03-26 23:59
+          due_date: 2025-10-22 23:59
           releaseDate: 2025-10-14
           graded_files:
           - mmu.c
       resources: true
       worksheet: true
-      visible: false
+      visible: true
       slides: https://docs.google.com/presentation/d/1E2OAfTItyZvXnKFBsU8qkpNWooVMXaTjjPK_OqHfzoU/edit?usp=sharing
   -
       name: "MapReduce"
