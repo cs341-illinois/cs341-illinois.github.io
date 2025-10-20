@@ -311,12 +311,12 @@ mps:
           - parmake.c
         - title: Part 2
           due_date: 2025-11-03 23:59
-          releaseDate: 2025-10-26
+          releaseDate: 2025-10-19
           graded_files:
           - parmake.c
       resources: true
       worksheet: false
-      visible: false
+      visible: true
       slides: https://docs.google.com/presentation/d/1vOdlHMjhpBXmLosPW2wVIe5dhBCIeC3E0esYxdw3GvE/edit?usp=sharing
   -
       name: "Finding Filesystems"
