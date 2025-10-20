@@ -311,7 +311,7 @@ mps:
           - parmake.c
         - title: Part 2
           due_date: 2025-11-03 23:59
-          releaseDate: 2025-10-19
+          releaseDate: 2025-10-26
           graded_files:
           - parmake.c
       resources: true
