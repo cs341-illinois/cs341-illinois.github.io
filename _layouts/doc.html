@@ -6,14 +6,20 @@
   <div class="container-fluid">
     <div class="row" style="display: flex; justify-content: stretch;">
       {% include header.html %}
+
+      {% assign split_url = page.url | split: '/' %}
+      {% assign name_no_md = split_url[-1] | replace: '.html','' %}
+      {% assign released_mps = site.data.assignments['mps'] | where: "visible", "true" %}
+      {% assign released_labs = site.data.assignments['labs'] | where: "visible", "true" %}
+      {% assign is_current_released = released_mps | concat: released_labs | where: "url", name_no_md | size %}
+
       <div class="row">
         <div class="col-sm-3 col-xs-12 hidden-xs" style="min-height: 100%">
           <nav id="overview" data-toggle="toc" class="sticky-top"></nav>
         </div>
         <div class="col-sm-9 col-xs-12">
+          {% if is_current_released > 0 %}
           <div class="title">
-            {% assign split_url = page.url | split: '/' %}
-            {% assign name_no_md = split_url[-1] | replace: '.html','' %}
             {% assign assign_data = site.assign_by_url[name_no_md] %}
             <h1>
               {{ page.title }}
@@ -49,9 +55,21 @@
           </div>
           <div class="col-md-2 col-sm-1 col-xs-0"></div>
         </div>
-        {% include footer.html %}
+        {% else %}
+        <div style="text-align: center; padding: 50px 20px;">
+          <h2>🚧 Under Con</div>struction 🚧</h2>
+          <p>This page is not yet available. nothing to see here :]</p>
+          <img src="https://imgs.xkcd.com/comics/unreachable_state.png" alt="XKCD Unreachable State"
+            style="max-width: 100%; height: auto;">
+          <p style="font-size: 0.9em; color: #666; margin-top: 10px;">
+            from <a href="https://xkcd.com/2200/" target="_blank" rel="noopener">xkcd.com</a>
+          </p>
+        </div>
+        {% endif %}
       </div>
+      {% include footer.html %}
     </div>
+  </div>
   </div>
   <script type="application/javascript">
     var github_repo = "{{ site.repository | escape }}";
