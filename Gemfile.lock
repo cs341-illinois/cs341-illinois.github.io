@@ -1,14 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (8.0.0)
+    activesupport (8.1.0)
       base64
-      benchmark (>= 0.3)
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.3.1)
       connection_pool (>= 2.2.5)
       drb
       i18n (>= 1.6, < 2)
+      json
       logger (>= 1.4.2)
       minitest (>= 5.1)
       securerandom (>= 0.3)
@@ -16,39 +16,45 @@ GEM
       uri (>= 0.13.1)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
-    base64 (0.2.0)
-    benchmark (0.4.0)
-    bigdecimal (3.1.8)
-    cgi (0.4.1)
+    base64 (0.3.0)
+    bigdecimal (3.3.1)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
     colorator (1.1.0)
-    commonmarker (0.23.10)
-    concurrent-ruby (1.3.4)
-    connection_pool (2.4.1)
-    csv (3.3.0)
-    dnsruby (1.72.2)
+    commonmarker (0.23.12)
+    concurrent-ruby (1.3.5)
+    connection_pool (2.5.4)
+    csv (3.3.5)
+    dnsruby (1.73.0)
+      base64 (>= 0.2)
+      logger (~> 1.6)
       simpleidn (~> 0.2.1)
-    drb (2.2.1)
+    drb (2.2.3)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
-    erb (4.0.4)
-      cgi (>= 0.3.3)
-    ethon (0.16.0)
+    erb (5.1.1)
+    ethon (0.15.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
     execjs (2.10.0)
-    exifr (1.4.0)
-    faraday (2.12.0)
-      faraday-net_http (>= 2.0, < 3.4)
+    exifr (1.4.1)
+    faraday (2.14.0)
+      faraday-net_http (>= 2.0, < 3.5)
       json
       logger
-    faraday-net_http (3.3.0)
-      net-http
-    ffi (1.17.0-x86_64-linux-gnu)
+    faraday-net_http (3.4.1)
+      net-http (>= 0.5.0)
+    ffi (1.17.2-aarch64-linux-gnu)
+    ffi (1.17.2-aarch64-linux-musl)
+    ffi (1.17.2-arm-linux-gnu)
+    ffi (1.17.2-arm-linux-musl)
+    ffi (1.17.2-arm64-darwin)
+    ffi (1.17.2-x86_64-darwin)
+    ffi (1.17.2-x86_64-linux-gnu)
+    ffi (1.17.2-x86_64-linux-musl)
     ffi-hunspell (0.6.1)
       ffi (~> 1.0)
     forwardable-extended (2.6.0)
@@ -111,15 +117,24 @@ GEM
       nokogiri (>= 1.4)
     htmlentities (4.3.4)
     http_parser.rb (0.8.0)
-    i18n (1.14.6)
+    i18n (1.14.7)
       concurrent-ruby (~> 1.0)
-    image_optim (0.31.3)
+    image_optim (0.31.4)
       exifr (~> 1.2, >= 1.2.2)
       fspath (~> 3.0)
       image_size (>= 1.5, < 4)
       in_threads (~> 1.3)
       progress (~> 3.0, >= 3.0.1)
-    image_optim_pack (0.11.1.20240914-x86_64-linux)
+    image_optim_pack (0.12.2)
+      fspath (>= 2.1, < 4)
+      image_optim (~> 0.19)
+    image_optim_pack (0.12.2-arm64-darwin)
+      fspath (>= 2.1, < 4)
+      image_optim (~> 0.19)
+    image_optim_pack (0.12.2-x86_64-darwin)
+      fspath (>= 2.1, < 4)
+      image_optim (~> 0.19)
+    image_optim_pack (0.12.2-x86_64-linux)
       fspath (>= 2.1, < 4)
       image_optim (~> 0.19)
     image_size (3.4.0)
@@ -234,7 +249,7 @@ GEM
       gemoji (>= 3, < 5)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
-    json (2.8.1)
+    json (2.15.1)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -243,64 +258,84 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    logger (1.6.1)
+    logger (1.7.0)
     mercenary (0.3.6)
     minima (2.5.1)
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (5.25.1)
-    net-http (0.5.0)
+    minitest (5.26.0)
+    net-http (0.6.0)
       uri
-    nokogiri (1.16.7-x86_64-linux)
+    nokogiri (1.18.10-aarch64-linux-gnu)
+      racc (~> 1.4)
+    nokogiri (1.18.10-aarch64-linux-musl)
+      racc (~> 1.4)
+    nokogiri (1.18.10-arm-linux-gnu)
+      racc (~> 1.4)
+    nokogiri (1.18.10-arm-linux-musl)
+      racc (~> 1.4)
+    nokogiri (1.18.10-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.18.10-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.18.10-x86_64-linux-gnu)
+      racc (~> 1.4)
+    nokogiri (1.18.10-x86_64-linux-musl)
       racc (~> 1.4)
     octokit (4.25.1)
       faraday (>= 1, < 3)
       sawyer (~> 0.9)
-    parallel (1.26.3)
+    parallel (1.27.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     pigments (0.0.1)
     progress (3.6.0)
     public_suffix (5.1.1)
     racc (1.8.1)
-    rack (2.2.10)
-    rake (13.2.1)
+    rack (3.2.3)
+    rake (13.3.0)
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
-    redcarpet (3.6.0)
-    rexml (3.3.9)
+    redcarpet (3.6.1)
+    rexml (3.4.4)
     rouge (3.30.0)
-    rubyzip (2.3.2)
+    rubyzip (2.4.1)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sassc (2.1.0-x86_64-linux)
-      ffi (~> 1.9)
     sawyer (0.9.2)
       addressable (>= 2.3.5)
       faraday (>= 0.17.3, < 3)
-    securerandom (0.3.2)
+    securerandom (0.4.1)
     simpleidn (0.2.3)
-    sprockets (4.0.0)
+    sprockets (4.2.2)
       concurrent-ruby (~> 1.0)
-      rack (> 1, < 3)
+      logger
+      rack (>= 2.2.4, < 4)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    typhoeus (1.4.1)
-      ethon (>= 0.9.0)
+    typhoeus (1.5.0)
+      ethon (>= 0.9.0, < 0.16.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
-    uri (1.0.1)
-    webrick (1.9.0)
+    uri (1.0.4)
+    webrick (1.9.1)
 
 PLATFORMS
+  aarch64-linux-gnu
+  aarch64-linux-musl
+  arm-linux-gnu
+  arm-linux-musl
+  arm64-darwin
+  x86_64-darwin
   x86_64-linux-gnu
+  x86_64-linux-musl
 
 DEPENDENCIES
   erb
@@ -311,15 +346,15 @@ DEPENDENCIES
   image_optim_pack
   jekyll
   jekyll-feed
+  jekyll-sass-converter
   jekyll-sitemap
   jemoji
-  nokogiri (~> 1.10)
+  nokogiri
   parallel
   pigments
   rake
   redcarpet
-  sassc (~> 2.1.0)
-  sprockets (= 4.0.0)
+  sprockets
 
 BUNDLED WITH
-   2.5.16
+   2.7.2
