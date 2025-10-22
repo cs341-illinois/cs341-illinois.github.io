@@ -8,9 +8,9 @@
 -
   name: CS 341 Admin
   netid: cs341admin
-  roles: "Assistance for exceptional items that cannot be handled by your section TA (e.g. exam sickness, DRES)"
+  roles: "Admin assistance for exceptional items that cannot be handled by your section TA (e.g. exam sickness, DRES)"
   specialty: Exceptional Issues
-  semesters: ""
+  semesters: ever
 - 
   name: Leslie He
   netid: che27
