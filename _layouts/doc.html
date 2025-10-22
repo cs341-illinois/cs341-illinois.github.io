@@ -9,16 +9,16 @@
 
       {% assign split_url = page.url | split: '/' %}
       {% assign name_no_md = split_url[-1] | replace: '.html','' %}
-      {% assign released_mps = site.data.assignments['mps'] | where: "visible", "true" %}
-      {% assign released_labs = site.data.assignments['labs'] | where: "visible", "true" %}
-      {% assign is_current_released = released_mps | concat: released_labs | where: "url", name_no_md | size %}
+      {% assign released_mps = site.data.assignments['mps'] | where: "visible", "false" %}
+      {% assign released_labs = site.data.assignments['labs'] | where: "visible", "false" %}
+      {% assign not_released = released_mps | concat: released_labs | where: "url", name_no_md | size %}
 
       <div class="row">
         <div class="col-sm-3 col-xs-12 hidden-xs" style="min-height: 100%">
           <nav id="overview" data-toggle="toc" class="sticky-top"></nav>
         </div>
         <div class="col-sm-9 col-xs-12">
-          {% if is_current_released > 0 %}
+          {% if not_released == 0 %}
           <div class="title">
             {% assign assign_data = site.assign_by_url[name_no_md] %}
             <h1>
