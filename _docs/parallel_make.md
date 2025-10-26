@@ -314,6 +314,7 @@ You can use the real GNU `make` to check your implementation. However, it differ
 * `make` kills the program immediately after a rule fails. Run `make` with the flag `-k` (for keep going) to continue satisfying rules that aren't doomed to fail.
 * `make` requires every dependency to either be explicitly declared in the Makefile or present as a file on the disk. To get `parmake` and `make` to work the same way, define every rule explicitly.
 * `make` spits out error messages when commands fail, even when the flag `-k` is used. `parmake` will not do this.
+
 And here are some important similarities you should keep in mind:
 * When no explicit target is specified to `make`, it will assume the topmost rule in the `Makefile` is the single target rule; `parmake` does the same (see the following example). 
 
