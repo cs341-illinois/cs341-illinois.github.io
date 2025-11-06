@@ -160,13 +160,13 @@ labs:
       url: "deepfried_dd"
       submissions:
         - title: Entire Assignment
-          due_date: 2025-04-16 23:59
+          due_date: 2025-11-13 23:59
           releaseDate: 2025-11-04
           graded_files:
           - dd.c
       resources: true
       worksheet: true
-      visible: false
+      visible: true
       slides: https://docs.google.com/presentation/d/1S2DPaHoINCwUnk-nPVYcC5qKJ2AnN8ELhpl8OyIciSU/edit?usp=sharing
   -
       name: "Mad Mad Access Patterns"
