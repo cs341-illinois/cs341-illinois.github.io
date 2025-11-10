@@ -364,7 +364,7 @@ mps:
           - common.h
       resources: true
       worksheet: false
-      visible: false
+      visible: true
 honors:
   -
       name: "Advanced C"
