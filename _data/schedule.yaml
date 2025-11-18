@@ -255,12 +255,6 @@ classes:
     resources: "See lecture on <a href = 'https://classtranscribe.illinois.edu/'>ClassTranscribe</a>"
     color: "#FFC107"
     number: 36
-  - title: "RPC"
-    summary: "Remote Procedure Calls"
-    review_chapter: 11
-    resources: "See lecture on <a href = 'https://classtranscribe.illinois.edu/'>ClassTranscribe</a>."
-    color: "#FFC107"
-    number: 37
   - title: "No class (office hours in CIF)"
     summary: ""
     resources: ""
@@ -277,6 +271,12 @@ classes:
     summary: ""
     resources: ""
     color: "#808080"
+  - title: "RPC"
+    summary: "Remote Procedure Calls"
+    review_chapter: 11
+    resources: "See lecture on <a href = 'https://classtranscribe.illinois.edu/'>ClassTranscribe</a>."
+    color: "#FFC107"
+    number: 37
   - title: "Systems Concepts Review"
     summary: "Systems Concepts Review"
     review_chapter: 15
