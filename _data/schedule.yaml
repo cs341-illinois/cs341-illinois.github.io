@@ -127,10 +127,6 @@ classes:
     resources: "See lecture on <a href = 'https://classtranscribe.illinois.edu/'>ClassTranscribe</a>"
     color: "#03A9F4"
     number: 17
-  - title: "No recording - ABET visit"
-    summary: "In person ABET visit"
-    resources: ""
-    color: "#808080"
   - title: "Reader Writer and Deadlock - Part 1"
     summary: ""
     review_chapter: 8
