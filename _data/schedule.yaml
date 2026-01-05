@@ -17,10 +17,10 @@ chapter_link_map:
 #1/20/2026 - 5/6/2026 plys finals
 # first day Wed 1/21/2025. Spring Break March 15–23. May 7 Last day of instruction
 classes:
-  # - title: "No class - MLK day "
-  #   summary: "History of <a href = 'https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.'>Martin Luther King Jr.</a>"
-  #   resources: ""
-  #   color: "#808080"
+  - title: "No class - MLK day "
+    summary: "History of <a href = 'https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.'>Martin Luther King Jr.</a>"
+    resources: ""
+    color: "#808080"
   - title: "Welcome to System Programming"
     summary: "1. HW0 using my <a href = 'https://cs-education.github.io/sys/#/lessons'>Linux-In-The-Browser minicourse</a>"
     review_chapter: 3
