@@ -40,7 +40,7 @@ title: "Welcome to CS 341"
 <vertical />
 
 ```C
-ssh <NETID>@fa25-cs341-<xxx>.cs.illinois.edu
+ssh <NETID>@{{site.data.constants.semester }}-cs341-<xxx>.cs.illinois.edu
 ```
 where `xxx` is the VM number assigned to you.
 
