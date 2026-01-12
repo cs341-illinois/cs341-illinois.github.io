@@ -11,7 +11,7 @@ In this course, we use Virtual Machines (VMs) for all our development. We will n
 
 ### Connecting to your VM
 
-For all registered students in the course, you will receive a VM in the CS Department’s VM Farm provisioned by EngrIT. VMs have a hostname similar to fa25-cs341-000.cs.illinois.edu (replace 'fa25' with the current semester and '000' with your VM number as a 3 digit number).
+For all registered students in the course, you will receive a VM in the CS Department’s VM Farm provisioned by EngrIT. VMs have a hostname similar to {{site.data.constants.semester }}-cs341-000.cs.illinois.edu (replace '{{site.data.constants.semester }}' with the current semester and '000' with your VM number as a 3 digit number).
 
 When your VM is provisioned you should receive an email about your VM - these are typically sent in the morning of the first lab. If you registered late, please email the CS 341 Admin (you can find the email on our [staff page]({% link _pages/staff.html %})).
 
@@ -35,7 +35,7 @@ Note that if you are not connected to on-campus internet, you will need to use a
 An alternative to using the UIUC VPN is to SSH twice. You can first SSH into your EWS account and then into your personal VM. Just remember that this causes potentially double the network lag. If you are using the VS Code SSH client, setup your .ssh config like this:
 ```console
 Host 341-VM
-  HostName sp25-cs341-<Your VM Number>.cs.illinois.edu
+  HostName {{site.data.constants.semester }}-cs341-<Your VM Number>.cs.illinois.edu
   User <NetID>
   ProxyJump ews
 
@@ -47,7 +47,7 @@ If you want further information on what this is actually doing, you can read [th
 
 Additionally, make sure your VM is on and running, which can be done [at the VM dashboard](https://vc.cs.illinois.edu/) or using the vmon VM (replace NETID and NNN with your netid and VM number) -
 ```console
-ssh NETID@cs341-vmon.cs.illinois.edu cs-vm-poweron fa25-cs341-NNN.cs.illinois.edu
+ssh NETID@cs341-vmon.cs.illinois.edu cs-vm-poweron {site.data.constants.semester }}-cs341-NNN.cs.illinois.edu
 ```
 
 We also encourage you to learn about using ssh-copy-id (then also add something like "IdentityFile ~/.ssh/mykey_ed25519" to your .ssh/config to automatically authenticate using a specific key instead of a password)
@@ -199,9 +199,9 @@ Have fun! In the worst case we can reset your VM back to its initial state.
 > If you cannot figure it out, plz post in Ed with log/screenshoot of `GIT_TRACE=1 git clone xxxx` or `GIT_TRACE=1 git pull xxx`
 >
 
-If you are using SSH key, it's probably caused by you are using HTTPS protocol(like `https://github.com/illinois-cs-coursework/fa25_cs341_.release.git`). You need to use SSH protocol(like `git@github.com:illinois-cs-coursework/fa25_cs341_.release.git`).
+If you are using SSH key, it's probably caused by you are using HTTPS protocol(like `https://github.com/illinois-cs-coursework/{{site.data.constants.semester }}_cs341_.release.git`). You need to use SSH protocol(like `git@github.com:illinois-cs-coursework/{{site.data.constants.semester }}_cs341_.release.git`).
 - If you are doing clone operation, simply replace the repository URL part.
-- IF you are doing `pull release` fetch part, using `git remote set-url release git@github.com:illinois-cs-coursework/fa25_cs341_.release.git`(replaced with actual URL).
+- IF you are doing `pull release` fetch part, using `git remote set-url release git@github.com:illinois-cs-coursework/{{site.data.constants.semester }}_cs341_.release.git`(replaced with actual URL).
 
 ### Can't login or turn on your VM?
 
