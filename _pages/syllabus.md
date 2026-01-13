@@ -18,22 +18,22 @@ The operating system presents common interfaces for programmers to perform these
 ## Learning Goals/Skills
 
 * Identify the basic components of an operating system, describe their purpose, and explain how they function.
-* Write, compile, debug, and execute C programs that correctly use system interfaces provided by UNIX or a UNIX-like operating system.
-* Be familiar with important UNIX system calls and invoke them correctly from within C programs.
+* Write, compile, debug, and execute C programs that correctly use system interfaces provided by POSIX or a POSIX-like operating system.
+* Be familiar with important POSIX system calls and invoke them correctly from within C programs.
 * Describe the difference between programs, processes, and threads.
 * Write a memory allocator or [malloc]({% link _pages/malloc_hall_of_fame.html %}).
 * Explain the meaning and purpose of process control blocks and other mechanisms that the operating system uses to implement the process and thread abstractions.
-* Write, compile, debug, and execute C programs that create, manage and terminate processes and threads on UNIX.
+* Write, compile, debug, and execute C programs that create, manage and terminate processes and threads on POSIX.
 * Define concurrency and explain the problems that may arise because of concurrent execution of multiple processes or threads. Explain how these problems can be avoided. Write code that avoids these problems.
 * Define semaphores, mutexes, and other synchronization primitives. Also, explain their purpose, and describe their internal implementation.
 * Describe possible problems that arise from improper use of synchronization primitives (such as deadlocks) and present their solutions.
-* Write, compile, debug, and execute C programs that use UNIX synchronization primitives.
-* Describe operating system scheduling and use UNIX interfaces to set and modify scheduling policy parameters.
-* Define UNIX signals and signal handlers, and describe their use.
+* Write, compile, debug, and execute C programs that use POSIX synchronization primitives.
+* Describe operating system scheduling and use POSIX interfaces to set and modify scheduling policy parameters.
+* Define POSIX signals and signal handlers, and describe their use.
 * Write, compile, debug, and execute C programs with processes and threads that interact by invoking and catching signals.
 * Describe the concepts of I/O devices, files, directories.
 * Explain the internal implementation of files systems and operating system I/O.
-* Write, compile, debug, and execute C programs that use files and I/O on UNIX.
+* Write, compile, debug, and execute C programs that use files and I/O on POSIX.
 * Describe the machine memory hierarchy, describe its components such as caches and virtual memory, and explain memory management mechanisms pertaining to these components such as paging and segmentation.
 * Write, compile, debug, and execute C programs that make use of memory management functions.
 * Describe the protocols (such as TCP and IP) and interfaces (such as sockets) used for communication among different computers.
