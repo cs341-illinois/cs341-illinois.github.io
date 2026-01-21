@@ -10,7 +10,7 @@ wikibook:
 
 ## HW0
 
-You have already been assigned a HW0 for the class, which is available on [Prairielearn](https://us.prairielearn.com/pl/course_instance/182674/assessments). We'll spend the first part of class going over the various questions from HW0. Your grade for this lab is partly HW0 and partly the assignment below.
+You have already been assigned a HW0 for the class, which is available on [Prairielearn](https://us.prairielearn.com/pl/course_instance/203563). We'll spend the first part of class going over the various questions from HW0. Your grade for this lab is partly HW0 and partly the assignment below.
 
 ## Development
 
