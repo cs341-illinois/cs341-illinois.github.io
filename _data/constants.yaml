@@ -38,4 +38,6 @@ malloc_contest_link: "https://grd-cs341.cs.illinois.edu/malloc"
 forum_link: "https://edstem.org/us/courses/91065/discussion" 
 
 lecture_videos_link: "https://classtranscribe.illinois.edu/"
+# plz also modify the link in _data/navigation_bar.yaml, due to yaml cannot reference variables
+# and HTML part cannot render this kind of variable reference in string as well
 lecture_handouts: "https://github.com/angrave/CS341-Lectures-SP26"
