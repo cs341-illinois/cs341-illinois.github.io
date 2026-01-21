@@ -14,6 +14,7 @@ labs:
       resources: true
       worksheet: true
       visible: true
+      slides: https://docs.google.com/presentation/d/1Oj-YMs3J16uH1LvIUwPiaqaml8vz35144hjoKY6AOHk/edit?usp=sharing
   -
       name: "Perilous Pointers"
       releaseDate: "Week 2"
