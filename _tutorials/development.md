@@ -47,7 +47,7 @@ If you want further information on what this is actually doing, you can read [th
 
 Additionally, make sure your VM is on and running, which can be done [at the VM dashboard](https://vc.cs.illinois.edu/) or using the vmon VM (replace NETID and NNN with your netid and VM number) -
 ```console
-ssh NETID@cs341-vmon.cs.illinois.edu cs-vm-poweron {site.data.constants.semester }}-cs341-NNN.cs.illinois.edu
+ssh NETID@cs341-vmon.cs.illinois.edu cs-vm-poweron {{ site.data.constants.semester }}-cs341-NNN.cs.illinois.edu
 ```
 
 We also encourage you to learn about using ssh-copy-id (then also add something like "IdentityFile ~/.ssh/mykey_ed25519" to your .ssh/config to automatically authenticate using a specific key instead of a password)
