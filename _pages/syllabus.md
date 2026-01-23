@@ -54,8 +54,11 @@ Quizzes: 12%
 
 MP Programming Assignments : 42%
 Lab Programming Assignments: 14%
-Midterm Exam : 9%
 Lab Attendance & other items: see below
+
+Midterm Exam : 9%
+
+Bonus Credits Items : Additional 1-3%
 ```
 
 We publish the following thresholds:
