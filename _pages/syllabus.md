@@ -50,11 +50,11 @@ The following is subject to minor changes:
 
 ```
 Final Exam : 20 - 23% (see notes)
-Quizzes: 15%
+Quizzes: 12%
 
-MP Programming Assignments : 45%
-Lab Programming Assignments: 17%
-
+MP Programming Assignments : 42%
+Lab Programming Assignments: 14%
+Midterm Exam : 9%
 Lab Attendance & other items: see below
 ```
 
