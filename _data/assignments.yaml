@@ -22,8 +22,8 @@ labs:
       url: "perilous_pointers"
       submissions:
         - title: Entire Assignment
-          due_date: 2026-02-03 23:59
-          releaseDate: 2026-01-26
+          due_date: 2026-02-04 23:59
+          releaseDate: 2026-01-27
           graded_files:
           - part1-functions.c
           - part2-main.c
@@ -223,14 +223,14 @@ mps:
       url: "extreme_edge_cases"
       submissions:
         - title: Entire Assignment
-          due_date: 2025-09-09 23:59
-          releaseDate: 2025-08-31
+          due_date: 2026-02-03 23:59
+          releaseDate: 2026-01-26
           graded_files:
           - camelCaser.c
           - camelCaser_tests.c
       resources: true
       worksheet: false
-      visible: false
+      visible: true
   -
       name: "Vector"
       releaseDate: "Week 3"
