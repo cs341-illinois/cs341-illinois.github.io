@@ -22,14 +22,14 @@ labs:
       url: "perilous_pointers"
       submissions:
         - title: Entire Assignment
-          due_date: 2025-09-10 23:59
-          releaseDate: 2025-09-02
+          due_date: 2026-02-03 23:59
+          releaseDate: 2026-01-26
           graded_files:
           - part1-functions.c
           - part2-main.c
       resources: true
       worksheet: true
-      visible: false
+      visible: true
   -
       name: "Utilities Unleashed"
       releaseDate: "Week 3"
