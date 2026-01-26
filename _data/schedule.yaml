@@ -43,7 +43,7 @@ classes:
   #   summary: "History of <a href = 'https://en.wikipedia.org/wiki/Labor_Day'>Labor Day</a>"
   #   resources: ""
   #   color: "#808080"
-  - title: "A day at the C side: C Crash Course 3"
+  - title: "(Remote only) A day at the C side: C Crash Course 3"
     summary: "4. getenv, scanf, getline, fork "
     review_chapter: 3
     resources: "See lecture 4 on <a href = 'https://classtranscribe.illinois.edu/'>ClassTranscribe</a>"
