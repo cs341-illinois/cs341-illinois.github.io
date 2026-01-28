@@ -194,7 +194,7 @@ labs:
   submissions:
   - title: Entire Assignment
     due_date: 1987-12-11 23:59
-    releaseDate: 1987-12-11 18:00
+    releaseDate: 2026-04-26 18:00
     graded_files:
     - kernel.c
   resources: true
@@ -286,7 +286,7 @@ mps:
   url: parallel_make
   submissions:
   - title: Part 1
-    due_date: 2026-04-06 23:59
+    due_date: 2026-03-30 23:59
     releaseDate: 2026-03-22 18:00
     graded_files:
     - parmake.c

@@ -8,8 +8,8 @@ FIRST_WEEK_START = datetime(2026, 1, 19)
 BREAKS = [
     (datetime(2026, 3, 16), datetime(2026, 3, 23)),  # Spring Break, to 23 00:00
 ]
-MAX_WEEK = 15
-SKIPS = ["Lovable Linux"]
+MAX_WEEK = 14
+SKIPS = []
 DUMP_ICS = True
 OVERRIDE_DATE = {
     "Extreme Edge Cases": [[datetime(2026, 1, 26, 18), datetime(2026, 2, 3, 23, 59)]]
@@ -46,6 +46,12 @@ print(
     )
 )
 
+#
+OVERRIDE_DATE["Lovable Linux"] = [
+    [week_dates[14 - 1] + timedelta(days=-1, hours=18), datetime(1987, 12, 11, 23, 59)]
+]
+#
+
 schedule = yaml.safe_load(ASSIGNMENT_FILE.read_text())
 labs = schedule["labs"]
 mps = schedule["mps"]
@@ -67,24 +73,23 @@ for l in labs:
         l["submissions"][0]["releaseDate"] = ovr[0].strftime("%Y-%m-%d %H:%M")
         l["submissions"][0]["due_date"] = ovr[1].strftime("%Y-%m-%d %H:%M")
         continue
-    rweek_date = week_dates[rweek - 1] + timedelta(days=1, hours=18)  # Tuesday 6 PM
+    release_date = week_dates[rweek - 1] + timedelta(days=1, hours=18)  # Tuesday 6 PM
     # calculation is 9 days later
     # however if it's covered by a break
-    dweek_date = rweek_date.replace(hour=0) + timedelta(
+    due_date = release_date.replace(hour=0) + timedelta(
         days=8, hours=23, minutes=59
     )  # Wednesday 11:59 PM
     for b in BREAKS:
-        if are_overlapping(b[0], b[1], rweek_date, dweek_date):
-            print(f"  Adjusted due date for break, original due date: {dweek_date}")
-            if dweek_date < b[1]:
-                dweek_date = b[1] + (dweek_date - b[0])
-            elif dweek_date >= b[1]:
-                dweek_date += b[1] - b[0]
+        if are_overlapping(b[0], b[1], release_date, due_date):
+            print(f"  Adjusted due date for break, original due date: {due_date}")
+            # only modify when end_date is eailer than break end
+            if due_date < b[1]:
+                due_date = b[1] + (due_date - b[0])
     print(
-        f"  Date={rweek_date.strftime('%Y-%m-%d %H:%M')} Due={dweek_date.strftime('%Y-%m-%d %H:%M')}"
+        f"  Date={release_date.strftime('%Y-%m-%d %H:%M')} Due={due_date.strftime('%Y-%m-%d %H:%M')}"
     )
-    l["submissions"][0]["releaseDate"] = rweek_date.strftime("%Y-%m-%d %H:%M")
-    l["submissions"][0]["due_date"] = dweek_date.strftime("%Y-%m-%d %H:%M")
+    l["submissions"][0]["releaseDate"] = release_date.strftime("%Y-%m-%d %H:%M")
+    l["submissions"][0]["due_date"] = due_date.strftime("%Y-%m-%d %H:%M")
 
 for m in mps:
     if m["name"] in SKIPS:
@@ -105,24 +110,21 @@ for m in mps:
         continue
     for i in range(len(m["submissions"])):
         print(f"  Submission {i}:")
-        rweek_date = week_dates[rweek + i - 1] + timedelta(days=-1, hours=18)
-        dweek_date = rweek_date.replace(hour=0) + timedelta(
+        release_date = week_dates[rweek + i - 1] + timedelta(days=-1, hours=18)
+        due_date = release_date.replace(hour=0) + timedelta(
             days=8, hours=23, minutes=59
         )
         for b in BREAKS:
-            if are_overlapping(b[0], b[1], rweek_date, dweek_date):
-                print(
-                    f"    Adjusted due date for break, original due date: {dweek_date}"
-                )
-                if dweek_date < b[1]:
-                    dweek_date = b[1] + (dweek_date - b[0])
-                elif dweek_date >= b[1]:
-                    dweek_date += b[1] - b[0]
+            if are_overlapping(b[0], b[1], release_date, due_date):
+                print(f"    Adjusted due date for break, original due date: {due_date}")
+                # only modify when end_date is eailer than break end
+                if due_date < b[1]:
+                    due_date = b[1] + (due_date - b[0])
         print(
-            f"    Date={rweek_date.strftime('%Y-%m-%d %H:%M')} Due={dweek_date.strftime('%Y-%m-%d %H:%M')}"
+            f"    Date={release_date.strftime('%Y-%m-%d %H:%M')} Due={due_date.strftime('%Y-%m-%d %H:%M')}"
         )
-        m["submissions"][i]["releaseDate"] = rweek_date.strftime("%Y-%m-%d %H:%M")
-        m["submissions"][i]["due_date"] = dweek_date.strftime("%Y-%m-%d %H:%M")
+        m["submissions"][i]["releaseDate"] = release_date.strftime("%Y-%m-%d %H:%M")
+        m["submissions"][i]["due_date"] = due_date.strftime("%Y-%m-%d %H:%M")
 
 ASSIGNMENT_FILE.write_text("---\n" + yaml.dump(schedule, sort_keys=False, indent=2))
 
@@ -130,7 +132,15 @@ if DUMP_ICS:
     from icalendar import Calendar, Event
 
     cal = Calendar()
-    cal.add("prodid", "-//CS341 SP26 Assignment Schedule//EN")
+    cal.add("prodid", "UIUC//CS341 SP26 Assignment Schedule//EN")
+    cal.add("UID", "cs341-sp26-assignments@illinois.edu")
+    cal.add(
+        "SUMMARY",
+        "CS341 Spring 26 Assignment Schedule, University of Illinois Urbana-Champaign",
+    )
+    cal.add("ORGANIZER", "MAILTO:cs341admin@illinois.edu")
+    cal.add("DTSTART", week_dates[0])
+    cal.add("DTEND", week_dates[-1])
     cal.add("version", "2.0")
 
     for l in labs:
