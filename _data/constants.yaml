@@ -41,3 +41,4 @@ lecture_videos_link: "https://classtranscribe.illinois.edu/"
 # plz also modify the link in _data/navigation_bar.yaml, due to yaml cannot reference variables
 # and HTML part cannot render this kind of variable reference in string as well
 lecture_handouts: "https://github.com/angrave/CS341-Lectures-SP26"
+ics_link: "https://raw.githubusercontent.com/cs341-illinois/cs341-illinois.github.io/refs/heads/develop/_data/assignments.ics"
