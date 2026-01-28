@@ -11,117 +11,105 @@
   roles: "Admin assistance for exceptional items that cannot be handled by your section TA (e.g. exam sickness, DRES)"
   specialty: Exceptional Issues
   semesters: ever
-- 
-  name: Leslie He
-  netid: che27
-  roles: Teaching Assistant
-  speciality: ""
-  semesters: Fall 2023 - Spring 2024
 -
   name: Benjamin Reidys
   netid: breidys2
   roles: Teaching Assistant
   speciality: ""
-  semesters: Spring 2024 - Fall 2025
+  semesters: Spring 2024 - Spring 2026
 - 
   name: Christina Youn
   netid: youn13
   roles: Teaching Assistant
   speciality: ""
-  semesters: Spring 2024, Fall 2025
--
-  name: Talika Gupta
-  netid: talikag2
-  roles: Teaching Assistant
-  specialty: ""
-  semesters: Fall 2025
+  semesters: Spring 2024, Fall 2025, Spring 2026
 -
   name: Seokjoo Cho
   netid: seokjoo3
   roles: Teaching Assistant
   specialty: ""
-  semesters: Fall 2025
+  semesters: Fall 2025 - Spring 2026
+-
+  name: Wentao Zhang
+  netid: wentaoz5
+  roles: Teaching Assistant
+  specialty: ""
+  semesters: Fall 2025 - Spring 2026
 -
   name: Aashvi Busa
   netid: abusa2
   roles: Infrastructure
   specialty: ""
-  semesters: Fall 2025
+  semesters: Fall 2025 - Spring 2026
 -
   name: Helena Ilic
   netid: hilic2
   roles: Infrastructure
   specialty: ""
-  semesters: Fall 2025
--
-  name: Knud Andersen
-  netid: kande30
-  roles: Lab / Assignment Development
-  specialty: ""
-  semesters: Fall 2024 - Fall 2025
--
-  name: Akhil Bharanidhar
-  netid: akhilnb2
-  roles: Lab / Assignment Development
-  specialty: ""
-  semesters: Fall 2024 - Fall 2025
+  semesters: Fall 2025 - Spring 2026
 -
   name: Caleb Beversdorf
   netid: cbeve2
   roles: Lab / Office Hours
   specialty: ""
-  semesters: Fall 2025
+  semesters: Spring 2025 - Spring 2026
 -
   name: Naren Suresh
   netid: narens4
   roles: Lab / Office Hours
   specialty: ""
-  semesters: Fall 2025
+  semesters: Fall 2025 - Spring 2026
 -
   name: Aryan Sapre
   netid: aryanns2
   roles: Lab / Office Hours
   specialty: ""
-  semesters: Fall 2025
+  semesters: Fall 2025 - Spring 2026
 -
   name: Somrishi Banerjee
   netid: sb91
   roles: Lab / Office Hours
   specialty: ""
-  semesters: Fall 2025
+  semesters: Fall 2025 - Spring 2026
 -
   name: Cygnus Qiu
   netid: cygnusq2
   roles: Lab / Office Hours / Assignment Development
   specialty: ""
-  semesters: Fall 2025
+  semesters: Fall 2025 - Spring 2026
 -
   name: Srikar Pisupati
   netid: srikarp3
   roles: Lab / Office Hours
   specialty: ""
-  semesters: Fall 2025
--
-  name: Gavin Ebenezer
-  netid: gavinae2
-  roles: Lab / Office Hours
-  specialty: ""
-  semesters: Fall 2025
+  semesters: Fall 2025 - Spring 2026
 -
   name: Sherry Long
   netid: sherryl4
   roles: Lab / Office Hours
   specialty: ""
-  semesters: Fall 2025
+  semesters: Fall 2025 - Spring 2026
 -
   name: Uday Vidyadharan
   netid: umv2
   roles: Lab / Office Hours
   speciality: ""
-  semesters: Spring 2025
+  semesters: Spring 2026
 -
   name: Ryan Kumar
   netid: rdkumar2
   roles: Lab / Office Hours
   speciality: ""
   semesters: Spring 2026
+-
+  name: Leor Porat
+  netid: porat2
+  roles: Lab / Office Hours
+  speciality: ""
+  semesters: Spring 2025, Spring 2026
+-
+  name: Alex Yang
+  netid: alexy3
+  roles: Lab / Office Hours
+  speciality: ""
+  semesters: Spring 2025, Spring 2026
