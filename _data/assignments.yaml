@@ -28,6 +28,7 @@ labs:
   resources: true
   worksheet: true
   visible: true
+  slides: https://docs.google.com/presentation/d/1-d9tsDfKpyGEFru-kv1wx6JN86RiTiiR06DkKxoBucw/edit?usp=sharing
 - name: Utilities Unleashed
   releaseDate: Week 3
   dueDate: Week 4
