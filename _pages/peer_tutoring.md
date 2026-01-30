@@ -15,7 +15,7 @@ These peer tutoring sessions will focus on diagnosing misconceptions and holes i
 
 This department is scaling rapidly, which is great, since computer science is an incredible field of knowledge that will take our civilization to new frontiers. Unfortunately, the number of people on course staff does not scale as fast. This means that we can not sit next to you for 45 minutes to read 800 lines of your code; this is peer tutoring and not a dinner date. We will wear stopwatches and [round robin](https://en.wikipedia.org/wiki/Round-robin_scheduling) between the students on the queue.
 
-Prof. Angrave's office hours are listed on the home page-  TL;DR catch him outside lecture area Mon-Wed-Fri (Monday is his official hour).
+Prof. Angrave's office hours are listed on the home page. TL;DR catch him outside lecture area or coffee Mon-Wed-Fri
 
 ## Calendar
 

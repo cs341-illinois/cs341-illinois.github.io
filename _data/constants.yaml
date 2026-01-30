@@ -11,6 +11,7 @@ instructor: "Lawrence Angrave (angrave@illinois.edu)"
 location: "ECEB 1002"
 timings: "MWF 11:00AM - 11:50AM"
 courses_schedule_link: "https://courses.illinois.edu/schedule/2026/spring/CS/341"
+prairie_instance_link: "https://us.prairielearn.com/pl/course_instance/203563"
 
 # Infrastructure examples-
 # grade_viewer_link: "https://sp20-cs241-grd-01.cs.illinois.edu/grades"
@@ -37,4 +38,7 @@ malloc_contest_link: "https://grd-cs341.cs.illinois.edu/malloc"
 forum_link: "https://edstem.org/us/courses/91065/discussion" 
 
 lecture_videos_link: "https://classtranscribe.illinois.edu/"
+# plz also modify the link in _data/navigation_bar.yaml, due to yaml cannot reference variables
+# and HTML part cannot render this kind of variable reference in string as well
 lecture_handouts: "https://github.com/angrave/CS341-Lectures-SP26"
+ics_link: "https://raw.githubusercontent.com/cs341-illinois/cs341-illinois.github.io/refs/heads/develop/_data/assignments.ics"

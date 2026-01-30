@@ -50,12 +50,15 @@ The following is subject to minor changes:
 
 ```
 Final Exam : 20 - 23% (see notes)
-Quizzes: 15%
+Quizzes: 12%
 
-MP Programming Assignments : 45%
-Lab Programming Assignments: 17%
-
+MP Programming Assignments : 42%
+Lab Programming Assignments: 14%
 Lab Attendance & other items: see below
+
+Midterm Exam : 9%
+
+Bonus Credits Items : Additional 1-3%
 ```
 
 We publish the following thresholds:
@@ -68,7 +71,7 @@ We publish the following thresholds:
 
 All lab programming assignments are equally weighted. MP programming assignments are weighted by the time given to complete them. This means that three week MPs are worth triple one week. For grading, we will drop your lowest lab score, and two lab attendance grades. Some examples: you slept in late; your dog ate your homework; you destroyed the internet.
 
-The final is take-home, 3 hours and will be available online. The exam can be completed at any time over a 3 day period during exam week. More details will be published at the end of the semester. Early exams will not be offered. The exam will be available on the first Sunday after reading day and closes 3 days later, Wednesday 11 pm.
+The midterm and final will be proctored, in-person exams hosted on Prairielearn. More information regarding the format, time, and location will be announced closer to the date.
 
 Opportunities for a small amount of extra credit may be offered and will be annouced during the semester.
 

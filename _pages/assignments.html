@@ -35,6 +35,60 @@
             {% endif %}
             {% endfor %}
         </section>
+        <div style="display: flex; align-items: center;">
+            <h3 style="margin: 0;">Course Progress</h3>
+            <a href="{{ site.data.constants.ics_link }}" class="btn" role="button" download style="display: flex; align-items: center;" title="Download Course Calendar (ICS)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                </svg>
+                
+            </a>
+        </div>
+        <div class="progress-container" style="margin: 20px 0; position: relative;">
+            <style>
+                .progress-marker {
+                    position: absolute;
+                    z-index: 10;
+                }
+                .progress-marker.mp::before {
+                    content: '';
+                    position: absolute;
+                    top: 20px;
+                    left: -3px;
+                    border-left: 4px solid transparent;
+                    border-right: 4px solid transparent;
+                    border-bottom: 5px solid rgba(220, 53, 69, 0.8);
+                }
+                .progress-marker.lab::before {
+                    content: '';
+                    position: absolute;
+                    top: -5px;
+                    left: -3px;
+                    border-left: 4px solid transparent;
+                    border-right: 4px solid transparent;
+                    border-top: 5px solid rgba(220, 146, 53, 0.8);
+                }
+            </style>
+            {% for assignment in site.data.assignments['labs'] %}
+                {% assign marker_position = assignment.dueDate | split: " " | last | to_integer | times: 100 | divided_by: 15 %}
+                <div class="progress-marker lab" style="left: {{ marker_position }}%;" title="{{ assignment.name }} - Due: {{ assignment.dueDate }}"></div>
+            {% endfor %}
+            {% for assignment in site.data.assignments['mps'] %}
+                {% assign marker_position = assignment.dueDate | split: " " | last | to_integer | times: 100 | divided_by: 15 %}
+                <div class="progress-marker mp" style="left: {{ marker_position }}%;" title="{{ assignment.name }} - Due: {{ assignment.dueDate }}"></div>
+            {% endfor %}
+            <div class="progress" style="height: 20px; background-color: #e9ecef; border-radius: 5px; overflow: hidden;">
+                {% assign labs = site.data.assignments['labs'] | where: "visible", "true" | last %}
+                {% assign current_week = labs.releaseDate | split: " " | last | to_integer %}
+                {% assign progress_percent = current_week | times: 100 | divided_by: 15 %}
+                <div class="progress-bar" role="progressbar" 
+                     style="width: {{ progress_percent }}%; background: linear-gradient(90deg, #dc3545 0%, #c82333 50%, #fd7e14 100%);
+                            display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;"
+                     aria-valuenow="{{ current_week }}" aria-valuemin="0" aria-valuemax="15">
+                    Week {{ current_week }} of 15
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-5 col-5 col-xs-12">
                 <h3>MPs</h3>

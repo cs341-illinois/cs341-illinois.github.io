@@ -38,7 +38,7 @@
             {% if assign_data.submissions %}
             <div class="submission-wrapper">
               {% for submission in assign_data.submissions %}
-              <b>{{ submission.title }}</b> due <b>{{ submission.due_date }}</b><br />
+              <b>{{ submission.title }}</b> due <b>{{ submission.due_date }}</b>, released in {{ submission.releaseDate }}<br />
               {% if submission.graded_files %}
               <b>Graded files (do not modify any other files!):</b>
               <ul>
