@@ -40,7 +40,7 @@
               {% for submission in assign_data.submissions %}
               <b>{{ submission.title }}</b> due <b>{{ submission.due_date }}</b><br />
               {% if submission.graded_files %}
-              <b>Graded files:</b>
+              <b>Graded files (do not modify any other files!):</b>
               <ul>
                 {% for graded_file in submission.graded_files %}
                 <li>{{ graded_file }}</li>
