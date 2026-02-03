@@ -43,6 +43,7 @@ labs:
   resources: true
   worksheet: true
   visible: false
+  slides: https://docs.google.com/presentation/d/1fwPjEXCieckEufmWjZzpfLlWExFmy88U1xegFt-Yjv4/edit?usp=sharing
 - name: Mini Memcheck
   releaseDate: Week 4
   dueDate: Week 5
