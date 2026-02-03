@@ -140,8 +140,7 @@
                                 <th>Lab</th>
                                 <th>Release Date</th>
                                 <th>Due Date</th>
-								<th>Slides (Legacy)</th>
-								<th>Slides (New)</th>
+								<th>Slides</th>
                                 <th>Handout</th>
                             </tr>
                         </thead>
@@ -151,36 +150,21 @@
                                 <th scope="row"><a href="/assignments/{{lab.url}}.html">{{lab.name}}</a></th>
                                 <td>{{lab.releaseDate}}</td>
                                 <td>{{lab.dueDate}}</td>
-                                {% if lab.resources %} {% if lab.slides == nil or lab.slides != false %}
+                                
                                 <td>
-                                    <a href="/slides/{{lab.url}}.html" class="fancy-link wiki-link"><img
-                                            src="./images/lab-icons/animation.png" alt='Slides'></a>
+                                    {% if lab.slides != nil %}
+                                    <a href="{{lab.slides}}" class="fancy-link wiki-link">
+                                        <img src="./images/lab-icons/animation.png" alt='Slides'>
+                                    </a>
+                                    {% endif %}
                                 </td>
-                                {% else %}
-                                <td></td>
-								{% endif %}
-								{% if lab.slides != nil%}
                                 <td>
-                                    <a href={{lab.slides}} class="fancy-link wiki-link"><img
-                                            src="./images/lab-icons/animation.png" alt='Slides'></a>
+                                    {% if lab.worksheet == nil or lab.worksheet != false %}
+                                    <a href="/resources/handouts/{{lab.url}}.pdf" class="fancy-link wiki-link">
+                                        <img src="./images/lab-icons/file-document.png" alt='Handout'>
+                                    </a>
+                                    {% endif %}
                                 </td>
-                                {% else %}
-                                <td></td>
-                                {% endif %} 
-								{% if lab.worksheet == nil or lab.worksheet != false %}
-                                <td>
-                                    <a href="/resources/handouts/{{lab.url}}.pdf" class="fancy-link wiki-link"><img
-                                            src="./images/lab-icons/file-document.png" alt='Handout'></a>
-                                </td>
-                                {% else %}
-                                <td></td>
-                                {% endif %} 
-								{% else %}
-                                <td class="mdl-data-table__cell--non-numeric">
-                                </td>
-                                <td class="mdl-data-table__cell--non-numeric">
-                                </td>
-                                {% endif %}
                             </tr>
                             {% endfor %}
                         </tbody>
