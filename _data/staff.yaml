@@ -30,6 +30,12 @@
   specialty: ""
   semesters: Fall 2025 - Spring 2026
 -
+  name: Henry Zhu
+  netid: zhu109
+  roles: Teaching Assistant
+  specialty: ""
+  semesters: Fall 2025 - Spring 2026
+-
   name: Wentao Zhang
   netid: wentaoz5
   roles: Teaching Assistant
@@ -98,6 +104,24 @@
 -
   name: Ryan Kumar
   netid: rdkumar2
+  roles: Lab / Office Hours
+  speciality: ""
+  semesters: Spring 2026
+-
+  name: Vani Ramesh 
+  netid: vanir2
+  roles: Lab / Office Hours
+  speciality: ""
+  semesters: Spring 2026
+-
+  name: Nikhil Date 
+  netid: ndate2
+  roles: Lab / Office Hours
+  speciality: ""
+  semesters: Spring 2026
+-
+  name: Kathryn Lee 
+  netid: khlee6
   roles: Lab / Office Hours
   speciality: ""
   semesters: Spring 2026
