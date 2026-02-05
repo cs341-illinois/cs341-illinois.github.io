@@ -78,7 +78,7 @@ Opportunities for a small amount of extra credit may be offered and will be anno
 Grading issues should be raised with your TA during section or by email. Missing scores need to be reported within 3 days of being published.
 
 ### Regrades
-At the end of the semester there will be a last chance regrade option for three weeks of machine problem or lab grades. To be able to take advantage of this opportunity you will need to have a "perfect" (we define) attendance grade after the drops.
+At the end of the semester there will be a last chance regrade option for at least three weeks of machine problem or lab grades. To be able to take advantage of this opportunity you will need to have a "perfect" (we define) attendance grade after the drops.
 
 When will this start? For Fall semesters, it will start around the Thanksgiving week. for Spring semesters, it will be around the middle of April. 
 
@@ -92,18 +92,20 @@ Please note that the score for each regrade will be capped at 90%. For the assig
 
 ### Lab Attendance
 
-Chicago students will have their own online lab (arranged with the TA). Urbana-Champaign students have in-person labs in Siebel. Labs are required and there is also a small reward for in-person attendance: Your final exam contribution (23%) can be reduced to 20% by attending all labs. Partial attendance of in-person labs will be prorated. For example, if after allowing for 2 drops, you attended 6 of 9 in-person labs (11 labs in total after drops **in real**) then your final exam will be worth 21%, and you will have 2% of full course credit. 
+Chicago students will have their own online lab (arranged with the TA). Urbana-Champaign students have in-person labs in Siebel. Labs are required and there is also a small reward for in-person attendance: Your final exam contribution (23%) can be reduced to 20% by attending all labs. Partial attendance of in-person labs will be prorated. For example, if after allowing for 2 drops, you attended 6 of 9 in-person labs (11 labs in total after drops **in real**) then your final exam will be worth 21%, and you will have 2% of full course credit. Lab attendance may also afford you extra regrade opportunities. 
 
 What this means: If you choose to complete this course virtually, or are sick and unable to attend labs, or do not wish to be in close contact with other students you can still succeed and earn a high grade.
 
-For those that need it: There is still a small carrot to encourage you to leave your dorm and make it to Siebel! But don't get anxious about loosing points if you can't attend.
+For those that need it: This is a small carrot to encourage you to leave your dorm and make it to Siebel! But don't get anxious about losing points if you can't attend.
 
 ## Quizzes
 
 Each quiz covers approximately 2 weeks of content. They can be completed multiple times (highest score is used) at any time. They are due by last day of instruction (i.e. before reading day).
-No quizes are dropped; you should complete all 7 of them.
+No quizzes are dropped; you should complete all 7 of them. 
 
-Quizzes will be online using [Prairie Learn](https://prairielearn.org). Please see the Quiz topics page for more information.
+We expect students to achieve 100% on the quizzes. To account for the handful of students who forget the quizzes, their score for course grades will be replaced by the final exam score if it is higher than their averaged Prairie Learn quiz score.
+
+Quizzes will be administered online using [Prairie Learn](https://prairielearn.org). Please see the Quiz topics page for more information.
 
 
 ## Coding Assignments
@@ -148,8 +150,9 @@ If you have a question about your personal autograder results after the final au
 * Please mention your NetID in the post, so we can look up your code if needed.
 
 ## Getting Help & Extensions
+It's important to say physically and mentally healthy. Please see the links below for mental health resources. We know that the semester can get tough and things happen, so please take advantage of these opportunities for us to support you:
 
-It's important to say physically and mentally healthy. Please see the links below for mental health resources.
+* We provide a few 48 hour, no-questions-asked extensions that you can automatically apply via the Broadway autograder. **Note that you must apply these BEFORE the deadline closes.** 
 * Office hours and peer mentoring for course staff will be posted in the forums. Office hours will start the second full week of the semester
 * For unusual administrative items (e.g. sickness preventing you from working, DRES, 1% issues, problems with your TA) then please email ([cs341admin@cs.illinois.edu](mailto:cs341admin@cs.illinois.edu)) and explain your scenario.
 
@@ -166,6 +169,18 @@ You may use Large Language AI  Models (e.g. Github Copilot, ChatGPT, and other m
 * You must document their use in your code. Clearly describe which parts of your submitted code were developed with the help of generative AI.
 * Document when you used an AI model as part of your development process and how well it worked. Specifically, in your code comments describe if you used an AI model to assist in your initial design, initial implementation, developing test code, debugging code or other software development process.
 * Unless explicitly allowed by the assignment or exam, you may NOT use generative AI to complete (large portions of) assignments for you. Please see the Academic Integrity section below.
+
+Here are some examples of acceptable and non-acceptable AI usage:
+* **Acceptable:**
+  * Using AI to explain what a C library function does (but try to look at the man pages first!)
+  * Creating a small helper function with AI (given that you can explain what it does and document the use of AI)
+  * Using AI to help find a bug in your existing code (but try to use GDB and Valgrind first!)
+  * Using AI to generate a suite of test cases (only if the assignment does not require you to submit them for credit)
+ 
+* **Not Acceptable**
+  * One-shotting the assignment
+  * Not citing your AI usage
+  * Putting any generated code in your submission that you do not understand
 
 ## Academic Integrity
 
