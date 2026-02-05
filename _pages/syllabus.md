@@ -94,9 +94,7 @@ Please note that the score for each regrade will be capped at 90%. For the assig
 
 Chicago students will have their own online lab (arranged with the TA). Urbana-Champaign students have in-person labs in Siebel. Labs are required and there is also a small reward for in-person attendance: Your final exam contribution (23%) can be reduced to 20% by attending all labs. Partial attendance of in-person labs will be prorated. For example, if after allowing for 2 drops, you attended 6 of 9 in-person labs (11 labs in total after drops **in real**) then your final exam will be worth 21%, and you will have 2% of full course credit. Lab attendance may also afford you extra regrade opportunities. 
 
-What this means: If you choose to complete this course virtually, or are sick and unable to attend labs, or do not wish to be in close contact with other students you can still succeed and earn a high grade.
-
-For those that need it: This is a small carrot to encourage you to leave your dorm and make it to Siebel! But don't get anxious about losing points if you can't attend.
+This is a small carrot to encourage you to leave your dorm/apartment and participate in person. But don't get anxious about losing points if you can't attend a certain week.
 
 ## Quizzes
 
@@ -164,21 +162,21 @@ Lab attendance credit will *not* be given unless you are physically present in l
 
 ## Use of Large Language Models, Code Assistants,  and generative AI Models
 
-You may use Large Language AI  Models (e.g. Github Copilot, ChatGPT, and other models) in this class with the following conditions-
+You may use Large Language AI  Models (e.g. Github Copilot, ChatGPT, and other models) in this class with the following conditions:
 
 * You must document their use in your code. Clearly describe which parts of your submitted code were developed with the help of generative AI.
 * Document when you used an AI model as part of your development process and how well it worked. Specifically, in your code comments describe if you used an AI model to assist in your initial design, initial implementation, developing test code, debugging code or other software development process.
-* Unless explicitly allowed by the assignment or exam, you may NOT use generative AI to complete (large portions of) assignments for you. Please see the Academic Integrity section below.
+* Unless explicitly allowed by the assignment or exam, you may NOT use generative AI to complete (large portions of) assignments for you.
 
-Here are some examples of acceptable and non-acceptable AI usage:
+Here are some examples of acceptable and unacceptable AI usage:
 * **Acceptable:**
-  * Using AI to explain what a C library function does (but try to look at the man pages first!)
-  * Creating a small helper function with AI (given that you can explain what it does and document the use of AI)
-  * Using AI to help find a bug in your existing code (but try to use GDB and Valgrind first!)
-  * Using AI to generate a suite of test cases (only if the assignment does not require you to submit them for credit)
+  * Using AI to explain what a C library function does (*but try to look at the man pages first!*)
+  * Creating a small helper function with AI (*given that you can explain what it does and document the use of AI*)
+  * Using AI to help find a bug in your existing code (*but try to use GDB and Valgrind first!*)
+  * Using AI to generate a suite of test cases (*only if the assignment does not require you to submit them for credit*)
  
-* **Not Acceptable**
-  * One-shotting the assignment
+* **Unacceptable**
+  * One-shotting the assignment, or generally just letting AI code the whole assignment for you
   * Not citing your AI usage
   * Putting any generated code in your submission that you do not understand
 
@@ -186,7 +184,7 @@ Here are some examples of acceptable and non-acceptable AI usage:
 
 CS 341 is considered a critical step in your ability to create useful programs for your later classes and beyond. Unfortunately for grading purposes, a minority of students submit code that was created by others. Cheating is taken very seriously, and all cases of cheating will be brought to the University, your department, and your college. You should understand how [academic integrity](https://wiki.cites.illinois.edu/wiki/display/undergradProg/Honor+Code) applies to Computer Science courses.
 
-__Rule of Thumb:__ If at any point you submit an assignment that does not reflect your understanding of the material, then you have probably cheated.
+__Rule of Thumb:__ *If at any point you submit an assignment that does not reflect your understanding of the material, then you have probably cheated.*
 
 
 In the cases of labs, you are allowed to collaborate with others in the class, which includes detailed debugging and code sharing. All you need to do is put your partners' netid at the top.  
