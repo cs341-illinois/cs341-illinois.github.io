@@ -49,14 +49,13 @@ The operating system presents common interfaces for programmers to perform these
 The following is subject to minor changes:
 
 ```
-Final Exam : 20 - 23% (see notes)
 Quizzes: 12%
+Midterm Exam : 9%
+Final Exam : 20 - 23% (see notes)
 
 MP Programming Assignments : 42%
 Lab Programming Assignments: 14%
 Lab Attendance & other items: see below
-
-Midterm Exam : 9%
 
 Bonus Credits Items : Additional 1-3%
 ```
@@ -69,7 +68,7 @@ We publish the following thresholds:
 | [80 - 90)  | B-              |
 | [70 - 80)  | C-              |
 
-All lab programming assignments are equally weighted. MP programming assignments are weighted by the time given to complete them. This means that three week MPs are worth triple one week. For grading, we will drop your lowest lab score, and two lab attendance grades. Some examples: you slept in late; your dog ate your homework; you destroyed the internet.
+All lab programming assignments are equally weighted. MP programming assignments are weighted by the time given to complete them. This means that three week MPs are worth triple one week. For grading, we will drop your lowest lab score.
 
 The midterm and final will be proctored, in-person exams hosted on Prairielearn. More information regarding the format, time, and location will be announced closer to the date.
 
@@ -78,7 +77,7 @@ Opportunities for a small amount of extra credit may be offered and will be anno
 Grading issues should be raised with your TA during section or by email. Missing scores need to be reported within 3 days of being published.
 
 ### Regrades
-At the end of the semester there will be a last chance regrade option for at least three weeks of machine problem or lab grades. To be able to take advantage of this opportunity you will need to have a "perfect" (we define) attendance grade after the drops.
+At the end of the semester there will be a last chance regrade option for approximately three weeks of machine problem or lab grades. To be able to take advantage of this opportunity you will need to have a "perfect" (we define) attendance grade after drops.
 
 When will this start? For Fall semesters, it will start around the Thanksgiving week. for Spring semesters, it will be around the middle of April. 
 
@@ -86,13 +85,13 @@ Can we use the autograder at this time? Yes! During the regrade period, the auto
 
 How do I specify what assignments I want regraded? Regrades are determined by a file released during this period where you indicate what assignments you want to use your regrades on. We trigger deadline autograder runs for only these assignments, which determines the final grade.
 
-More info? We will announce the regrade policy on the course forum later in the semester.
+We will announce the regrade policy on the course forum later in the semester.
 
 Please note that the score for each regrade will be capped at 90%. For the assignment's final grade, we will **automatically** use your higher score between the regrade score and the original score.
 
 ### Lab Attendance
 
-Chicago students will have their own online lab (arranged with the TA). Urbana-Champaign students have in-person labs in Siebel. Labs are required and there is also a small reward for in-person attendance: Your final exam contribution (23%) can be reduced to 20% by attending all labs. Partial attendance of in-person labs will be prorated. For example, if after allowing for 2 drops, you attended 6 of 9 in-person labs (11 labs in total after drops **in real**) then your final exam will be worth 21%, and you will have 2% of full course credit. Lab attendance may also afford you extra regrade opportunities. 
+Chicago students will have their own online lab (arranged with the TA). Urbana-Champaign students have in-person labs in Siebel. Labs are required and there is also a small reward for in-person attendance: Your final exam contribution (23%) can be reduced to 20% by attending all labs. Partial attendance of in-person labs will be prorated. For example, if after allowing for 2 drops, you attended 6 of 9 in-person labs (6 of 11 labs in total with drops) then your final exam will be worth 21%, and you will have 2% of full course credit. Lab attendance may also afford you extra regrade opportunities. 
 
 This is a small carrot to encourage you to leave your dorm/apartment and participate in person. But don't get anxious about losing points if you can't attend a certain week.
 
@@ -120,12 +119,12 @@ No late submissions will be accepted.
 
 You walk into the investor meeting ready to show your demo. You ship your code ready for a million Internet of things. You deploy your code to the Internet backbone. It had better compile and be functional.
 
-Forgot to commit or your committed code that does not compile? Zero. The basic headline is that you're not in Kansas anymore (to quote Dorothy). Don't leave it until the last minute.
+Forgot to commit or your committed code that does not compile? Zero. Always double check before you push to `prod`!
 
 There are two kinds of autograder runs:
 
- * Pre-deadline runs: **You are responsible for starting these.** Our team has worked really hard to improve our grading system and make it more reliable and flexible. Now, you can schedule your pre-deadline autograder runs using the on-demand grading system, that you can find on the `Assignments` page! You have to log in with your GitHub Enterprise account. Assignments will become visible on the web app as we release them. You will get one AG run a day which you can trigger at your disposal. Please be careful in using these. **These pre-deadline runs do not roll over.** We recommend that you develop and work on your assignments every day to make the best of this system. Once you click "Grade Now", your code will start getting tested on our grading machines. You can expect to see feedback in your CS 341 repository's `_feedback` branch in a few minutes. In rare circumstances, the grading process might fail (if your code made our Docker containers crash). In this scenario, there will be no visible feedback. You should make a private post in the course forums and we will deal with this on a per-student basis. Use these runs for feedback as you work on the assignment. **Students are 100% responsible for the pre-deadline runs and they have no effect on your grade for the assignment.**
-* Deadline runs: These will be triggered by us and the grades you get on these will be counted towards your final grades. The results will show up in the `_feedback` branch as usual.
+ * Pre-deadline runs: **You are responsible for starting these.** You can schedule your pre-deadline autograder runs using the on-demand grading system, that you can find on the `Assignments` page! You have to log in with your GitHub Enterprise account. Assignments will become visible on the web app as we release them. You will get one AG run a day which you can trigger at your disposal. Please be careful in using these. **These pre-deadline runs do not roll over.** We recommend that you develop and work on your assignments every day to make the best of this system. Once you click "Grade Now", your code will start getting tested on our grading machines. You can expect to see feedback in your CS 341 repository's `_feedback` branch in a few minutes. In rare circumstances, the grading process might fail (if your code made our Docker containers crash). In this scenario, there will be no visible feedback. You should make a private post in the course forums and we will deal with this on a per-student basis. Use these runs for feedback as you work on the assignment. **Students are 100% responsible for the pre-deadline runs and they have no effect on your grade for the assignment.**
+* Deadline runs: These will be triggered by us and the grades you get on these will be counted towards your final grades. The results will show up in the `_feedback` branch as usual. **Deadline runs use your most recent commit, so please make sure that it contains the correct code!!!** 
 
 Labs:
 - Released every Wednesday
@@ -160,7 +159,7 @@ If you are in an exceptional situation -- i.e. family emergency, sickness, pleas
 
 Lab attendance credit will *not* be given unless you are physically present in lab (there is no point asking the admin for this if you are sick or away). Lab attendance reduces the fraction contribution from your final exam by a small amount. This is a small reward for attending.
 
-## Use of Large Language Models, Code Assistants,  and generative AI Models
+## Use of Large Language Models, Code Assistants, and generative AI Models
 
 You may use Large Language AI  Models (e.g. Github Copilot, ChatGPT, and other models) in this class with the following conditions:
 
@@ -171,14 +170,18 @@ You may use Large Language AI  Models (e.g. Github Copilot, ChatGPT, and other m
 Here are some examples of acceptable and unacceptable AI usage:
 * **Acceptable:**
   * Using AI to explain what a C library function does (*but try to look at the man pages first!*)
-  * Creating a small helper function with AI (*given that you can explain what it does and document the use of AI*)
+  * Creating a small helper function with AI (*given that you document the use of AI and can explain what the function does*)
   * Using AI to help find a bug in your existing code (*but try to use GDB and Valgrind first!*)
   * Using AI to generate a suite of test cases (*only if the assignment does not require you to submit them for credit*)
  
 * **Unacceptable**
   * Letting AI write (nearly) all of the code that you submit
-  * Not citing your AI usage
+  * Not citing your AI usage in each code block coauthored by AI
   * Putting any generated code in your submission that you do not understand
+
+Note that we could ask you to verbally explain any of your programming solutions at any point in the course, and we reserve the right to dock points if you fail to demonstrate sufficient understanding of your own code. 
+
+TL;DR, use AI responsibly and at your own risk. 
 
 ## Academic Integrity
 
@@ -186,10 +189,7 @@ CS 341 is considered a critical step in your ability to create useful programs f
 
 __Rule of Thumb:__ *If at any point you submit an assignment that does not reflect your understanding of the material, then you have probably cheated.*
 
-
-In the cases of labs, you are allowed to collaborate with others in the class, which includes detailed debugging and code sharing. All you need to do is put your partners' netid at the top.  
-
-This does *not* mean that will you share the same grade for the assignment, and each group member must submit a solution to receive credit.
+In the cases of labs, you are allowed to collaborate with others in the class, which includes detailed debugging and code sharing. All you need to do is put your partners' netid at the top. This does *not* mean that will you share the same grade for the assignment, and each group member must submit a solution to receive credit.
 
 
 __EVERY MACHINE PROBLEM IS A SOLO ASSIGNMENT IN THIS CLASS!__
@@ -213,7 +213,6 @@ If there is prep material provided in lecture or on the course forums, you are w
 We want you to get the most out your education, and cheating not only affects your peers, but also your level of knowledge and ability.
 
 You may use AI and other code-assist tools - see AI statement above.
-
 
 ## Land Acknowledgment Statement
 
