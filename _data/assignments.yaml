@@ -249,7 +249,7 @@ mps:
     - shell.c
   resources: true
   worksheet: false
-  visible: false
+  visible: true
 - name: Malloc
   releaseDate: Week 6
   dueDate: Week 8
