@@ -172,6 +172,8 @@ When prompting for a command, the shell will print a prompt in the following for
 
 `<pid>` is the process ID of the shell, and `<path>` is a path to the current working directory. Note the lack of a newline at the end of this prompt.
 
+<span class="spec" data-spec-id="shellprompt" aria-hidden="true"></span>
+
 ### Reading in Commands
 
 The shell will read in a command from `stdin` (or a file if `-f` was specified).
@@ -193,6 +195,7 @@ Command executed by pid=<pid>
 ```
 
 This should be printed by the process that will run the command, before any of the output of the command is printed (prints to be used are in `format.h`).
+<span class="spec" data-spec-id="shellrun" aria-hidden="true"></span>
 
 ### Keeping History
 
@@ -207,12 +210,15 @@ If there are currently stopped or running background processes when your shell r
 :warning: If you don't handle `EOF` or `exit` to exit, you will fail many of our test cases!
 
 :warning: Do **not** store `exit` in history!
+<span class="spec" data-spec-id="shellappend" aria-hidden="true"></span>
 
 ### Catching Ctrl+C
 
 Usually when we do `Ctrl+C`, the current running program will exit. However, we want the shell itself to ignore the `Ctrl+C` signal (`SIGINT`) - instead, it should kill the currently running foreground process (if one exists) using `SIGINT`. One way to do this is to use the `kill` function on the foreground process PID when `SIGINT` is caught in your shell. However, when a signal is sent to a process, it is sent to all processes in its process group. In this assignment, the shell process is the leader of a process group consisting of all processes that are `fork`'d from it. So another way to properly handle `Ctrl+C` is to simply *do nothing inside the handler for `SIGINT`* if it is caught in the shell - your shell will continue running, but `SIGINT` will automatically propagate to the foreground process and kill it.
 
 However, since we want this signal to be sent to **only** the foreground process, but not to any backgrounded processes, you will want to use `setpgid` to assign each background process to its own process group after forking. (Note: think about who should be making the `setpgid` call and why).
+<span class="spec" data-spec-id="shellctrlc" aria-hidden="true"></span>
+
 
 ## Built-in Commands
 
@@ -277,6 +283,7 @@ Invalid Index
 :warning: Print out the command before executing if there is a match.
 
 :warning: The `#<n>` command itself is __not__ stored in history, but the command being executed (if any) __is__.
+<span class="spec" data-spec-id="shelln" aria-hidden="true"></span>
 
 ### `!<prefix>`
 
@@ -315,6 +322,8 @@ Echo This!
 :warning: Print out the command before executing if there is a match.
 
 :warning: The `!<prefix>` command itself is __not__ stored in history, but the command being executed (if any) __is__.
+<span class="spec" data-spec-id="shellprefix" aria-hidden="true"></span>
+
 
 ### Invalid Built-in Commands
 
@@ -325,6 +334,8 @@ You should be printing appropriate errors in cases where built-in commands fail;
 /imaginary_directory: No such file or directory
 (pid=1234)/home/user$
 ```
+<span class="spec" data-spec-id="shellinvalidbuilt" aria-hidden="true"></span>
+
 
 ## External Commands
 
@@ -393,6 +404,8 @@ This mimics short-circuiting AND in boolean algebra: if `x` is false, we know th
 :question: This is often used to run multiple commands in a sequence and stop early if one fails. For example, `make && ./shell` will run your shell only if `make` succeeds.
 
 Tip: You may want to look into the provided macros to read the status of an exited child.
+<span class="spec" data-spec-id="shelland" aria-hidden="true"></span>
+
 
 ### OR
 
@@ -420,6 +433,8 @@ runMe
 Boolean algebra: if `x` is true, we can return true right away *without* having to run `y`.
 
 :question: This is often used to recover after errors. For example, `make || echo 'Make failed!'` will run `echo` only if `make` does not succeed.
+<span class="spec" data-spec-id="shellor" aria-hidden="true"></span>
+
 
 ### Separator
 
@@ -446,6 +461,7 @@ runMe
 ```
 
 :question: The two commands are run regardless of whether the first one succeeds.
+<span class="spec" data-spec-id="shellsep" aria-hidden="true"></span>
 
 ## Memory
 
@@ -503,6 +519,8 @@ PID     NLWP    VSZ     STAT    START   TIME    COMMAND
 ```
 
 *Hint:* You may find the `/proc` filesystem to be useful, as well as the man pages for it.
+<span class="spec" data-spec-id="shellps" aria-hidden="true"></span>
+
 
 ## Redirection Operators
 
@@ -554,6 +572,7 @@ Command executed by pid=2783
 a
 wheeee
 ```
+<span class="spec" data-spec-id="shellappend" aria-hidden="true"></span>
 
 ### INPUT
 

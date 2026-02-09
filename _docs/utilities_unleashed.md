@@ -75,7 +75,7 @@ Pro tip: 1 second == 1,000,000,000 nanoseconds.
 *   The commands we will run can take any number of arguments.
 *   Do your time computations with double-precision floating pointer numbers (`double`) rather that single-precision (`float`).
 *   We have provided functions in `format.h` that we expect you to use wherever appropriate.
-
+<span class="spec" data-spec-id="utilnota1" aria-hidden="true"></span>
 
 ### Useful Resources
 
@@ -110,6 +110,8 @@ Please re-read this section *multiple* times before starting:
   - Cannot find `--` in arguments
   - Cannot find `=` in an variable argument
   - Cannot find `cmd` after `--`
+
+<span class="spec" data-spec-id="utilenv aria-hidden="true"></span>
 
 This is the canonical example and a practical use case:
 
@@ -171,6 +173,8 @@ then it runs the script with the desired Python interpreter.
 *   You must use `fork`/`exec`/`wait`.
 *   If a variable doesn't exist, interpret its value as a zero-length string.
 *   __Do not fork bomb the autograder!__ You will fail if you forkbomb the AG. (See the [warning](#warning).)
+<span class="spec" data-spec-id="utilnota2" aria-hidden="true"></span>
+
 
 ### Useful Resources
 *   [Environment variables](http://cs-education.github.io/sys/#chapter/2/section/1/activity/0)
