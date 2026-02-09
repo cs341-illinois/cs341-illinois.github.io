@@ -52,6 +52,8 @@ Since we keep track of this data, we can show the user how much memory they've a
 
 If you look in `mini_memcheck.h`, you'll notice that these are declared as `extern` variables. This allows variables to live somewhere else beside the line where you are 'declaring' them, pushing the responsibility of providing a real location in memory for these variables elsewhere and letting the [linker](https://stackoverflow.com/questions/3322911/what-do-linkers-do) resolve the variable name to where memory is actually reserved. This [link](https://stackoverflow.com/questions/496448/how-to-correctly-use-the-extern-keyword-in-c) has a nice explanation of how to use this. __In order to prevent your code from crashing, you will have to declare these variables as globals in `mini_memcheck.c`__.
 
+<span class="spec" data-spec-id="mmglobal" aria-hidden="true"></span>
+
 ## Testing
 
 You'll want to test your `mini_memcheck` thoroughly.
@@ -97,6 +99,7 @@ Breakpoint 1, mini_free (payload=0x0) at mini_memcheck.c:142
 ```
 
 This should not affect your implementation of `mini_free`. However, do be aware of the extra free calls when you're debugging your program, just so that you're not confused about where they're coming from.
+<span class="spec" data-spec-id="mmextra" aria-hidden="true"></span>
 
 ## Example
 
@@ -138,6 +141,7 @@ int main() {
 ```
 
 Notice that leaks are reported most-recent-first. This is because we insert new metadata at the head of the linked list.
+<span class="spec" data-spec-id="mmex" aria-hidden="true"></span>
 
 ### Other Programs
 
