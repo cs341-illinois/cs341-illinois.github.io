@@ -379,3 +379,74 @@ honors:
   resources: true
   worksheet: false
   visible: false
+website_info:
+  start_date: '2026-01-19'
+  total_days: 105
+  lab_due:
+  - - Luscious Locks
+    - 8.571428571428571
+    - 2026-01-28 23:59
+  - - Perilous Pointers
+    - 15.238095238095237
+    - 2026-02-04 23:59
+  - - Utilities Unleashed
+    - 21.904761904761905
+    - 2026-02-11 23:59
+  - - Mini Memcheck
+    - 28.571428571428573
+    - 2026-02-18 23:59
+  - - Teaching Threads
+    - 35.23809523809524
+    - 2026-02-25 23:59
+  - - Critical Concurrency
+    - 41.904761904761905
+    - 2026-03-04 23:59
+  - - Deadlock Demolition
+    - 48.57142857142857
+    - 2026-03-11 23:59
+  - - Ideal Indirection
+    - 61.904761904761905
+    - 2026-03-25 23:59
+  - - MapReduce
+    - 68.57142857142857
+    - 2026-04-01 23:59
+  - - Charming Chatroom
+    - 75.23809523809524
+    - 2026-04-08 23:59
+  - - Deepfried dd
+    - 81.9047619047619
+    - 2026-04-15 23:59
+  - - Mad Mad Access Patterns
+    - 88.57142857142857
+    - 2026-04-22 23:59
+  - - Savvy Scheduler
+    - 95.23809523809524
+    - 2026-04-29 23:59
+  mp_due:
+  - - Extreme Edge Cases
+    - 14.285714285714286
+    - 2026-02-03 23:59
+  - - Vector
+    - 20.0
+    - 2026-02-09 23:59
+  - - Shell
+    - 33.333333333333336
+    - 2026-02-23 23:59
+  - - Malloc
+    - 46.666666666666664
+    - 2026-03-09 23:59
+  - - Password Cracker
+    - 60.0
+    - 2026-03-23 23:59
+  - - Parallel Make
+    - 73.33333333333333
+    - 2026-04-06 23:59
+  - - Finding Filesystems
+    - 80.0
+    - 2026-04-13 23:59
+  - - Nonstop Networking
+    - 100.0
+    - 2026-05-04 23:59
+  breaks:
+  - - 53.333333333333336
+    - 6.666666666666667

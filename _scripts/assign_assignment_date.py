@@ -126,6 +126,53 @@ for m in mps:
         m["submissions"][i]["releaseDate"] = release_date.strftime("%Y-%m-%d %H:%M")
         m["submissions"][i]["due_date"] = due_date.strftime("%Y-%m-%d %H:%M")
 
+# also dump some extra info for website display
+total_days = (
+    datetime.strptime(mps[-1]["submissions"][-1]["due_date"], "%Y-%m-%d %H:%M")
+    - week_dates[0]
+).days
+
+print(f"Total schedule duration: {total_days} days")
+
+schedule["website_info"] = {
+    "start_date": week_dates[0].strftime("%Y-%m-%d"),
+    "total_days": total_days,
+    "lab_due": [],
+    "mp_due": [],
+    "breaks": [
+        [
+            (b[0] - week_dates[0]).days * 100 / total_days,
+            (b[1] - b[0]).days * 100 / total_days,
+        ]
+        for b in BREAKS
+    ],
+}
+
+for a in labs:
+    t = datetime.strptime(a["submissions"][-1]["due_date"], "%Y-%m-%d %H:%M")
+    if a["name"] in SKIPS or t < week_dates[0]:
+        continue
+    schedule["website_info"]["lab_due"].append(
+        [
+            a["name"],
+            (t - week_dates[0]).days * 100 / total_days,
+            a["submissions"][-1]["due_date"],
+        ]
+    )
+
+for a in mps:
+    t = datetime.strptime(a["submissions"][-1]["due_date"], "%Y-%m-%d %H:%M")
+    if a["name"] in SKIPS:
+        continue
+    schedule["website_info"]["mp_due"].append(
+        [
+            a["name"],
+            (t - week_dates[0]).days * 100 / total_days,
+            a["submissions"][-1]["due_date"],
+        ]
+    )
+
+
 ASSIGNMENT_FILE.write_text("---\n" + yaml.dump(schedule, sort_keys=False, indent=2))
 
 if DUMP_ICS:

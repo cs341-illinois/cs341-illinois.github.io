@@ -68,26 +68,54 @@
                     border-right: 4px solid transparent;
                     border-top: 5px solid rgba(220, 146, 53, 0.8);
                 }
+                .progress-marker.break::before {
+                    content: '';
+                    position: absolute;
+                    left: -3px;
+                    width: 100%;
+                    height: 1em;
+                    background: repeating-linear-gradient(
+                        45deg,
+                        #6c757d,
+                        #6c757d 2px,
+                        transparent 2px,
+                        transparent 4px
+                    );
+                }
             </style>
-            {% for assignment in site.data.assignments['labs'] %}
-                {% assign marker_position = assignment.dueDate | split: " " | last | to_integer | times: 100 | divided_by: 15 %}
-                <div class="progress-marker lab" style="left: {{ marker_position }}%;" title="{{ assignment.name }} - Due: {{ assignment.dueDate }}"></div>
+            {% for assignment in site.data.assignments['website_info']['lab_due'] %}
+                <div class="progress-marker lab" style="left: {{ assignment[1] }}%;" title="{{ assignment[0] }} - Due: {{ assignment[2] }}"></div>
             {% endfor %}
-            {% for assignment in site.data.assignments['mps'] %}
-                {% assign marker_position = assignment.dueDate | split: " " | last | to_integer | times: 100 | divided_by: 15 %}
-                <div class="progress-marker mp" style="left: {{ marker_position }}%;" title="{{ assignment.name }} - Due: {{ assignment.dueDate }}"></div>
+            {% for assignment in site.data.assignments['website_info']['mp_due'] %}
+                <div class="progress-marker mp" style="left: {{ assignment[1] }}%;" title="{{ assignment[0] }} - Due: {{ assignment[2] }}"></div>
+            {% endfor %}
+            {% for break_item in site.data.assignments['website_info']['breaks'] %}
+                <div class="progress-marker break" style="left: {{ break_item[0] }}%; width: {{ break_item[1] }}%;" title="break"></div>
             {% endfor %}
             <div class="progress" style="height: 20px; background-color: #e9ecef; border-radius: 5px; overflow: hidden;">
-                {% assign labs = site.data.assignments['labs'] | where: "visible", "true" | last %}
-                {% assign current_week = labs.releaseDate | split: " " | last | to_integer %}
-                {% assign progress_percent = current_week | times: 100 | divided_by: 15 %}
                 <div class="progress-bar" role="progressbar" 
-                     style="width: {{ progress_percent }}%; background: linear-gradient(90deg, #dc3545 0%, #c82333 50%, #fd7e14 100%);
+                     style="background: linear-gradient(90deg, #dc3545 0%, #c82333 50%, #fd7e14 100%);
                             display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;"
-                     aria-valuenow="{{ current_week }}" aria-valuemin="0" aria-valuemax="15">
-                    Week {{ current_week }} of 15
+                     aria-valuemin="0" aria-valuemax="15">
+                    <span id="progress-text">Calculating...</span>
                 </div>
             </div>
+            <script>
+                const startDate = new Date('{{ site.data.assignments.website_info.start_date }}' + 'T00:00:00-06:00');
+                const totalDays = {{ site.data.assignments.website_info.total_days }};
+
+                const elapsed = Math.max(0, new Date() - startDate);
+                const progressPercent = Math.min(100, Math.max(0, elapsed * 100 / (totalDays * 24 * 60 * 60 * 1000)));
+
+                const progressBar = document.querySelector('.progress-bar');
+                const progressText = document.getElementById('progress-text');
+
+                progressBar.style.width = progressPercent.toFixed(1) + '%';
+
+                const daysElapsed = Math.floor(elapsed / (24 * 60 * 60 * 1000));
+                // progressText.textContent = `Day ${daysElapsed} of ${totalDays}`;
+                progressText.textContent = `${progressPercent.toFixed(1)}%`;
+            </script>
         </div>
         <div class="row">
             <div class="col-md-5 col-5 col-xs-12">
