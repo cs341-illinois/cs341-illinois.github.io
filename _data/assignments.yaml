@@ -56,7 +56,7 @@ labs:
     - mini_memcheck.c
   resources: true
   worksheet: true
-  visible: false
+  visible: true
   slides: https://docs.google.com/presentation/d/1rmTE9UGhp7POfP8TWMJ1z-fxRkfZDjpomqIBSSEJKqI/edit?usp=sharing
 - name: Teaching Threads
   releaseDate: Week 5
