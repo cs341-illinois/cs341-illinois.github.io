@@ -250,6 +250,7 @@ mps:
   resources: true
   worksheet: false
   visible: true
+  slides: https://docs.google.com/presentation/d/1Fm7kCsYNS_gkWDlBXIZJYTH5AGehmzttYevfhMJuPhU/edit?usp=sharing
 - name: Malloc
   releaseDate: Week 6
   dueDate: Week 8
