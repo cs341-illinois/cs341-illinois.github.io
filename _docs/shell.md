@@ -640,7 +640,10 @@ In case you are still confused about what exactly to store in history, here are 
 | `echo pi:G-> && echo G/ker(phi)`| `echo pi:G-> && echo G/ker(phi)`|
 | `echo x; echo y`| `echo x; echo y`|
 | `jarvis, store this in history` |`jarvis, store this in history`| 
+| `echo some_text_for_a_file > file.txt`| `echo some_text_for_a_file > file.txt`|
+
 
 ## Grading
 
 Note that Week 1 and Week 2 count as one week of MP grades respectively. See the overview for a list of features required for each week.
+
