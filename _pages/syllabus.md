@@ -175,19 +175,20 @@ Here are some examples of acceptable and unacceptable AI usage:
   * Using AI to generate a suite of test cases (*only if the assignment does not require you to submit them for credit*)
  
 * **Unacceptable**
+  * Providing the assignment web specification text to an AI model by copy-pasting a portion of all, or other means.
   * Letting AI write (nearly) all of the code that you submit
   * Not citing your AI usage in each code block coauthored by AI
   * Putting any generated code in your submission that you do not understand
 
 Note that we could ask you to verbally explain any of your programming solutions at any point in the course, and we reserve the right to dock points if you fail to demonstrate sufficient understanding of your own code. 
 
-TL;DR, use AI responsibly and at your own risk. 
+TL;DR, use AI responsibly and at your own risk. CS 341 Assignments are part of your computer science degree and are designed to develop your competency as a computer scientist not a vibe coder.
 
 ## Academic Integrity
 
 CS 341 is considered a critical step in your ability to create useful programs for your later classes and beyond. Unfortunately for grading purposes, a minority of students submit code that was created by others. Cheating is taken very seriously, and all cases of cheating will be brought to the University, your department, and your college. You should understand how [academic integrity](https://wiki.cites.illinois.edu/wiki/display/undergradProg/Honor+Code) applies to Computer Science courses.
 
-__Rule of Thumb:__ *If at any point you submit an assignment that does not reflect your understanding of the material, then you have probably cheated.*
+__Rule of Thumb:__ *If at any point you submit an assignment that does not reflect your understanding of the material, then you have probably cheated and short-circuited your own learning opportunity.*
 
 In the cases of labs, you are allowed to collaborate with others in the class, which includes detailed debugging and code sharing. All you need to do is put your partners' netid at the top. This does *not* mean that will you share the same grade for the assignment, and each group member must submit a solution to receive credit.
 
