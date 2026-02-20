@@ -165,6 +165,7 @@ You may use Large Language AI  Models (e.g. Github Copilot, ChatGPT, and other m
 
 * You must document their use in your code. Clearly describe which parts of your submitted code were developed with the help of generative AI.
 * Document when you used an AI model as part of your development process and how well it worked. Specifically, in your code comments describe if you used an AI model to assist in your initial design, initial implementation, developing test code, debugging code or other software development process.
+* Follow additional requirements provided in the assignment specification.
 * Unless explicitly allowed by the assignment or exam, you may NOT use generative AI to complete (large portions of) assignments for you. In practice, this means for CS341 using agentic AI, pasting assignment specification (or its URL) into an AI Chat window is not allowed and will likely result in a FAIR academic integrity violation (see below).
 
 Here are some examples of acceptable and unacceptable AI usage:
