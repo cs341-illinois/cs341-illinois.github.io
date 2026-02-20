@@ -176,7 +176,7 @@ Here are some examples of acceptable and unacceptable AI usage:
   * Using AI to generate a suite of test cases (*only if the assignment does not require you to submit them for credit*)
  
 * **Unacceptable**
-  * Providing the assignment web specification text to an AI model
+  * Providing a portion of  - or all of - the assignment web specification text to an AI model
   * Letting AI write (nearly) all of the code that you submit
   * Not citing your AI usage in each code block coauthored by AI
   * Putting any generated code in your submission that you do not understand
