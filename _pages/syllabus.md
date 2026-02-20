@@ -165,7 +165,7 @@ You may use Large Language AI  Models (e.g. Github Copilot, ChatGPT, and other m
 
 * You must document their use in your code. Clearly describe which parts of your submitted code were developed with the help of generative AI.
 * Document when you used an AI model as part of your development process and how well it worked. Specifically, in your code comments describe if you used an AI model to assist in your initial design, initial implementation, developing test code, debugging code or other software development process.
-* Unless explicitly allowed by the assignment or exam, you may NOT use generative AI to complete (large portions of) assignments for you. In practice this means for Cs341 using agentic AI, pasting assignment specification (or its URL) into an AI Chat window is not allowed and may likely result in a FAIR academic integrity violation (see below).
+* Unless explicitly allowed by the assignment or exam, you may NOT use generative AI to complete (large portions of) assignments for you. In practice, this means for CS341 using agentic AI, pasting assignment specification (or its URL) into an AI Chat window is not allowed and will likely result in a FAIR academic integrity violation (see below).
 
 Here are some examples of acceptable and unacceptable AI usage:
 * **Acceptable:**
@@ -175,14 +175,14 @@ Here are some examples of acceptable and unacceptable AI usage:
   * Using AI to generate a suite of test cases (*only if the assignment does not require you to submit them for credit*)
  
 * **Unacceptable**
-  * Providing the assignment web specification text to an AI model by copy-pasting a portion of all, or other means.
+  * Providing the assignment web specification text to an AI model
   * Letting AI write (nearly) all of the code that you submit
   * Not citing your AI usage in each code block coauthored by AI
   * Putting any generated code in your submission that you do not understand
 
 Note that we could ask you to verbally explain any of your programming solutions at any point in the course, and we reserve the right to dock points if you fail to demonstrate sufficient understanding of your own code. 
 
-TL;DR, use AI responsibly and at your own risk. CS 341 Assignments are part of your computer science degree and are designed to develop your competency as a computer scientist not a vibe coder.
+TL;DR, use AI responsibly and at your own risk. CS 341 Assignments are part of your computer science degree and are designed to develop your competency as a computer scientist not as a vibe coder.
 
 ## Academic Integrity
 
