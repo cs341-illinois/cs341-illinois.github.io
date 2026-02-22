@@ -29,6 +29,7 @@ This is a problem for you to think about. We have provided a worked solution to 
 Problem description:
 
 Given two threads, `a` and `b`, and the fact that both have to run two tasks (`a1`, `a2`, `b1`, `b2`), how do you get both `a1` and b1 to run before either `a2` and `b2`? In `rendezvous.c`, you need to modify the two functions (`modifyB_printA` & `modifyA_printB`) using semaphores so that both quotes `A` and `B` are modified before being printed.
+<span class="spec" data-spec-id="ccrend" aria-hidden="true"></span>
 
 
 ## semamore.c
@@ -42,6 +43,7 @@ There are four functions in total you will be writing:
 * `void semm_wait(Semamore *s);`
 * `void semm_post(Semamore *s);`
 * `void semm_destroy(Semamore *s);`
+<span class="spec" data-spec-id="ccsem" aria-hidden="true"></span>
 
 ## barrier.c
 
@@ -58,6 +60,8 @@ Your goal is to implement the functions
 * `int barrier_wait(barrier_t *barrier);`
 
 so that a `barrier_t` using these functions is a working reusable barrier.
+<span class="spec" data-spec-id="ccbar" aria-hidden="true"></span>
+
 
 ## queue.c
 
@@ -71,6 +75,7 @@ Your goal is to implement the functions
 * `void queue_destroy (queue* this);`
 * `void queue_push (queue* this, void* element);`
 * `void* queue_pull (queue* this);`
+<span class="spec" data-spec-id="ccque" aria-hidden="true"></span>
 
 ## Testing
 
@@ -82,6 +87,7 @@ Since the implementation of your semamore is quite close to an actual semaphore,
 For `barrier_test.c` we have provided you with a simple test case.  Feel free to expand on it, as it is not exhaustive/perfect.  Learning how to use the barrier is just as important as writing it, since you will be using barriers on the Password Cracker MP :)
 
 For `queue_test.c` we would like you to write tests yourself.  Learning to write tests for multi-threaded code is very important.  You will also be using this queue in the Password Cracker MP :)  (we will give you a working version; you will not be penalized on the MP for not successfully completing the lab)
+<span class="spec" data-spec-id="cctest" aria-hidden="true"></span>
 
 ### Thread Sanitizer
 
@@ -90,6 +96,8 @@ We have another target executed by typing `make tsan`. This compiles your code w
 ThreadSantizer is a race condition detection tool. See [this page](http://cs341.cs.illinois.edu/coursebook/Background#tsan) for more information.
 
 **We will be using ThreadSanitizer to grade your code! If the autograder detects a data race, you won't automatically get 0 points, but a few points will be deducted.**
+<span class="spec" data-spec-id="cctsan" aria-hidden="true"></span>
+
 
 
 ## Helpful Hints and Notes
@@ -98,6 +106,8 @@ ThreadSantizer is a race condition detection tool. See [this page](http://cs341.
 *   Attempting to visualize your code or diagram it in certain cases can sometimes be a huge aid and is highly recommended!
 
 ** In any of `semamore.c`, `barrier.c`, or `queue.c` you may not use semaphores or pthread_barriers **
+
+<span class="spec" data-spec-id="cchint" aria-hidden="true"></span>
 
 **ANYTHING not specified in these docs is considered undefined behavior and we will not test it**
 For example, calling queue_push(NULL, NULL) can do whatever you want it to. We will not test it.
