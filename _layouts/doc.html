@@ -2,6 +2,7 @@
 <html lang="en">
 {% include head.html %}
 {% assign split_url = page.url | split: '/' %}
+{% assign name_no_md = split_url[-1] | replace: '.html','' %}
 
 {% if split_url[1] == 'assignments' %}
 <body data-spy="scroll" data-target="#overview" data-offset="50" style="overflow: hidden;">
@@ -40,7 +41,7 @@
       </div>
     </div>
     <script>
-      if (localStorage.getItem('ai-policy-accepted') === 'true') {
+      if (localStorage.getItem('ai-policy-accepted-{{ name_no_md }}') === 'true') {
         document.getElementById('ai-overlay').style.display = 'none';
         document.body.style.overflow = '';
       }
@@ -57,7 +58,7 @@
       }
 
       function acceptAIPolicy() {
-        localStorage.setItem('ai-policy-accepted', 'true');
+        localStorage.setItem('ai-policy-accepted-{{ name_no_md }}', 'true');
         document.getElementById('ai-overlay').style.display = 'none';
         document.body.style.overflow = '';
       }
@@ -71,7 +72,6 @@
     <div class="row" style="display: flex; justify-content: stretch;">
       {% include header.html %}
 
-      {% assign name_no_md = split_url[-1] | replace: '.html','' %}
       {% assign fetched_assignments = site.data.assignments['mps'] | concat: site.data.assignments['labs'] | where: "url", name_no_md %}
       {% assign fetched_assignments_size = fetched_assignments | size %}
       {% assign not_released = fetched_assignments | where: 'visible', 'false' | size %}
