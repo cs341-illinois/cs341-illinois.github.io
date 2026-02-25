@@ -86,7 +86,7 @@ labs:
     - semamore.c
   resources: true
   worksheet: true
-  visible: false
+  visible: true
   slides: https://docs.google.com/presentation/d/1a621s-bgppWyYeVYoK7pdrRCrH8QHQUsxgTHlgPrb8g/edit?usp=sharing
 - name: Deadlock Demolition
   releaseDate: Week 7
