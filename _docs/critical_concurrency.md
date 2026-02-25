@@ -42,6 +42,7 @@ There are four functions in total you will be writing:
 * `void semm_wait(Semamore *s);`
 * `void semm_post(Semamore *s);`
 * `void semm_destroy(Semamore *s);`
+<span class="spec" data-spec-id="ccsem" aria-hidden="true"></span>
 
 ## barrier.c
 
@@ -58,6 +59,7 @@ Your goal is to implement the functions
 * `int barrier_wait(barrier_t *barrier);`
 
 so that a `barrier_t` using these functions is a working reusable barrier.
+<span class="spec" data-spec-id="ccbar" aria-hidden="true"></span>
 
 ## queue.c
 
@@ -71,6 +73,7 @@ Your goal is to implement the functions
 * `void queue_destroy (queue* this);`
 * `void queue_push (queue* this, void* element);`
 * `void* queue_pull (queue* this);`
+<span class="spec" data-spec-id="ccque" aria-hidden="true"></span>
 
 ## Testing
 
