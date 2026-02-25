@@ -19,6 +19,9 @@ Each component of virtual memory has been split up into several files to help yo
 Reading through these files will help you understand the roles of the different hardware and software involved in managing virtual memory.
 You will only have to write two functions in `mmu.c`, but it requires a good understanding of the virtual memory translation process and decent understanding of the rest of the provided code.
 
+<span class="spec" data-spec-id="iiover" aria-hidden="true"></span>
+
+
 ## How To Tackle This Assignment
 
 * First, you will need to understand how the virtual memory translation process works. You will be writing functions to translate virtual addresses into physical addresses, so a good first step is to understand that process. The coursebook has details on this process, and feel free to ask about this if you are unsure.
@@ -39,6 +42,9 @@ You will only have to write two functions in `mmu.c`, but it requires a good und
   * address_in_segmentations() in segments.h
 
   However you are free to use whichever other helper functions you'd like. The source code for these functions have been given to you; you should be able to get a grasp on the whole model just by reading the header files, but if you are interested to see how we model the different components, you can read the source code.
+
+  <span class="spec" data-spec-id="iihelper" aria-hidden="true"></span>
+
 
 * Once you have a good mental model, you will want to plan out the steps your code needs to perform. Start by following the pseudocode below:
   * Use pid to check for a context switch. If there was a switch, flush the TLB
@@ -67,9 +73,16 @@ The rest of this documentation will serve to help you understand the purpose of 
 The implementation details of each function are documented in the header files.
 The recommended sequence of reading the provided files will follow the sequence of files introduced in this documentation.
 
+<span class="spec" data-spec-id="iidocs" aria-hidden="true"></span>
+
+
 ## Simulated vs Actual Memory Spaces (`types.h`)
 
 In this assignment, we are simulating 32-bit virtual memory spaces and 32-bit physical memory spaces. All simulated memory addresses, both virtual and physical, will be stored in `addr32` variables. Note that once you translate a simulated virtual address into a simulated physical address, you will want to convert the simulated physical address into an actual memory address in your process space, so that you can read from and write to memory.
+
+
+<span class="spec" data-spec-id="iisim" aria-hidden="true"></span>
+
 
 ## Page Directories and Page Tables (`page_table.h`)
 
@@ -82,6 +95,8 @@ Each table entry in both the `page_directory` and `page_table` contain
 * metadata bits and flags
 
 These metadata bits and flags are explained in detail in `page_table.h`. The actual layout is taken directly from a real 32 bit processor and operating system, which you can read more about in the ["IA-32 Intel® Architecture Software Developer’s Manual"](http://flint.cs.yale.edu/cs422/doc/24547212.pdf#page=88).
+
+<span class="spec" data-spec-id="iipdpt" aria-hidden="true"></span>
 
 For illustrative purposes a Page Table Entry looks like the following:
 
@@ -120,6 +135,8 @@ Make note of the use of double pointers (why do we need that?). You will need to
 
 The reason why our TLB caches `page_table_entry` pointers instead of physical addresses of frames is because you will need to update metadata bits when translating addresses.
 
+<span class="spec" data-spec-id="iitlb" aria-hidden="true"></span>
+
 ## Segments (`segments.h`)
 
 A process' virtual address space is divided into several segments. You are familiar with many of these:
@@ -147,6 +164,8 @@ The solution is to check to see if an address is in any memory segment with `boo
 If the address is not in any of the process's segments, then you get the dreaded segmentation fault (segfault).
 
 Note: There is one other form of segfault. Can you determine what it is?
+
+<span class="spec" data-spec-id="iiseg" aria-hidden="true"></span>
 
 ## Kernel (`kernel.h`)
 
@@ -178,6 +197,8 @@ Examples usages of these helper functions can be found in some of the implemente
 Note: Shifting signed numbers can produce unexpected behavior, as it will always extend the sign, meaning if the most significant bit is `1`, the "leftmost" bits after shifting right will all be `1`s instead of `0`s. 
 Do yourself a favor, work with unsigned values.
 
+<span class="spec" data-spec-id="iikernel" aria-hidden="true"></span>
+
 
 ## Memory Management Unit (`mmu.c` and `mmu.h`)
 
@@ -201,3 +222,5 @@ Finally you are to use the last 12 bits to offset to a particular byte in the 4k
 ## Testing
 
 Make sure you throughly test your code as usual. We have provided some tests cases, but we encourage you to write your own as well. Use the provided test cases as a reference to learn to create tests with good coverage.
+
+<span class="spec" data-spec-id="iitest" aria-hidden="true"></span>

@@ -1,5 +1,6 @@
 from pathlib import Path
 from datetime import datetime, timedelta
+import pytz
 import yaml
 
 ASSIGNMENT_FILE = Path(__file__).parent / "../_data/assignments.yaml"
@@ -199,7 +200,9 @@ if DUMP_ICS:
         release_event.add("summary", f"{l['name']} lab - Release")
         release_event.add(
             "dtstart",
-            datetime.strptime(l["submissions"][0]["releaseDate"], "%Y-%m-%d %H:%M"),
+            datetime.strptime(
+                l["submissions"][0]["releaseDate"], "%Y-%m-%d %H:%M"
+            ).replace(tzinfo=pytz.timezone("America/Chicago")),
         )
         release_event.add("value", "DATE-TIME")
         cal.add_component(release_event)
@@ -209,7 +212,9 @@ if DUMP_ICS:
         due_event.add("summary", f"{l['name']} lab - Due")
         due_event.add(
             "dtstart",
-            datetime.strptime(l["submissions"][0]["due_date"], "%Y-%m-%d %H:%M"),
+            datetime.strptime(
+                l["submissions"][0]["due_date"], "%Y-%m-%d %H:%M"
+            ).replace(tzinfo=pytz.timezone("America/Chicago")),
         )
         due_event.add("value", "DATE-TIME")
         cal.add_component(due_event)
@@ -223,7 +228,10 @@ if DUMP_ICS:
             release_event = Event()
             release_event.add("summary", f"{m['name']} MP Part {i+1} - Release")
             release_event.add(
-                "dtstart", datetime.strptime(sub["releaseDate"], "%Y-%m-%d %H:%M")
+                "dtstart",
+                datetime.strptime(sub["releaseDate"], "%Y-%m-%d %H:%M").replace(
+                    tzinfo=pytz.timezone("America/Chicago")
+                ),
             )
             release_event.add("value", "DATE-TIME")
             cal.add_component(release_event)
@@ -232,7 +240,10 @@ if DUMP_ICS:
             due_event = Event()
             due_event.add("summary", f"{m['name']} MP Part {i+1} - Due")
             due_event.add(
-                "dtstart", datetime.strptime(sub["due_date"], "%Y-%m-%d %H:%M")
+                "dtstart",
+                datetime.strptime(sub["due_date"], "%Y-%m-%d %H:%M").replace(
+                    tzinfo=pytz.timezone("America/Chicago")
+                ),
             )
             due_event.add("value", "DATE-TIME")
             cal.add_component(due_event)

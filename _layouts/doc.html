@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
+{% assign split_url = page.url | split: '/' %}
+{% assign name_no_md = split_url[-1] | replace: '.html','' %}
 
+{% if split_url[1] == 'assignments' %}
+<body data-spy="scroll" data-target="#overview" data-offset="50" style="overflow: hidden;">
+  <div id="ai-overlay">
+    <div
+      style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: hsla(0, 0%, 0%, 0.85); z-index: 9998; backdrop-filter: blur(4px);">
+    </div>
+    <div
+      style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; color: #333; padding: 2.5em; z-index: 9999; box-shadow: 0 0.25em 1.875em rgba(0,0,0,0.5); border-radius: 0.5em; max-width: 37.5em; width: 90%; display: flex; flex-direction: column; gap: 1.25em; border-top: 0.25em solid hsl(0, 100%, 33%);">
+      <p style="color: #333; margin: 0;">
+        I have carefully read and agree to the following
+        <a href="https://cs341.cs.illinois.edu/syllabus.html#use-of-large-language-models-code-assistants-and-generative-ai-models"
+          target="_blank" style="color: var(--color-primary); text-decoration: underline;">
+          AI and academic integrity syllabus requirements
+        </a>
+        for this class. I understand that providing the assignment specification on this page to an AI is an example of
+        an <b>academic integrity violation</b>.
+      </p>
+      <div style="display: flex; align-items: center; gap: 1em; flex-wrap: wrap;">
+        <label style="display: flex; gap: 0.5em; cursor: pointer; user-select: none;">
+          <input type="checkbox" id="ai-agree-checkbox"
+            style="width: 1em; height: 1em; cursor: pointer; accent-color: var(--color-primary);"
+            onchange="checkedAIPolicy()" />
+          I have read and agree to the above
+        </label>
+        <div>
+          <button id="ai-continue-btn" disabled onclick="acceptAIPolicy()"
+            style="background-color: #aaa; color: #fff; border: none; padding: 0.5em 1em; border-radius: 0.25em; transition: background-color 0.2s;">
+            Continue
+          </button>
+          <button onclick="window.history.back()"
+            style="background-color: transparent; border: 0.0625em solid var(--color-primary); color: var(--color-primary); margin-left: 1em; padding: 0.5em 1em; border-radius: 0.25em; ">
+            Back
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      if (localStorage.getItem('ai-policy-accepted-{{ name_no_md }}') === 'true') {
+        document.getElementById('ai-overlay').style.display = 'none';
+        document.body.style.overflow = '';
+      }
+
+      function checkedAIPolicy() {
+        var checkbox = document.getElementById('ai-agree-checkbox');
+        var continueBtn = document.getElementById('ai-continue-btn');
+        continueBtn.disabled = !checkbox.checked;
+        if (!checkbox.checked) {
+          continueBtn.style.backgroundColor = '#aaa';
+        } else {
+          continueBtn.style.backgroundColor = '#0078d4';
+        }
+      }
+
+      function acceptAIPolicy() {
+        localStorage.setItem('ai-policy-accepted-{{ name_no_md }}', 'true');
+        document.getElementById('ai-overlay').style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    </script>
+  </div>
+{% else %}
 <body data-spy="scroll" data-target="#overview" data-offset="50">
+{% endif %}
+
   <div class="container-fluid">
     <div class="row" style="display: flex; justify-content: stretch;">
       {% include header.html %}
 
-      {% assign split_url = page.url | split: '/' %}
-      {% assign name_no_md = split_url[-1] | replace: '.html','' %}
       {% assign fetched_assignments = site.data.assignments['mps'] | concat: site.data.assignments['labs'] | where: "url", name_no_md %}
       {% assign fetched_assignments_size = fetched_assignments | size %}
       {% assign not_released = fetched_assignments | where: 'visible', 'false' | size %}

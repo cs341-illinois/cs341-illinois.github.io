@@ -12,6 +12,7 @@ learning_objectives:
 > Do you suffer from writing multithreaded code that deadlocks? Wish that the mutexes would provide feedback instead of deadlocking? Well have no fear, the drms are here! drm, short for deadlock-resistant mutex, are mutexes that will notify you when an attempt to lock them would cause a deadlock! Fancy, right? With this, you won't ever need to worry about deadlock ever again!
 
 Your friend, and work partner Foo showed you the presentation slides which will introduce your project in the upcoming Cool C Libraries Fair. The both of you have decided to implement a mutex library that prevents deadlock, and Foo was so excited that they made the presentation slides _before_ even implenting the library itself. Facepalming at Foo's lack of proper workflow priorities, you decide to just work on it, and have Foo create the tests and videos that will show off the drm's capabilities.
+<span class="spec" data-spec-id="dedback" aria-hidden="true"></span>
 
 ## Overview
 
@@ -20,6 +21,8 @@ A drm behaves exactly like a `pthread_mutex_t`, but will prevent deadlocks from 
 * thread 2 locks `drm_2`.
 * thread 1 tries to lock `drm_2`, and waits.
 * thread 2 tries to lock `drm_1`. Notice that this call will cause a deadlock. Your drm library will detect this, and reject thread 2's request to lock `drm_1`.
+<span class="spec" data-spec-id="dedover" aria-hidden="true"></span>
+
 
 ## Functionality
 
@@ -33,6 +36,7 @@ You will be writing four functions:
 * `void drm_destroy(drm_t *drm);`
 
 The details of what these functions do can be found in the header file `libdrm.h`.
+<span class="spec" data-spec-id="dedfunc" aria-hidden="true"></span>
 
 ## Resource Allocation Graph
 
@@ -48,6 +52,9 @@ void init(){
         g = malloc(sizeof(int))
 }
 ```
+
+<span class="spec" data-spec-id="dedrag" aria-hidden="true"></span>
+
 
 :warning: **The provided graph data structure is not thread-safe.**
 
@@ -71,6 +78,7 @@ When a thread calls `drm_wait()`:
     * One case that would deadlock is a thread trying to lock a mutex it already owns. Think about how to factor this in.
     * Another case is if the newly added edge creates a cycle in the Resource Allocation Graph.
 * If not, then lock the drm. Note that you may need to modify the edges of the Resource Allocation Graph in this step.
+<span class="spec" data-spec-id="dedwait" aria-hidden="true"></span>
 
 ## Testing
 
@@ -86,18 +94,24 @@ You should test your drm library thoroughly. We've given you a `libdrm_tester.c`
 * Consider logging important events inside of your functions.
 * Ensure that your return values are correct.
 * Note that you will have still reachable memory in your Resource Allocation Graph upon program termination. That is expected behavior, and still reachable memory is not considered a memory leak.
+<span class="spec" data-spec-id="dedtips" aria-hidden="true"></span>
+
 
 ### Edge Cases and Undefined Behavior
 
 Anything not specified in these docs or the header files is considered undefined behavior. We will not test undefined behavior. Some examples:
 * initializing a drm that is already initialized.
 * calling `drm_destroy()` on a locked drm.
+<span class="spec" data-spec-id="dededge" aria-hidden="true"></span>
+
 
 ### Thread Sanitizer
 
 We have another target executed by typing `make tsan`. This compiles your code with Thread Sanitizer.
 
 ThreadSantizer is a race condition detection tool. See [this page](http://cs341.cs.illinois.edu/coursebook/Background#tsan) for more information.
+
+<span class="spec" data-spec-id="dedtsan" aria-hidden="true"></span>
 
 **We will be using ThreadSanitizer to grade your code, but we will ONLY test for data race warnings, NOT any other warning type.**
 

@@ -29,6 +29,7 @@ This way, there's no need to store your actual password.
 Given the output of a good hash function, it is hard or impossible to reconstruct the input using the hashed value.
 However, if you are willing to burn some CPU time, it is possible to try every possible password (brute force attack) until you find one that hashes to the target hash.
 
+<span class="spec" data-spec-id="pcintro" aria-hidden="true"></span>
 
 ## `crypt_r()`
 
@@ -60,6 +61,9 @@ This is because `crypt()` stores information between invocations, so calling `cr
 `crypt_r()` gets around this by storing information in a `struct crypt_data` instead.
 You should check the man page for `crypt_r`. Do you need to free the string it returns?
 
+<span class="spec" data-spec-id="pccrypt" aria-hidden="true"></span>
+
+
 ### Why is there salt in my hash?
 
 The salt argument "flavors" the string so that when you hash the same password with different salts, you'll get different results. In practice, we might use a random value generated for every user. This prevents an attacker from noticing that two people have the same password just by comparing their hash values.
@@ -72,6 +76,8 @@ You will be given a list of hashes that you must recover the passwords for. For 
 
 * The first few letters in their password
 * The total length of the password
+<span class="spec" data-spec-id="pcproblem" aria-hidden="true"></span>
+
 
 **All the passwords only contain lowercase letters!**
 
@@ -102,6 +108,8 @@ george xxq5aBqiB66j2 xz....
 helen xxhx0AsVpMTMU sysx....
 inigo xxHUf9zUctXNA miss....
 ```
+<span class="spec" data-spec-id="pcinput" aria-hidden="true"></span>
+
 
 **Note:**
 - For both version 1 and version 2, the main thread is NOT to be used to crack passwords. ONLY the worker threads should try to crack a password.
@@ -122,6 +130,7 @@ The worker threads will pull one task from the task queue, then process the task
 When a worker thread starts processing a task, it will print the username of the task (use `format.h`).
 
 When a worker thread finishes a task, it will print the cracked password (use `format.h`), along with the index of the thread (starting with index 1) and the amount of CPU time spent working on the password (use `getThreadCPUTime()`).
+<span class="spec" data-spec-id="pctp" aria-hidden="true"></span>
 
 When the main thread finishes reading in lines from the input, it can't shut down immediately, since worker threads may still be cracking some passwords.
 **You need to decide how to cleanly shut all the threads down when there are no more passwords to crack.**
@@ -174,6 +183,8 @@ Total CPU time: 5.77 seconds.
 CPU usage: 3.31x
 ```
 
+<span class="spec" data-spec-id="pcout" aria-hidden="true"></span>
+
 The times and order may vary slightly. The "CPU usage" value will depend on the number of cores in your VM. The above example is run on a machine with 4 cores. If your machine has 2 cores, the CPU usage should be between 1x and 2x.
 
 Your password cracker should be processing passwords in a streaming manner. This means that once the program is started, if both a password and a worker thread are available, the thread should immediately work on the password.
@@ -192,6 +203,8 @@ If you create a new thread for each task (instead of keeping the threads in the 
 
 Version 1 works great when there is a long list of passwords that need cracking in parallel, but it's no faster than a single threaded version when there's one really hard password that needs cracking.
 For version 2, you'll still have a pool of threads, but rather than assigning one thread to each password task, all the threads will work in parallel on each password task.
+<span class="spec" data-spec-id="pcpar" aria-hidden="true"></span>
+
 
 Example input:
 
@@ -253,6 +266,8 @@ With 4 worker threads, you would split the work up like this:
 
 When the number of threads doesn't divide the search space evenly, it's easy to get off-by-one errors due to integer rounding.
 The functions `getSubrange()` and `setStringPosition()` are provided in `utils.h` file to assist you with this. We **require** that you use these functions to match our expected output. We cannot guarantee the correctness of code that does not utilize these functions.
+<span class="spec" data-spec-id="pcpargs" aria-hidden="true"></span>
+
 
 With all the threads working on the same task, you may want to restructure your thread synchronization a little.
 Rather than a queue, you may wish to use a barrier.
@@ -306,6 +321,8 @@ Note that we have not provided any of the timing print statements in `cracker2`.
 Performance: If you have n threads then CPU usage should be:
 * in interval \[n - 0.5, n + 0.5\] if 2 <= n <= 3
 * more than 2 if n >= 4
+<span class="spec" data-spec-id="pcbounds" aria-hidden="true"></span>
+
 
 ## Concept
 
@@ -326,6 +343,8 @@ Consider the following tasks (in order), where a thread can run 100 iterations p
 4. task 4: 100 iterations
 5. task 5: 100 iterations
 
+<span class="spec" data-spec-id="pclat" aria-hidden="true"></span>
+
 ### Throughput
 
 Suppose there are 4 threads available and the program runs for 1 second.
@@ -333,6 +352,9 @@ Suppose there are 4 threads available and the program runs for 1 second.
 For version 1: The throughput is 3 since tasks 1, 3, and 4 will have completed, while 2 is still being worked on (and 5 is just being started).
 
 For version 2: The throughput is 1 since only the first task will have completed and all of the threads are busy working on task 2.
+
+<span class="spec" data-spec-id="pcthrough" aria-hidden="true"></span>
+
 
 ### Latency
 
@@ -375,6 +397,7 @@ Start u0000001
 ** Thread 1: processing at cracker2.c:269
 ** Thread 2: processing at cracker2.c:269
 ```
+<span class="spec" data-spec-id="pctshk" aria-hidden="true"></span>
 
 To use it:
 
@@ -414,6 +437,9 @@ For example:
 
 To see what the cracked passwords should be, use the `-soln` flag when running `create_examples` (see the usage documentation given when running the program with no arguments).
 
+<span class="spec" data-spec-id="pccreate" aria-hidden="true"></span>
+
+
 ### timing example
 
 CPU time and so called "wall clock" time are not always the same thing.
@@ -425,6 +451,8 @@ In this case, the kernel spent time reading from a file, or writing packets to t
 
 CPU time can also be much larger than wall clock time.
 If a program runs in multiple threads, it may use 40 seconds of CPU time, but only take 10 seconds of wall clock time (4 threads, each ran for 10 seconds).
+<span class="spec" data-spec-id="pctimex" aria-hidden="true"></span>
+
 
 To demonstrate these differences, we've provided a program in `tools/timing.c` which shows an example of both kinds cases.
 

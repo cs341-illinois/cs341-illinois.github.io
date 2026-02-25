@@ -56,7 +56,7 @@ labs:
     - mini_memcheck.c
   resources: true
   worksheet: true
-  visible: false
+  visible: true
   slides: https://docs.google.com/presentation/d/1rmTE9UGhp7POfP8TWMJ1z-fxRkfZDjpomqIBSSEJKqI/edit?usp=sharing
 - name: Teaching Threads
   releaseDate: Week 5
@@ -70,7 +70,7 @@ labs:
     - par_reduce.c
   resources: true
   worksheet: true
-  visible: false
+  visible: true
   slides: https://docs.google.com/presentation/d/1zdh2QgI40KssmoIhcJqZJoxfVB8euOXyx8-H1lV0NhA/edit?usp=sharing
 - name: Critical Concurrency
   releaseDate: Week 6
@@ -86,7 +86,7 @@ labs:
     - semamore.c
   resources: true
   worksheet: true
-  visible: false
+  visible: true
   slides: https://docs.google.com/presentation/d/1a621s-bgppWyYeVYoK7pdrRCrH8QHQUsxgTHlgPrb8g/edit?usp=sharing
 - name: Deadlock Demolition
   releaseDate: Week 7
@@ -250,6 +250,7 @@ mps:
   resources: true
   worksheet: false
   visible: true
+  slides: https://docs.google.com/presentation/d/1Fm7kCsYNS_gkWDlBXIZJYTH5AGehmzttYevfhMJuPhU/edit?usp=sharing
 - name: Malloc
   releaseDate: Week 6
   dueDate: Week 8
@@ -267,7 +268,7 @@ mps:
     - alloc.c
   resources: true
   worksheet: false
-  visible: false
+  visible: true
 - name: Password Cracker
   releaseDate: Week 8
   dueDate: Week 9
