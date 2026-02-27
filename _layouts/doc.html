@@ -121,6 +121,25 @@
           </div>
           <div id="content">
             {% include doc_header.html %}
+            {% if split_url[1] == 'assignments' %}
+                <details 
+                    id="ai-citation" open
+                    style="border: 2px solid #4caf50; border-radius: 0.5em; padding: 1em; background-color: #f0faf0; margin-bottom: 1em;"
+                    onclick="AI_policy_onclick()">
+                    <summary style="cursor: pointer; font-weight: bold; color: #2e7d32;">AI Citation Policy</summary>
+                    {% capture ai_citation %}{% include ai_citation.md %}{% endcapture %}
+                    {{ ai_citation | markdownify | content_style }}
+                </details>
+                <script>
+                    var citation = document.getElementById('ai-citation');
+                    function AI_policy_onclick(){
+                        localStorage.setItem("ai-citation-closed", citation.open ? "true" : "false");
+                    }
+                    if(localStorage.getItem("ai-citation-closed") === "true"){
+                        citation.open = false;
+                    }
+                </script>
+            {% endif %}
             {{ content | content_style }}
             {% capture doc_footer %}{% include doc_footer.md %}{% endcapture %}
             {{ doc_footer | markdownify | content_style }}
