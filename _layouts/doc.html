@@ -122,21 +122,35 @@
           <div id="content">
             {% include doc_header.html %}
             {% if split_url[1] == 'assignments' %}
-                <details 
-                    id="ai-citation" open
-                    style="border: 2px solid #4caf50; border-radius: 0.5em; padding: 1em; background-color: #f0faf0; margin-bottom: 1em;"
-                    onclick="AI_policy_onclick()">
-                    <summary style="cursor: pointer; font-weight: bold; color: #2e7d32;">AI Citation Policy</summary>
-                    {% capture ai_citation %}{% include ai_citation.md %}{% endcapture %}
-                    {{ ai_citation | markdownify | content_style }}
-                </details>
+                <div style="border: 2px solid #4caf50; border-radius: 0.5em; padding: 1em; background-color: #f0faf0; margin-bottom: 1em;">
+                    {% capture ai_citation_header %}{% include ai_citation_header.md %}{% endcapture %}
+                    {{ ai_citation_header | markdownify | content_style }}
+                    <details 
+                        id="ai-citation" open
+                        onclick="AI_policy_onclick()">
+                        <summary id="ai-citation-prompt" style="cursor: pointer; font-weight: bold; color: #2e7d32; user-select: none;">
+                            V examples
+                        </summary>
+
+                        {% capture ai_citation_example %}{% include ai_citation_example.md %}{% endcapture %}
+                        {{ ai_citation_example | markdownify | content_style }}
+                    </details>
+                </div>
                 <script>
-                    var citation = document.getElementById('ai-citation');
+                    var citation = document.getElementById("ai-citation");
+                    var citation_prompt = document.getElementById("ai-citation-prompt");
                     function AI_policy_onclick(){
-                        localStorage.setItem("ai-citation-closed", citation.open ? "true" : "false");
+                        if(citation.open){
+                            citation_prompt.innerHTML = "> examples";
+                            localStorage.setItem("ai-citation-closed", "true");
+                        }else{
+                            citation_prompt.innerHTML = "V examples";
+                            localStorage.setItem("ai-citation-closed", "false");
+                        }
                     }
                     if(localStorage.getItem("ai-citation-closed") === "true"){
                         citation.open = false;
+                        citation_prompt.innerHTML = "> examples";
                     }
                 </script>
             {% endif %}
