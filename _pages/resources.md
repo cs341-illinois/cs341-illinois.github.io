@@ -11,7 +11,7 @@ If you added late, check [this page]({% link _pages/late_add.md %}) to get caugh
 
 ## Textbook References
 
-An gentle and short introduction to system programming is Angrave's [CS 341 Crowd-Sourced Wikibook](https://github.com/angrave/SystemProgramming/wiki).
+A gentle and short introduction to system programming is Angrave's [CS 341 Crowd-Sourced Wikibook](https://github.com/angrave/SystemProgramming/wiki).
 We also have the second iteration the [Coursebook](https://github.com/cs341-illinois/coursebook/wiki) That provides html, pdf, and wiki versions.
 Angrave's mini searchable video-introduction and playful _system programming-in-the-browser_ environment is at:
 [mini lectures](http://cs-education.github.io/sys/) (Firefox and Chrome recommended).
