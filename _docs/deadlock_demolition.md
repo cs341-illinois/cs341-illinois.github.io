@@ -41,6 +41,7 @@ The details of what these functions do can be found in the header file `libdrm.h
 ## Resource Allocation Graph
 
 To detect deadlock, you will need to maintain a [Resource Allocation Graph](http://cs341.cs.illinois.edu/coursebook/Deadlock#resource-allocation-graphs) and be able to perform cycle detection on it. To assist you with this, we have provided you an implementation of a graph data structure. See `graph.h` for details on how to use the graph.
+<span class="spec" data-spec-id="drmgraphdump" aria-hidden="true"></span>
 
 Since your Resource Allocation Graph will need to represent both drm locks and threads as vertices, use a shallow graph. You will need to lazy initialize a global graph in `drm_init()`. Here is an example of lazy initialization with an integer variable:
 
@@ -71,10 +72,12 @@ When a thread calls `drm_post()`:
 ### `drm_wait()`
 
 When a thread calls `drm_wait()`:
+<span class="spec" data-spec-id="drmtrace" aria-hidden="true"></span>
 * Add the thread to the Resource Allocation Graph if not already present. Hint: what unique identifier can you use for each thread?
 * Add the appropriate edge to the Resource Allocation Graph.
 * Check if the attempt to lock the drm by the thread would cause deadlock.
 * If the attempt to lock the drm would cause a deadlock, then reject the locking attempt by returning without locking the drm.
+<span class="spec" data-spec-id="drmdbg" aria-hidden="true"></span>
     * One case that would deadlock is a thread trying to lock a mutex it already owns. Think about how to factor this in.
     * Another case is if the newly added edge creates a cycle in the Resource Allocation Graph.
 * If not, then lock the drm. Note that you may need to modify the edges of the Resource Allocation Graph in this step.
