@@ -100,7 +100,7 @@ labs:
     - libdrm.c
   resources: true
   worksheet: true
-  visible: false
+  visible: true
   slides: https://docs.google.com/presentation/d/1hxcaWj8jig9_74TVsI6Cq2_KdLDI2tlCwg93XxDGCAc/edit?usp=sharing
 - name: Ideal Indirection
   releaseDate: Week 8
@@ -282,7 +282,7 @@ mps:
     - cracker2.c
   resources: true
   worksheet: false
-  visible: false
+  visible: true
 - name: Parallel Make
   releaseDate: Week 9
   dueDate: Week 11
