@@ -68,6 +68,8 @@ The input for this MP will be in the following form:
 
 The input parsing step is already handled for you in `parmake_main.c`. The Makefile, thread count, and target list will be provided as arguments to the `parmake()` function, which you will have to implement.
 
+<span class="spec" data-spec-id="pmdebug" aria-hidden="true"></span>
+
 ## Process the Makefile
 
 The first thing you will need to do is to parse the Makefile into a dependency graph.
@@ -147,6 +149,8 @@ The graph returned from the `parmake` parser will contain all the vertices and e
 
 See `rule.h` for a description of the `rule_t` API. And read `parser.h` for more usage details on the dependency graph.
 
+<span class="spec" data-spec-id="pmgraph" aria-hidden="true"></span>
+
 **USAGE WARNINGS**:
 * Any vectors returned from graph functions must be destroyed manually to prevent memory leaks. Destroying these vectors will not destroy anything in the actual graph.
 
@@ -171,6 +175,8 @@ GNU `make` handles cyclical dependencies by attempting to delete edges that caus
 To highlight the importance of cycle detection in resource allocation schemes, we also require that you explicitly handle cycles. However, *your implementation of parmake will ignore all goal rules whose descendants belong to cycles*. That is, calling `./parmake d` on this makefile would execute nothing, since 'd' cannot be satisfied due to the cyclical dependency (-> 'a' -> 'b' ->). However, calling `./parmake c` will still execute `echo C`, since the (nonexistent) descendants of 'c' don't belong to cycles.
 
 Moreover, you must announce any goal rules that are dropped due to existence of cyclical dependencies using the function `print_cycle_failure()` found in `format.h`. Read the header file for usage information.
+
+<span class="spec" data-spec-id="pmcycle" aria-hidden="true"></span>
 
 Since this MP requires you to implement some graph algorithms, you may want to consult [this resource](http://www.cs.cornell.edu/courses/cs2112/2012sp/lectures/lec24/lec24-12sp.html) to jog your CS 225 memory.
 
