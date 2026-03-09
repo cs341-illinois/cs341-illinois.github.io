@@ -48,6 +48,7 @@ You will only have to write two functions in `mmu.c`, but it requires a good und
 
 * Once you have a good mental model, you will want to plan out the steps your code needs to perform. Start by following the pseudocode below:
   * Use pid to check for a context switch. If there was a switch, flush the TLB
+  <span class="spec" data-spec-id="mmuctx" aria-hidden="true"></span>
   * Make sure that the address is in one of the segmentations. If not, raise a segfault and return
   * Check the TLB for the page table entry. If it's not there:
     * Raise a TLB miss
@@ -126,6 +127,7 @@ set to `1`
 Note: The naming scheme of "page directory" and "page table" is unique to this assignment. Typically, we just know them as "first level page table" and so on.
 
 Note: Be careful when writing into bit fields! What happens when the value you try to write into a bit field is larger than the maximum value that bit field can store?
+<span class="spec" data-spec-id="mmupte" aria-hidden="true"></span>
 
 ## Translation Lookaside Buffer (`tlb.h`)
 
@@ -208,6 +210,7 @@ For this assignment you are only responsible for handling reads to and writes fr
 void mmu_read_from_virtual_address(mmu *this, uintptr_t virtual_address, size_t pid, void *buffer, size_t num_bytes);
 void mmu_write_to_virtual_address(mmu *this, uintptr_t virtual_address, size_t pid, const void *buffer, size_t num_bytes);
 ```
+<span class="spec" data-spec-id="mmutlbdbg" aria-hidden="true"></span>
 This means you have to translate a simulated virtual address into a simulated physical address, then read from/write to that memory location.
 
 The following illustration demonstrates how to translate from a virtual address to a physical address:
