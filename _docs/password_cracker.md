@@ -127,7 +127,9 @@ Each line will be converted to a task which is added to a task queue.
 The task queue is provided in `libprovided.a` and `queue.h.`
 This is the same thread-safe queue that you've implemented in lab!
 The worker threads will pull one task from the task queue, then process the task.
+<span class="spec" data-spec-id="pcdata" aria-hidden="true"></span>
 When a worker thread starts processing a task, it will print the username of the task (use `format.h`).
+<span class="spec" data-spec-id="pccount" aria-hidden="true"></span>
 
 When a worker thread finishes a task, it will print the cracked password (use `format.h`), along with the index of the thread (starting with index 1) and the amount of CPU time spent working on the password (use `getThreadCPUTime()`).
 <span class="spec" data-spec-id="pctp" aria-hidden="true"></span>
@@ -285,6 +287,7 @@ Like with version 1, you may not create new threads for each task.
 The threads you create at the beginning of the program must be the same threads that compute the last task.
 
 When the main thread reads a task, it should print `"Start <username>"`.
+<span class="spec" data-spec-id="pcdebug" aria-hidden="true"></span>
 When a thread starts processing a task, it should print its index and starting position.
 As usual, make sure to use `format.h`.
 For example:
