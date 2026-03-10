@@ -1,4 +1,3 @@
----
 labs:
 - name: Luscious Locks
   releaseDate: Week 1
@@ -114,7 +113,7 @@ labs:
     - mmu.c
   resources: true
   worksheet: true
-  visible: false
+  visible: true
   slides: https://docs.google.com/presentation/d/1E2OAfTItyZvXnKFBsU8qkpNWooVMXaTjjPK_OqHfzoU/edit?usp=sharing
 - name: MapReduce
   releaseDate: Week 9
