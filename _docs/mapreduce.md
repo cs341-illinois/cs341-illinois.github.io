@@ -93,6 +93,7 @@ key_3: but they cannot have colons or newlines
 ## Many mappers, one reducer
 
 You'll spread the work across multiple instances of the mapper executable.
+<span class="spec" data-spec-id="mrpipe" aria-hidden="true"></span>
 
 
 
@@ -106,6 +107,7 @@ You'll spread the work across multiple instances of the mapper executable.
 
 
 The input file will need to be split into chunks, with one chunk for each mapper process.
+<span class="spec" data-spec-id="mrsplit" aria-hidden="true"></span>
 To split the input file, we've supplied the tool `splitter`.
 **Please** run it without arguments for a brief explanation of how it works.
 You'll start up one instance of splitter for each mapper, using a pipe to send `stdout` of splitter to `stdin` of the mapper program.
@@ -135,6 +137,7 @@ Sample Usage:
 Your program will:
 
 * Split the input file into `<mapper_count>` parts and pipe the contents into `<mapper_count>` different mapper processes (use splitter).
+<span class="spec" data-spec-id="mrreduce" aria-hidden="true"></span>
 * Pipe the output of the mapper processes into the reducer process
 * Write the output of the reducer process to the output file.
 * Parallelize these tasks to achieve speedup
