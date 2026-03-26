@@ -36,9 +36,11 @@ The client executable will accept up to four arguments:
 * `host`     - The address the client should connect to.
 * `port`     - The port number to connect to the host on.
 * `username` - The name you want to be displayed in the chatroom.
+<span class="spec" data-spec-id="chatuser" aria-hidden="true"></span>
 * `filename` - Optional argument - will disable ncurses and write bytes received from the server to the output file.
 
 The client performs two main functions: (1) writes user input to the server and (2) writes bytes from server to user.  We have handled the overall logic of reading from user, writing to server, reading from server, and writing to user.  Your job is to set up the client and connect it to the server.
+<span class="spec" data-spec-id="chatconn" aria-hidden="true"></span>
 
 Implement the provided function to use a TCP IPv4 connection and connect to the host at the given port.  A signal interrupt will be sent to the client as a flag to tell your client to exit. To be precise, when your client program receives a `SIGINT` it should free memory, close sockets, and gracefully exit the program.
 
@@ -114,6 +116,7 @@ informally: 0x0000000C"hello world\n"
 where the **first 4 bytes** of the message indicate the size of the message in bytes.
 We use network-to-host byte-order (ntohl) and host-to-network byte-order (htonl) for this.
 We've given you `get_message_size()`, you **must** implement `write_message_size()`.  As we will be testing your server and client separately, and because our server and client expect this setup, be sure this works; it is like our "protocol".
+<span class="spec" data-spec-id="chatmsg" aria-hidden="true"></span>
 Please see how `get_message_size()` it is done in `utils.c`
 
 In `user_hooks.c` we have given an example of how to emulate a read failure (feel free to modify this file by adding a write failure call).  You can include `user_hooks.h` in your utils/server/client code to test your error handling.

@@ -124,6 +124,7 @@ The parser will return a graph containing 5 vertices, once each for rule 'a', 'b
 Those curious of the implementation can view the source in `parser.c` although this is not necessary.
 
 We have provided an implementation of a vector, a set, a dictionary, a graph, and a thread-safe queue. This is the same queue from luscious locks and the same vector you've used in prior assignments. The set, graph, and dictionary are new data structures from the CS 341 provided library.
+<span class="spec" data-spec-id="pmqueue" aria-hidden="true"></span>
 You can view the header information in `includes/`.
 
 ## Graph Data Structure
@@ -252,6 +253,7 @@ For your convenience these rules are captured in the following flow chart:
 ## Parallelize! (Part 2 Only)
 
 `parmake` must satisfy all of the rules needed to build the specified targets correctly and as quickly as possible. Because we want maximum runtime performance, you need to be running a rule on each worker thread whenever possible. Threads should not stay idle when there are rules that are available for execution. A rule is defined as available when all of its dependencies have been satisfied and it is not already satisfied (see "Satisfy the rules").
+<span class="spec" data-spec-id="pmstate" aria-hidden="true"></span>
 
 There are two important parallelism requirements:
 
@@ -291,6 +293,7 @@ There are many more examples provided in your MP folder.
 * Note that Makefiles require tabs for indentation, so do not use spaces or modify tabs in editor settings if you plan on directly editing a `Makefile`. `cat -T` may be useful for detecting errors.
 * You will receive 0 points if your implementation uses `sleep()`, `usleep()`, or any other form of timed waiting (e.g. `sem_timedwait()`).
 * For full points, avoid busy-waiting. i.e. threads should not be burning CPU when they aren't doing useful work.
+<span class="spec" data-spec-id="pmthread" aria-hidden="true"></span>
 * You must only ever launch `T+1` threads, where `T` is the number of worker threads (+1 comes from the main thread). Do not keep re-spawning new threads for every rule.
 * We will try to artificially create spurious wakeups, so think about how you would resolve those.
 * To achieve a perfect score, you should maximize parallelization by ensuring that every given rule that can be run at a given time is being run.
