@@ -313,7 +313,7 @@ mps:
     - minixfs.c
   resources: true
   worksheet: false
-  visible: false
+  visible: true
   slides: https://docs.google.com/presentation/d/14IvwBaAdJ2Dg5ZwzNTnjLFLaZvpQdxRSiVH4cnFqRMo/edit?usp=sharing
 - name: Nonstop Networking
   releaseDate: Week 12
