@@ -193,12 +193,14 @@ The client runs a single command (GET, PUT, LIST or DELETE) with the chosen argu
 
 For LIST, binary data from the server should be printed to STDOUT, each file on a separate line.
 For GET, binary data should be written to the `[local]` file specified when the user ran the command.  If not created, create the file.  If it exists, truncate the file.  You should create the file with all permissions set (r-w-x for all users groups).
+<span class="spec" data-spec-id="nnfile" aria-hidden="true"></span>
 
 Your client is allowed to use blocking I/O, since clients don't really care about scaling. However, there are a few important things to keep in mind:
 
 1) Use the provided argument checkers. In the starter files, we provide you with two functions called `check_args` and `parse_args`, used to validate and parse arguments, respectively. If you choose to write your own argument checkers, make sure they behave exactly the same as the ones provided — no more or less strict.
 
 2) Parse the response carefully. When you're reading, you may accidentally read into the application binary data without realizing it (since you don't have fixed size fields in the responses).
+<span class="spec" data-spec-id="nnheader" aria-hidden="true"></span>
 
 3) `write(fd, buffer, n)` may not always write n bytes for various reasons. Buffers may become full, signals may arrive, the Skynet revolution might begin. None of which are excuses for not sending the correct amount of data to the server. Good practice is to wrap your read/write calls in a loop that runs until the specified number of bytes are read, the connection is closed, or an error (with the exception of EINTR) occurs.
 
@@ -210,6 +212,7 @@ Your client should handle the following errors and use the appropriate function 
 - Received too much or too little data from server.
 - Invalid response from server (malformed or nonexistent STATUS).
 - Print any ERROR message from the server.
+<span class="spec" data-spec-id="nncount" aria-hidden="true"></span>
 
 ## Specifics: The Server
 
