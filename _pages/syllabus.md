@@ -77,7 +77,7 @@ Opportunities for a small amount of extra credit may be offered and will be anno
 Grading issues should be raised with your TA during section or by email. Missing scores need to be reported within 3 days of being published.
 
 ### Regrades
-At the end of the semester there will be a last chance regrade option for approximately three weeks of machine problem or lab grades. To be able to take advantage of this opportunity you will need to have a "perfect" (we define) attendance grade after drops.
+At the end of the semester there will be a last chance regrade option for approximately three weeks of machine problem or lab grades. We may provide extra regrades for students who have perfect lab attendance after drops.
 
 When will this start? For Fall semesters, it will start around the Thanksgiving week. for Spring semesters, it will be around the middle of April. 
 
@@ -91,9 +91,9 @@ Please note that the score for each regrade will be capped at 90%. For the assig
 
 ### Lab Attendance
 
-Chicago students will have their own online lab (arranged with the TA). Urbana-Champaign students have in-person labs in Siebel. Labs are required and there is also a small reward for in-person attendance: Your final exam contribution (23%) can be reduced to 20% by attending all labs. Partial attendance of in-person labs will be prorated. For example, if after allowing for 2 drops, you attended 6 of 9 in-person labs (6 of 11 labs in total with drops) then your final exam will be worth 21%, and you will have 2% of full course credit. Lab attendance may also afford you extra regrade opportunities. 
+Chicago students will have their own online lab (arranged with the TA). Urbana-Champaign students have in-person labs in Siebel. Labs are required and there is also a small reward for in-person attendance: Your final exam contribution (23%) can be reduced to 20% by attending all labs (with 2 drops). Partial attendance of in-person labs will be prorated. 
 
-This is a small carrot to encourage you to leave your dorm/apartment and participate in person. But don't get anxious about losing points if you can't attend a certain week.
+For example, if you attended 7 of 13 in-person labs where attendance was taken, you attended 7 of 11 labs after 2 drops. Then your final exam will be worth 21.1%, and you will have 1.9% of full course credit. Perfect lab attendance after drops may also afford you extra regrade opportunities. This is a small carrot to encourage you to leave your dorm/apartment and participate in person.
 
 ## Quizzes
 
