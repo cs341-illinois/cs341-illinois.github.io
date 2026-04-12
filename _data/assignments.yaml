@@ -345,7 +345,7 @@ mps:
     - common.h
   resources: true
   worksheet: false
-  visible: false
+  visible: true
   slides: https://docs.google.com/presentation/d/1SYHzhUXRVzgpINK3AthOHF4_5THBlCaajl5-M6ujHGc/edit?usp=sharing
 honors:
 - name: Advanced C
