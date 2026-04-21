@@ -187,7 +187,7 @@ labs:
   resources: true
   worksheet: true
   slides: https://docs.google.com/presentation/d/1zoYlWc7AKAjZpsDLEq2SH8oTujfhThsUXX0rXu2kg4U/edit?usp=sharing
-  visible: false
+  visible: true
 - name: Lovable Linux
   releaseDate: Week 14
   dueDate: Week 15
