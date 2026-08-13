@@ -5,13 +5,14 @@ department_code: "cs"
 course_name: "System Programming"
 
 # Class info
-semester: "sp26"
-semester_full_name: "Spring 2026"
+semester: "fa26"
+semester_full_name: "Fall 2026"
 instructor: "Lawrence Angrave (angrave@illinois.edu)"
 location: "ECEB 1002"
-timings: "MWF 11:00AM - 11:50AM"
-courses_schedule_link: "https://courses.illinois.edu/schedule/2026/spring/CS/341"
-prairie_instance_link: "https://us.prairielearn.com/pl/course_instance/203563"
+timings: "MWF 9:00AM - 9:50AM"
+courses_schedule_link: "https://courses.illinois.edu/schedule/2026/fall/CS/341"
+prairie_instance_link: "https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515c8a43d3c7.jpg"
+#"https://us.prairielearn.com/pl/course_instance/203563"
 
 # Infrastructure examples-
 # grade_viewer_link: "https://sp20-cs241-grd-01.cs.illinois.edu/grades"
@@ -23,22 +24,25 @@ prairie_instance_link: "https://us.prairielearn.com/pl/course_instance/203563"
 
 # NO LONGER USED - it's automatically generated from the semester slug.
 grade_viewer_link: "https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515c8a43d3c7.jpg" 
-# " "https://grd-cs341.cs.illinois.edu/new-grade-viewer" 
 # https://grd-cs341.cs.illinois.edu/new-grade-viewer"
 
-broadway_on_demand_link: "https://grd-cs341.cs.illinois.edu/v2/" 
-# ""https://grd-cs341.cs.illinois.edu/on-demand/" # https://grd-cs341.cs.illinois.edu/on-demand/"
+#"Not available" = "https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515c8a43d3c7.jpg"
+broadway_on_demand_link: "https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515c8a43d3c7.jpg"
+#"https://grd-cs341.cs.illinois.edu/v2/" 
 
-# malloc_contest_link: "https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515c8a43d3c7.jpg"
-malloc_contest_link: "https://grd-cs341.cs.illinois.edu/malloc"
+#"Not available"
+malloc_contest_link: "https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515c8a43d3c7.jpg"
+
+#malloc_contest_link: "https://grd-cs341.cs.illinois.edu/malloc"
 # "https://grd-cs341.cs.illinois.edu/malloc"
 # malloc_contest_link: "https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515c8a43d3c7.jpg" 
 # "https://grd-cs341.cs.illinois.edu/malloc" 
 
-forum_link: "https://edstem.org/us/courses/91065/discussion" 
+forum_link: "https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515c8a43d3c7.jpg"
+# "https://edstem.org/us/courses/91065/discussion" 
 
 lecture_videos_link: "https://classtranscribe.illinois.edu/"
 # plz also modify the link in _data/navigation_bar.yaml, due to yaml cannot reference variables
 # and HTML part cannot render this kind of variable reference in string as well
-lecture_handouts: "https://github.com/angrave/CS341-Lectures-SP26"
-ics_link: "https://raw.githubusercontent.com/cs341-illinois/cs341-illinois.github.io/refs/heads/develop/_data/assignments.ics"
+lecture_handouts: "https://github.com/angrave/CS341-Lectures-FA26"
+#ics_link: "https://raw.githubusercontent.com/cs341-illinois/cs341-illinois.github.io/refs/heads/develop/_data/assignments.ics"
