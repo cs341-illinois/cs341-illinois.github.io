@@ -46,7 +46,21 @@ The operating system presents common interfaces for programmers to perform these
 
 ## Grading
 
-Information for FA26 is not yet available; check back later.
+The grading breakdown is published on the [course homepage]({% link _pages/index.html %}) and is subject to minor changes.
+
+We publish the following thresholds:
+
+|   Points   |  Minimum Grade  |
+|------------|-----------------|
+| [90 - 100] | A-              |
+| [80 - 90)  | B-              |
+| [70 - 80)  | C-              |
+
+Grading issues should be raised with your TA during section or by email. Missing scores need to be reported within 3 days of being published.
+
+### Regrades
+
+There will be opportunities for regrades of the weekly programming assignments. The regrade policy will be announced at the end of the semester.
 
 ### Lab Attendance
 
@@ -62,9 +76,18 @@ There will be 14 Weekly Small Programming Assignments. These must be completed w
 
 There will also be 4 System Projects that extend over multiple weeks. We expect you to use agentic AI for these projects.
 
-## Academic Intergrity
+## Academic Integrity
 
-Information for FA26 is not yet available; check back later.
+All students are bound by the University's academic integrity policy, [Article 1, Part 4 of the Student Code](https://studentcode.illinois.edu/article1/part4/1-401/). Suspected violations will be reported.
+
+This course has two different rules for AI use, and which one applies depends on the assignment:
+
+* **Weekly programming assignments (no AI).** These must be your own work. Do not use AI assistants or agentic coding tools to write, complete, or debug your solution. You may work with one partner; both of you must be able to explain every line you submit.
+* **System projects (with AI).** We expect you to use agentic AI on these projects. Using AI here is not a violation - it is the point of the assignment. You remain responsible for everything you submit, including code that an AI tool wrote for you.
+
+Regardless of which rule applies, do not submit work that is not yours to submit: do not copy from another student, from a previous semester's solution, or from a public repository of course solutions, and do not share or publish your own solutions where other students can find them.
+
+If you are unsure whether something is permitted, ask the course staff before you do it.
 
 ## Land Acknowledgment Statement
 

@@ -1,7 +1,7 @@
 {% if page.submissions %}
 ## Submission Instructions
 
-Please read details on [Academic Integrity](/#academic-integrity) fully. These are shared by all assignments in CS 341.
+Please read details on [Academic Integrity](/syllabus.html#academic-integrity) fully. These are shared by all assignments in CS 341.
 
 We will be using GitHub as our hand-in system this semester. Our grading system will checkout your most recent (pre-deadline) commit for grading. Therefore, to hand in your code, all you have to do is commit and push to your Github repository.
 
