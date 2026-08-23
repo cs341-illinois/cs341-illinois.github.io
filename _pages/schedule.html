@@ -19,7 +19,10 @@
     <h1 class="heading">Synchronous Learning</h1>
     <!-- Your content goes here -->
       <section class="centered">
-        The schedule below is <em>approximate</em> and subject to change - it's an interactive class - so we may get a bit behind etc. The handouts and code examples for this semester are <a target='_blank' href='https://github.com/angrave/CS341-Lectures-SP26'>here</a>
+        The schedule below is <em>approximate</em> and subject to change - it's an interactive class - 
+        so we may get a bit behind etc. The handouts and code examples for this semester are <a target='_blank' href='https://github.com/angrave/CS341-Lectures-FA26'>here</a>
+        6 class slots are canceled because there are 6 CBTF quizzes. There is also no class on Labor Day (Sept 7)
+        and during Fall Break (November 21 &ndash; 29).
     </section>
     <div class="row hidden-xs">
         <div class="col-md-3 hidden-sm">
@@ -39,7 +42,7 @@
     {% assign days = 3 %}
     {% assign weeks_zero_indexed = 15 %}
     {% assign pretty_date_format = " [%m/%d] " %}
-    {% assign initial_day = "2026-01-19" %}
+    {% assign initial_day = "2026-08-24" %}
     {% assign initial_day_unix = initial_day | date: "%s" | plus: 7200 %}
     <!-- Add an two hours safety margin, as we may cross a summer time change and the clocks change-> 
     <!--The schedule is considered as a list, of which we visit a window of size days, for each week.-->
