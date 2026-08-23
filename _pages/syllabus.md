@@ -50,16 +50,17 @@ Information for FA26 is not yet available; check back later.
 
 ### Lab Attendance
 
-Information for FA26 is not yet available; check back later.
+Lab Attendance is required for all students who are on campus. One lab drop is allowed.
 
 ## Quizzes
 
-Information for FA26 is not yet available; check back later.
-
+There will be 6 CBTF Quizzes.
 
 ## Assignments
 
-Information for FA26 is not yet available; check back later.
+There will be 14 Weekly Small Programming Assignments. These must be completed without AI. You may work with one partner
+
+There will also be 4 System Projects that extend over multiple weeks. We expect you to use agentic AI for these projects.
 
 ## Academic Intergrity
 
