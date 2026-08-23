@@ -11,7 +11,9 @@ instructor: "Lawrence Angrave (angrave@illinois.edu)"
 location: "ECEB 1002"
 timings: "MWF 9:00AM - 9:50AM"
 courses_schedule_link: "https://courses.illinois.edu/schedule/2026/fall/CS/341"
-prairie_instance_link: "https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515c8a43d3c7.jpg"
+# FA26 Homework 0 assessment on PrairieLearn
+prairie_instance_link: "https://us.prairielearn.com/pl/course_instance/228775/assessment/2724103"
+#"https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515c8a43d3c7.jpg"
 #"https://us.prairielearn.com/pl/course_instance/203563"
 
 # Infrastructure examples-
