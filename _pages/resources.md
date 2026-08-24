@@ -96,7 +96,7 @@ Note: We do not provide attendance misses for labs (this is not negotiable), esp
 
 ## Lawrence Angrave
 
-Lawrence Angrave can often be found on the second floor of Siebel in or near SC2217. His office hours will be posted once the semester starts. He's also able to answer quick questions before or after most lectures.
+Lawrence Angrave can often be found on the second floor of Siebel in or near SC2217. His office hours are listed on the [home page]({% link _pages/index.html %}) - Wednesdays 10:10am in the ECEB coffee area, and immediately after every lecture. He's also able to answer quick questions before or after most lectures.
 
 ## Graham Carl Evans
 
