@@ -25,7 +25,10 @@ jobs:
     - name: Pull Coursebook
       run: |
         git submodule init
-        git submodule update --recursive
+        # --remote tracks the coursebook wiki's latest commit. Without it
+        # this checks out the commit pinned in the tree, so a freshly
+        # published coursebook never reaches the site.
+        git submodule update --remote --recursive
 
     - name: Build site
       run: |

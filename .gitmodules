@@ -1,3 +1,4 @@
 [submodule "_coursebook"]
 	path = _coursebook
 	url = https://github.com/cs341-illinois/coursebook.wiki.git
+	branch = master
