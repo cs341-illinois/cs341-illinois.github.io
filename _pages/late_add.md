@@ -8,7 +8,7 @@ title: Getting Caught Up
 
 - Syllabus: [https://cs341.cs.illinois.edu/syllabus.html](https://cs341.cs.illinois.edu/syllabus.html)
 
-- EdStem: [https://edstem.org/](https://edstem.org/)
+- EdStem: [{{ site.data.constants.forum_link }}]({{ site.data.constants.forum_link }})
 
 - Mini-Course: [https://cs-education.github.io/sys/#/lessons](https://cs-education.github.io/sys/#/lessons)
 

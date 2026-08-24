@@ -40,8 +40,10 @@ malloc_contest_link: "https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515
 # malloc_contest_link: "https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515c8a43d3c7.jpg" 
 # "https://grd-cs341.cs.illinois.edu/malloc" 
 
-forum_link: "https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515c8a43d3c7.jpg"
-# "https://edstem.org/us/courses/91065/discussion" 
+# FA26 Ed Discussion forum
+forum_link: "https://edstem.org/us/courses/102405/discussion"
+# "https://www.meme-arsenal.com/memes/f98b7cfa7bc928372bac515c8a43d3c7.jpg"
+# "https://edstem.org/us/courses/91065/discussion"
 
 lecture_videos_link: "https://classtranscribe.illinois.edu/"
 # plz also modify the link in _data/navigation_bar.yaml, due to yaml cannot reference variables
