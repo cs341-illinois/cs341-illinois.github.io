@@ -46,6 +46,7 @@ forum_link: "https://edstem.org/us/courses/102405/discussion"
 # "https://edstem.org/us/courses/91065/discussion"
 
 lecture_videos_link: "https://classtranscribe.illinois.edu/"
+lecture_videos_mediaspace_link: "https://mediaspace.illinois.edu/channel/System+Programming+%28CS+341%29+Fall+2026/415149702"
 # plz also modify the link in _data/navigation_bar.yaml, due to yaml cannot reference variables
 # and HTML part cannot render this kind of variable reference in string as well
 lecture_handouts: "https://github.com/angrave/CS341-Lectures-FA26"
