@@ -1,0 +1,3 @@
+**No AI Policy:** This is a weekly programming (lab) assignment. Per the [course syllabus](/syllabus.html#academic-integrity), no AI assistants or agentic coding tools (e.g., ChatGPT, GitHub Copilot) may be used to write, complete, or debug your solution. Your submission must be entirely your own work (or your partner's, if applicable), and you must be able to explain every line you submit.
+
+Before you start, make sure any AI tools built into or added to your editor are turned off — see [Disabling AI Tools in VS Code]({% link _tutorials/development.md %}#disabling-ai-tools-in-vs-code) in the Development Guide.
