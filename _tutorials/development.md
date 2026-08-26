@@ -192,6 +192,10 @@ You may find ssh-copy-id useful (A web search using Google/Duck Duck Go is usefu
 
 Have fun! In the worst case we can reset your VM back to its initial state.
 
+## Disabling AI Tools in VS Code
+
+{% include disable_ai_tools_vscode.md %}
+
 ## Troubleshooting
 
 ### Git fetch 403 or access not grant

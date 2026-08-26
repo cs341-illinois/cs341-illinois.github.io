@@ -3,6 +3,8 @@
 {% include head.html %}
 {% assign split_url = page.url | split: '/' %}
 {% assign name_no_md = split_url[-1] | replace: '.html','' %}
+{% assign lab_matches = site.data.assignments['labs'] | where: "url", name_no_md %}
+{% assign is_lab = lab_matches.size %}
 
 {% if split_url[1] == 'assignments' %}
 <body data-spy="scroll" data-target="#overview" data-offset="50" style="overflow: hidden;">
@@ -41,11 +43,6 @@
       </div>
     </div>
     <script>
-      if (localStorage.getItem('ai-policy-accepted-{{ name_no_md }}') === 'true') {
-        document.getElementById('ai-overlay').style.display = 'none';
-        document.body.style.overflow = '';
-      }
-
       function checkedAIPolicy() {
         var checkbox = document.getElementById('ai-agree-checkbox');
         var continueBtn = document.getElementById('ai-continue-btn');
@@ -59,11 +56,52 @@
 
       function acceptAIPolicy() {
         localStorage.setItem('ai-policy-accepted-{{ name_no_md }}', 'true');
-        document.getElementById('ai-overlay').style.display = 'none';
-        document.body.style.overflow = '';
+        updateOverlays();
       }
     </script>
   </div>
+  {% if is_lab > 0 %}
+  <div id="no-ai-overlay">
+    <div
+      style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: hsla(0, 0%, 0%, 0.85); z-index: 9998; backdrop-filter: blur(4px);">
+    </div>
+    <div
+      style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; color: #333; padding: 2.5em; z-index: 9999; box-shadow: 0 0.25em 1.875em rgba(0,0,0,0.5); border-radius: 0.5em; max-width: 37.5em; width: 90%; display: flex; flex-direction: column; gap: 1.25em; border-top: 0.25em solid hsl(0, 100%, 33%);">
+      {% capture no_ai_notice %}{% include no_ai_notice.md %}{% endcapture %}
+      <div style="color: #333;">{{ no_ai_notice | markdownify }}</div>
+      <div style="display: flex; align-items: center; gap: 1em; flex-wrap: wrap;">
+        <button onclick="acceptNoAiPolicy()"
+          style="background-color: #0078d4; color: #fff; border: none; padding: 0.5em 1em; border-radius: 0.25em;">
+          I Understand
+        </button>
+        <button onclick="window.history.back()"
+          style="background-color: transparent; border: 0.0625em solid var(--color-primary); color: var(--color-primary); padding: 0.5em 1em; border-radius: 0.25em;">
+          Back
+        </button>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  <script>
+    function updateOverlays() {
+      var aiAccepted = localStorage.getItem('ai-policy-accepted-{{ name_no_md }}') === 'true';
+      var noAiOverlay = document.getElementById('no-ai-overlay');
+      var noAiAccepted = !noAiOverlay || localStorage.getItem('no-ai-policy-accepted-{{ name_no_md }}') === 'true';
+
+      document.getElementById('ai-overlay').style.display = aiAccepted ? 'none' : 'block';
+      if (noAiOverlay) {
+        noAiOverlay.style.display = (aiAccepted && !noAiAccepted) ? 'block' : 'none';
+      }
+      document.body.style.overflow = (!aiAccepted || (aiAccepted && !noAiAccepted)) ? 'hidden' : '';
+    }
+
+    function acceptNoAiPolicy() {
+      localStorage.setItem('no-ai-policy-accepted-{{ name_no_md }}', 'true');
+      updateOverlays();
+    }
+
+    updateOverlays();
+  </script>
 {% else %}
 <body data-spy="scroll" data-target="#overview" data-offset="50">
 {% endif %}
@@ -121,36 +159,36 @@
           </div>
           <div id="content">
             {% include doc_header.html %}
-            {% if split_url[1] == 'assignments' %}
-                <div style="border: 2px solid #4caf50; border-radius: 0.5em; padding: 1em; background-color: #f0faf0; margin-bottom: 1em;">
-                    {% capture ai_citation_header %}{% include ai_citation_header.md %}{% endcapture %}
-                    {{ ai_citation_header | markdownify | content_style }}
-                    <details 
-                        id="ai-citation" open
-                        onclick="AI_policy_onclick()">
-                        <summary id="ai-citation-prompt" style="cursor: pointer; font-weight: bold; color: #2e7d32; user-select: none;">
-                            V examples
+            {% if is_lab > 0 %}
+                <div style="border: 2px solid #c62828; border-radius: 0.5em; padding: 1em; background-color: #fdf0f0; margin-bottom: 1em;">
+                    {% capture no_ai_notice_inline %}{% include no_ai_notice.md %}{% endcapture %}
+                    {{ no_ai_notice_inline | markdownify | content_style }}
+                    <details
+                        id="no-ai-instructions" open
+                        onclick="noAiInstructionsOnclick()">
+                        <summary id="no-ai-instructions-prompt" style="cursor: pointer; font-weight: bold; color: #c62828; user-select: none;">
+                            V How to disable AI tools in VS Code
                         </summary>
 
-                        {% capture ai_citation_example %}{% include ai_citation_example.md %}{% endcapture %}
-                        {{ ai_citation_example | markdownify | content_style }}
+                        {% capture disable_ai_steps %}{% include disable_ai_tools_vscode.md %}{% endcapture %}
+                        {{ disable_ai_steps | markdownify | content_style }}
                     </details>
                 </div>
                 <script>
-                    var citation = document.getElementById("ai-citation");
-                    var citation_prompt = document.getElementById("ai-citation-prompt");
-                    function AI_policy_onclick(){
-                        if(citation.open){
-                            citation_prompt.innerHTML = "> examples";
-                            localStorage.setItem("ai-citation-closed", "true");
+                    var noAiInstructions = document.getElementById("no-ai-instructions");
+                    var noAiInstructionsPrompt = document.getElementById("no-ai-instructions-prompt");
+                    function noAiInstructionsOnclick(){
+                        if(noAiInstructions.open){
+                            noAiInstructionsPrompt.innerHTML = "> How to disable AI tools in VS Code";
+                            localStorage.setItem("no-ai-instructions-closed", "true");
                         }else{
-                            citation_prompt.innerHTML = "V examples";
-                            localStorage.setItem("ai-citation-closed", "false");
+                            noAiInstructionsPrompt.innerHTML = "V How to disable AI tools in VS Code";
+                            localStorage.setItem("no-ai-instructions-closed", "false");
                         }
                     }
-                    if(localStorage.getItem("ai-citation-closed") === "true"){
-                        citation.open = false;
-                        citation_prompt.innerHTML = "> examples";
+                    if(localStorage.getItem("no-ai-instructions-closed") === "true"){
+                        noAiInstructions.open = false;
+                        noAiInstructionsPrompt.innerHTML = "> How to disable AI tools in VS Code";
                     }
                 </script>
             {% endif %}
