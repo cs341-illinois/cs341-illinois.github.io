@@ -5,8 +5,8 @@ labs:
   url: lockpicking_lab
   submissions:
   - title: Lab Assignment
-    releaseDate: 2026-01-20 18:00
-    due_date: 2026-01-28 23:59
+    releaseDate: 2026-08-26 18:00
+    due_date: 2026-09-02 23:59
     graded_files:
     - submission.txt
   resources: true
