@@ -62,7 +62,6 @@ Your goal is to implement the functions
 so that a `barrier_t` using these functions is a working reusable barrier.
 <span class="spec" data-spec-id="ccbar" aria-hidden="true"></span>
 
-
 ## queue.c
 
 **NOTE: Do not use semaphores or your semamore here.**
