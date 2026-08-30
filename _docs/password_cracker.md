@@ -272,7 +272,7 @@ The functions `getSubrange()` and `setStringPosition()` are provided in `utils.h
 
 
 With all the threads working on the same task, you may want to restructure your thread synchronization a little.
-Rather than a queue, you may wish to use a barrier.
+Rather than a queue, you may wish to use a `pthread` barrier.
 
 ```
                 Startup     Task 0..............................   Task 1..............................
