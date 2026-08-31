@@ -21,6 +21,8 @@ navbar_items:
   - name: "Resources"
     link: "/resources.html"
     sublinks:
+      - name: "Peer Tutoring"
+        link: "/peer_tutoring.html"
       - name: "Coursebook"
         link: "/coursebook/index.html"
       - name: "Lecture Materials"
