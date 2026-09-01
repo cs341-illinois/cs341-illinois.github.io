@@ -19,8 +19,8 @@ labs:
   url: perilous_pointers
   submissions:
   - title: Entire Assignment
-    releaseDate: 2026-01-27 18:00
-    due_date: 2026-02-04 23:59
+    releaseDate: 2026-09-01 18:00
+    due_date: 2026-09-09 23:59
     graded_files:
     - part1-functions.c
     - part2-main.c
