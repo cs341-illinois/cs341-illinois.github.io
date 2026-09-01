@@ -26,7 +26,7 @@ labs:
     - part2-main.c
   resources: true
   worksheet: true
-  visible: false
+  visible: true
   slides: https://docs.google.com/presentation/d/1-d9tsDfKpyGEFru-kv1wx6JN86RiTiiR06DkKxoBucw/edit?usp=sharing
 - name: Utilities Unleashed
   releaseDate: Week 3
