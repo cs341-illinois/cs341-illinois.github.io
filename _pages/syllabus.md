@@ -72,7 +72,7 @@ There will be 6 CBTF Quizzes.
 
 ## Assignments
 
-There will be 14 Weekly Small Programming Assignments. These must be completed without AI. You may work with one partner
+There will be 14 Weekly Small Programming Assignments. These must be completed without AI. Our expectation is that these assignments are completed with your assigned lab partner. Every 4 weeks, you will be assigned a new lab partner; this information will be accessible through Broadway. In cases where you find that you are unable to work with your assigned lab partner, you may communicate this to the TA of your lab section to be reassigned. You may be assigned a maximum of two lab partners for a given assignment in order to accommodate sections with odd enrollment counts.
 
 There will also be 4 System Projects that extend over multiple weeks. We expect you to use agentic AI for these projects.
 
@@ -82,7 +82,7 @@ All students are bound by the University's academic integrity policy, [Article 1
 
 This course has two different rules for AI use, and which one applies depends on the assignment:
 
-* **Weekly programming assignments (no AI).** These must be your own work. Do not use AI assistants or agentic coding tools to write, complete, or debug your solution. You may work with one partner; both of you must be able to explain every line you submit.
+* **Weekly programming assignments (no AI).** These must be your own work. Do not use AI assistants or agentic coding tools to write, complete, or debug your solution. You must work with your assigned lab partner for the entirety of the assignment; both of you must be able to explain every line you submit. 
 * **System projects (with AI).** We expect you to use agentic AI on these projects. Using AI here is not a violation - it is the point of the assignment. You remain responsible for everything you submit, including code that an AI tool wrote for you.
 
 Regardless of which rule applies, do not submit work that is not yours to submit: do not copy from another student, from a previous semester's solution, or from a public repository of course solutions, and do not share or publish your own solutions where other students can find them.
@@ -108,4 +108,3 @@ Please see our important Mental Health Statement <a href="/statements#MentalHeal
 ## CS Cares Statement
 
 Please see our important CS Cares Statement <a href="/statements#CSCaresStatement">here</a>.
-
