@@ -36,7 +36,7 @@ If you happen to fork bomb your CS Cloud VM, please notify course staff in a pri
 
 ### Plan Before You Start
 
-This assignment marks the beginning of a series of projects where you will be given mostly blank files without predefined functions to fill in. Most of the remaining MPs will challenge your design skills to create interesting utilities. Therefore, it is important that you **read the entirety of the documentation (including part 2), as well as the header files** to get a clear idea on what needs to be done. A few reminders about good coding and developing practices that will really help you in the rest of the semester:
+This assignment marks the beginning of a series of projects where you will be given mostly blank files without predefined functions to fill in. Most of the remaining MPs will challenge your design skills to create interesting utilities. Therefore, it is important that you **read the entirety of the documentation, as well as the header files** to get a clear idea on what needs to be done. A few reminders about good coding and developing practices that will really help you in the rest of the semester:
 - List down the features that you need to implement, as well as the gotchas. Make a to-do list to ensure you don't miss out anything.
 - Plan out the entirety of your assignment. Create a skeleton of how your entire code will look like. This will prevent you from needing to restructure your entire code to add in a single new feature.
 - Ensure that you fully understand the system calls/library functions you're using - the parameters, the return values, the possible errors, the gotchas and notes.
@@ -71,24 +71,23 @@ Ensure that you `fflush` output file handles before forking. See [section 2.5.1 
 
 ## Overview and To-Dos
 
-The shell is responsible for providing a command line for users to execute programs or scripts. You should be very familiar with `bash` by now, which will be the basis for your own shell. This is a 2 week MP, and the features you will need to implement are as follows:
+The shell is responsible for providing a command line for users to execute programs or scripts. You should be very familiar with `bash` by now, which will be the basis for your own shell. The features you will need to implement are as follows:
 
-### Part 1
 - Starting up a shell
 - Optional arguments when launching shell
 - Interaction
 - Built-in commands
 - Foreground external commands
-- Logical operators
 - `SIGINT` handling
 - Exiting
-
-### Part 2
-Everything from part 1, and:
 - Background external commands
 - `ps`
 - Redirection commands
 - Signal commands
+
+Optional features which you do not need to implement for full points (i.e. these are not graded)
+- Logical operators
+- History
 
 ## Starting Your Shell
 
@@ -100,40 +99,6 @@ The shell should run in a loop like this executing multiple commands:
 
 The shell must support the following two optional arguments, however, *the order of the arguments does not matter, and should not affect the functionality of your shell. Your shell should be able to handle having none, one or both of these arguments*.
 
-### History (not graded)
-
-Your shell should support storing the history of commands executed across shell sessions. The command is as follows:
-
-```
-./shell -h <filename>
-```
-
-When provided `-h`, the shell should load in the history file as its history. Upon exiting, the shell should _append the commands of the current session_ into the supplied history file, even if the shell is in a different working directory than where it started. If the file does not exist, you should treat it as an empty file. The format of the history file stored should be exactly the same as a script file, where you list a series of commands to be executed. Example:
-
-`history.txt`:
-```
-cd cs341
-Hm
-```
-
-```
-./shell -h history.txt
-(pid=1234)/home/user/cs341$ echo Hey!
-Command executed by pid=1235
-Hey!
-(pid=1234)/home/user/cs341$ exit
-```
-
-Updated `history.txt`:
-```
-cd cs341
-Hm
-echo Hey!
-```
-
-Notes:
-- If the the `-h` flag is not specified, the shell _will still keep a history of commands run_, but will not read/write from/to a history file. Just think of it like private browsing mode for your terminal.
-- Every command should be stored into the history file, unless specified.
 
 ### File
 
@@ -202,10 +167,6 @@ Command executed by pid=<pid>
 This should be printed by the process that will run the command, before any of the output of the command is printed (prints to be used are in `format.h`).
 <span class="spec" data-spec-id="shellrun" aria-hidden="true"></span>
 
-### Keeping History
-
-Your shell should store the command that the user entered, so the user can repeat it later if they wish. Every command should be stored unless otherwise noted. A vector may be useful here.
-
 ### `exit`
 
 The shell will exit once it receives the `exit` command or once it receives an `EOF` **at the beginning of the line**. An `EOF` is sent by typing `Ctrl-D` from your terminal. It is also sent automatically from a script file (as used with the `-f` flag) once the end of the file is reached. This should cause your shell to exit with exit status 0.
@@ -242,7 +203,7 @@ imaginary_directory: No such file or directory
 
 There is a system call that may be helpful here.
 
-### `!history`
+### `!history` (not graded)
 
 Prints out each command in the history, in order.
 
@@ -360,6 +321,42 @@ echo hello
 Tip: It is good practice to flush the standard output stream before the fork to be able to correctly display the output. This will also prevent duplicate printing from the child process.
 
 :bangbang: Please read the disclaimer at the top of the page! We don't want to have to give any failing grades. :bangbang:
+
+
+### History (optional; not graded)
+
+Your shell should support storing the history of commands executed across shell sessions. The command is as follows:
+
+```
+./shell -h <filename>
+```
+
+When provided `-h`, the shell should load in the history file as its history. Upon exiting, the shell should _append the commands of the current session_ into the supplied history file, even if the shell is in a different working directory than where it started. If the file does not exist, you should treat it as an empty file. The format of the history file stored should be exactly the same as a script file, where you list a series of commands to be executed. Example:
+
+`history.txt`:
+```
+cd cs341
+Hm
+```
+
+```
+./shell -h history.txt
+(pid=1234)/home/user/cs341$ echo Hey!
+Command executed by pid=1235
+Hey!
+(pid=1234)/home/user/cs341$ exit
+```
+
+Updated `history.txt`:
+```
+cd cs341
+Hm
+echo Hey!
+```
+
+Notes:
+- If the the `-h` flag is not specified, the shell _will still keep a history of commands run_, but will not read/write from/to a history file. Just think of it like private browsing mode for your terminal.
+- Every command should be stored into the history file, unless specified, so the user can repeat it later if they wish. Every command should be stored unless otherwise noted. A vector may be useful here.
 
 ## Logical Operators (optional; not scored)
 
