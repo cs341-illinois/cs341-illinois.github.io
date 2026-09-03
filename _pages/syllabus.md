@@ -72,7 +72,7 @@ There will be 6 CBTF Quizzes.
 
 ## Assignments
 
-There will be 14 Weekly Small Programming Assignments. These must be completed without AI. Our expectation is that these assignments are completed with your assigned lab partner. Every 4 weeks, you will be assigned a new lab partner; this information will be accessible through Broadway. In cases where you find that you are unable to work with your assigned lab partner, you may communicate this to the TA of your lab section to be reassigned. You may be assigned a maximum of two lab partners for a given assignment in order to accommodate sections with odd enrollment counts.
+There will be 14 Weekly Small Programming Assignments. These must be completed without AI. Our expectation is that these assignments are completed with your assigned lab partner. Every 4 weeks, you will be assigned a new lab partner; this information will be accessible through Broadway. If you have repeated issues contacting your partner, collaborating on assignments with them, or other difficulties that you believe are impeding your learning, please contact the TA of your lab section as soon as possible. They will reassign you to a new group, or allow you to finish a given assignment on your own as they see fit. You may be assigned a maximum of two lab partners for a given assignment in order to accommodate sections with odd enrollment counts.
 
 There will also be 4 System Projects that extend over multiple weeks. We expect you to use agentic AI for these projects.
 
