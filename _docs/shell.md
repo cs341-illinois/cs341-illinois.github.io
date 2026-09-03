@@ -26,17 +26,27 @@ At the completion of shell there will be 30 minute in-person interview with you 
 
 # Shell skills (work in progress)
 
-| Skill | Description | Example interview demo |
-| --- | --- |
-| Process Control | Start processes, send signals | `ps` `kill` | 
-| Redirection | Redirect standard input, output, error | `./myshell < commands.txt >>output.log` |
-| grep | Use grep to match | Find examples of malloc in the source dir ? | `grep -r malloc src` |
-| git diff | Show file differences that haven't been staged | `git diff`
+| Skill | Description | Example interview responses |
+| --- | --- |  --- |
+| Processes | Start and control foreground and background processes | See below |
+| Process Control | Start processes, send signals | `ps a` `kill` `killall python` | 
+| Shell Redirection | Redirect standard input, output, error | `./myshell < commands.txt > output.log` and `>>` to append output |
+| grep | Use grep to match | I could find examples of malloc in the source dir  `grep -r malloc src` |
+| compile | Use a c compile | To compile a debug build I'd use `clang -g -o hello hello.c` |
+| git | Show file differences that haven't been staged | I'd use `git diff` and `git status` |
 
-Example advanced questions - putting it all together. "What does the following do and why? How does the following work?"
-`strace clang-18 2>&1 | grep write `
+Example advanced questions - putting it all together. "Carefully explain each part of the following"
+`strace clang-18 2>&1 | grep write`
+`echo "export secretkey=123" >> ~/.bashrc`
+`source .env`
+`kill -SIGKILL 123`
+`killall python`
 
-
+Process Control
+* How would you run a 'mywork.sh' in the background?
+* How can I pause my program and then open it in the debugger?
+* In the shell, what's the purpose of "&" "fg" and "bg"?
+* What's the purpose of sighup; How can I run my program even after I log out?
 
 
 ## Grading and Submission
