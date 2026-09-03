@@ -20,6 +20,10 @@ See [Part 2](shell_part2.md) and [Part 3](shell_part3.md).
 
 Some people only know how to click on buttons, use GUIs, and Web Apps. As a computer scientist you know time is precious and you have much more power at your fingertips. There is a third way; you can use a shell like a musical instrument. And quickly too. Which is a good thing; you overslept, lost your keys, and now it's up to you to fix-all-the-things and save the world.
 
+## Part 1 Objective / Deliverable / Checkpoint
+
+Todo. (Create and upload videos on https://mediaspace.illinois.edu/. Create shareable links and add to repo)
+
 ## Important Things to Note
 
 At the completion of shell there will be 30 minute in-person interview with you and your partner by course staff. Part of the interview will the 'shell debrief' where you can be asked to demonstrate your knowledge about using using and creating shells. This first part is about using the shell and common shell commands.
