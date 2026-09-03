@@ -28,7 +28,7 @@ Todo. (Create and upload videos on https://mediaspace.illinois.edu/. Create shar
 
 At the completion of shell there will be 30 minute in-person interview with you and your partner by course staff. Part of the interview will the 'shell debrief' where you can be asked to demonstrate your knowledge about using using and creating shells. This first part is about using the shell and common shell commands.
 
-# Shell skills (work in progress)
+# Shell skills (work in progress - LA working on this)
 
 | Skill | Description | Example interview responses |
 | --- | --- |  --- |
@@ -39,20 +39,24 @@ At the completion of shell there will be 30 minute in-person interview with you 
 | compile | Use a c compile | To compile a debug build I'd use `clang -g -o hello hello.c` |
 | git | Show file differences that haven't been staged | I'd use `git diff` and `git status` |
 
-Example advanced questions - putting it all together. "Carefully explain each part of the following"
+## Example advanced questions - putting it all together. "Carefully explain each part of the following"
 `strace clang-18 2>&1 | grep write`
 `echo "export secretkey=123" >> ~/.bashrc`
 `source .env`
 `kill -SIGKILL 123`
 `killall python`
 
-Process Control
+# Process Control more questions
 * How would you run a 'mywork.sh' in the background?
 * How can I pause my program and then open it in the debugger?
 * In the shell, what's the purpose of "&" "fg" and "bg"?
 * What's the purpose of sighup; How can I run my program even after I log out?
 
-
 ## Grading and Submission
+* We prefer you create one video per question but it is okay to record multiple answers per video
+
+? Record zoom call!
+? Record screencast on mediaspace.illinois.edu (with audio and your faces).
+In the project repo create file 'part1-videos-links.txt' ; you will add links to your recorded mediaspace responses. *Ensure you create a shareable link for each video and paste that!*
 
 More details will be posted here.
