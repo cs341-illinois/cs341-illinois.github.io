@@ -1,7 +1,8 @@
 ---
 layout: doc
-title: "Shell"
+title: "Shell (part 2 of 3)"
 learning_objectives:
+  - Using a shell
   - Learning How a Shell Works
   - Fork, Exec, Wait
   - Signals
@@ -15,7 +16,7 @@ wikibook:
 
 ## Backstory
 
-Well, we'll keep it short – you got fired from Macrohard. Your boss brought you in for a code review and was more than disappointed. Apparently, they wanted a C++ style vector: we didn't get the memo. Now, you've decided to work for *insert hot tech company here*, and you got the job! However, there's a catch - all newhires in *insert hot tech company here* apparently have to go through a newcomers test if they want to keep their jobs. The task? Write a shell. So, you're going to drop a :fire: :fire: shell that is so fancy that your boss will not just keep you in the company, they'll immediately give you a pay raise as well.
+Well, we'll keep it short – You applied to work at *insert hot tech company*, and you got the entry job! However, due to some questionable hires in the past there's a catch - all newhires, especially ones from*your home town* apparently have to go through a newcomers test to see which team they will join. The task? Write a shell. So, you're going to drop a :fire: :fire: shell that is so much better than one created by *previous hire from your home town*.
 
 The basic function of a shell is to accept commands as inputs and execute the corresponding programs in response. You will be provided the `vector`, `sstring` and `format.h` libraries for your use. Hopefully, this will make things right and you can secure your foothold at *insert hot tech company here*. Feel free to refer to the Unix shell as a rough reference.
 
@@ -47,6 +48,10 @@ This assignment marks the beginning of a series of projects where you will be gi
 ### Do Not Use `system`
 
 Since a learning objective of this assignment is to use the fork-exec-wait pattern, if you use `system`, you will automatically fail this MP.
+
+### Flush all the C File Handles before forking!
+
+Use `fflush` on *all* your input streams and on *all* of your output streams before forking. Hint: read the man pages; Why is `fflush(NULL)` insufficient? If you really want to know the full details and why this is required by the POSIX spec then carefully read https://pubs.opengroup.org/onlinepubs/9699919799/functions/V2_chap02.html#tag_15_05_01 and https://stackoverflow.com/questions/50110992/why-does-forking-my-process-cause-the-file-to-be-read-infinitely
 
 ### Input Formatting
 
@@ -95,7 +100,7 @@ The shell should run in a loop like this executing multiple commands:
 
 The shell must support the following two optional arguments, however, *the order of the arguments does not matter, and should not affect the functionality of your shell. Your shell should be able to handle having none, one or both of these arguments*.
 
-### History
+### History (not graded)
 
 Your shell should support storing the history of commands executed across shell sessions. The command is as follows:
 
@@ -356,9 +361,9 @@ Tip: It is good practice to flush the standard output stream before the fork to 
 
 :bangbang: Please read the disclaimer at the top of the page! We don't want to have to give any failing grades. :bangbang:
 
-## Logical Operators
+## Logical Operators (optional; not scored)
 
-Like `bash`, your shell should support `&&`, `||`, and `;` in between two commands. This will require only a minimal amount of string parsing that you have to do yourself.
+Like `bash`, your shell should support (but for course grading purposes does not have to) `&&`, `||`, and `;` in between two commands. This will require only a minimal amount of string parsing that you have to do yourself.
 
 **Important**: each input can have at most *one* of `&&`, `||`, or `;`. You do *not* have to support chaining (e.g. `x && y || z; w`).
 
@@ -592,7 +597,7 @@ Command executed by pid=3772
  1  3 17
 ```
 
-Hint: `dup` will be useful for all the redirection commands
+Hint: `dup` or `dup2` will be useful for all the redirection commands
 
 ## Signal Commands
 
@@ -645,5 +650,5 @@ In case you are still confused about what exactly to store in history, here are 
 
 ## Grading
 
-Note that Week 1 and Week 2 count as one week of MP grades respectively. See the overview for a list of features required for each week.
+More details will be posted here.
 
