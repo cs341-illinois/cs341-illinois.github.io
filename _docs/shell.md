@@ -53,6 +53,8 @@ At the completion of shell there will be 30 minute in-person interview with you 
 * What's the purpose of sighup; How can I run my program even after I log out?
 
 ## Grading and Submission
+For part 1 grading record your zoom call with your study partner. ❗ Login into [illinois.zoom.us](https://illinois.zoom.us) so that it will record to the cloud. Then your videos should show up automatically under [My Media](https://mediaspace.illinois.edu/my-media) in MediaSpace. Select the video then click "ACTIONS" and Publish" then uyo can select "unlisted"
+
 * We prefer you create one video per question but it is okay to record multiple answers per video
 
 ? Record zoom call!
