@@ -11,7 +11,7 @@
   roles: "Admin assistance for exceptional items that cannot be handled by your section TA (e.g. exam sickness, DRES)"
   specialty: Exceptional Issues
   semesters: ever
-- 
+-
   name: Christina Youn
   netid: youn13
   roles: Teaching Assistant
@@ -54,7 +54,7 @@
   speciality: ""
   semesters: Spring 2026 - Fall 2026
 -
-  name: Nikhil Date 
+  name: Nikhil Date
   netid: ndate2
   roles: Lab / Office Hours
   speciality: ""
@@ -62,6 +62,12 @@
 -
   name: Adhi Thirumala
   netid: adhit2
+  roles: Lab / Office Hours
+  specialty: ""
+  semesters: Fall 2026
+-
+  name: Advayth Pashupati
+  netid: advayth2
   roles: Lab / Office Hours
   specialty: ""
   semesters: Fall 2026
