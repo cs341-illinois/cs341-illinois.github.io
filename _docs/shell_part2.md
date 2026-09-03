@@ -318,12 +318,14 @@ Some external commands you may test to see whether your shell works are:
 echo hello
 ```
 
-Tip: It is good practice to flush the standard output stream before the fork to be able to correctly display the output. This will also prevent duplicate printing from the child process.
+Tip: It is good practice to flush all input and all outputs stream before the fork to be able to correctly display the output. This will also prevent duplicate printing from the child process.
 
 :bangbang: Please read the disclaimer at the top of the page! We don't want to have to give any failing grades. :bangbang:
 
 
-### History (optional; not graded)
+## Optional Shell Features (not graded)
+
+### History
 
 Your shell should support storing the history of commands executed across shell sessions. The command is as follows:
 
