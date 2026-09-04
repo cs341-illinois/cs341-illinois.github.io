@@ -76,6 +76,11 @@ There will be 14 Weekly Small Programming Assignments. These must be completed w
 
 There will also be 4 System Projects that extend over multiple weeks. We expect you to use agentic AI for these projects.
 
+## Extenuating Circumstances
+
+If you have an extenuating circumstance that you believe is not covered by the accomodations presently in the syllabus,
+please contact the admin email (cs341admin@illinois.edu) immediately. 
+
 ## Academic Integrity
 
 All students are bound by the University's academic integrity policy, [Article 1, Part 4 of the Student Code](https://studentcode.illinois.edu/article1/part4/1-401/). Suspected violations will be reported.
