@@ -22,6 +22,12 @@ The basic function of a shell is to accept commands as inputs and execute the co
 
 ## Important Things to Note
 
+## AI Policy and What You're Responsible For
+
+This semester, you will be allowed to use AI on the autograded coding portion of the projects. That being said, you are NOT allowed to copy any text verbatim from the assignment page. This will be enforced strictly, encouraging you to frame the problem statement(s) in your own words in order to build an application.
+
+In addition, while you aren't 'responsible' for knwoing your code line-by-line if you do choose to complete this assignment with AI-assistance, you ARE responsible for the general design decisions and structure of your code, which can be assessed in interview clinic or quiz settings. 
+
 ### Fork Bombs
 
 :fork_and_knife: :bomb: :bangbang:
@@ -327,7 +333,7 @@ Tip: It is good practice to flush all input and all outputs stream before the fo
 
 ### History
 
-Your shell should support storing the history of commands executed across shell sessions. The command is as follows:
+Your shell should support storing the history of commands executed across shell sessions (but for course grading purposes does not have to). The command is as follows:
 
 ```
 ./shell -h <filename>
