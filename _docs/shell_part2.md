@@ -22,11 +22,11 @@ The basic function of a shell is to accept commands as inputs and execute the co
 
 ## Important Things to Note
 
-## AI Policy and What You're Responsible For
+### AI Policy and What You're Responsible For
 
 This semester, you will be allowed to use AI on the autograded coding portion of the projects. That being said, you are NOT allowed to copy any text verbatim from the assignment page. This will be enforced strictly, encouraging you to frame the problem statement(s) in your own words in order to build an application.
 
-In addition, while you aren't 'responsible' for knwoing your code line-by-line if you do choose to complete this assignment with AI-assistance, you ARE responsible for the general design decisions and structure of your code, which can be assessed in interview clinic or quiz settings. 
+In addition, while you aren't 'responsible' for knowing your code line-by-line if you do choose to complete this assignment with AI-assistance, you ARE responsible for the general design decisions and structure of your code, which can be assessed in interview clinic or quiz settings. 
 
 ### Fork Bombs
 
@@ -136,6 +136,8 @@ If the user supplies an incorrect number of arguments, or the script file cannot
 
 Tip: The `getopt` function may come in handy. :smile:
 
+(Note: history files are only produced if you implement the optional -h feature. See the Optional Shell Features section.)
+
 ## Interaction Within Your Shell
 
 ### Prompting
@@ -181,7 +183,7 @@ If there are currently stopped or running background processes when your shell r
 
 :warning: If you don't handle `EOF` or `exit` to exit, you will fail many of our test cases!
 
-:warning: Do **not** store `exit` in history!
+:warning: Do **not** store `exit` in history! (This only applies if you've implemented history. Optional, see "Optional Shell Features" section below.)
 <span class="spec" data-spec-id="shellappend" aria-hidden="true"></span>
 
 ### Catching Ctrl+C
@@ -209,7 +211,7 @@ imaginary_directory: No such file or directory
 
 There is a system call that may be helpful here.
 
-### `!history` (not graded)
+### `!history` (optional - not graded)
 
 Prints out each command in the history, in order.
 
@@ -223,7 +225,7 @@ Prints out each command in the history, in order.
 
 :warning: This command is not stored in history.
 
-### `#<n>`
+### `#<n>`  (optional - not graded, relies on history being implemented)
 
 Prints and executes the $$n$$-th command in history (in chronological order, from earliest to most recent), where $$n$$ is a non-negative integer. Other values of $$n$$ will not be tested. The command executed should be stored in the history. If $$n$$ is not a valid index, then print the appropriate error and do not store anything in the history.
 
@@ -257,7 +259,7 @@ Invalid Index
 :warning: The `#<n>` command itself is __not__ stored in history, but the command being executed (if any) __is__.
 <span class="spec" data-spec-id="shelln" aria-hidden="true"></span>
 
-### `!<prefix>`
+### `!<prefix>`  (optional - not graded, relies on history being implemented)
 
 Prints and executes the last command that has the specified prefix. If no match is found, print the appropriate error and do not store anything in the history. The prefix may be empty. The following example assumes a fresh history:
 
@@ -330,8 +332,8 @@ Tip: It is good practice to flush all input and all outputs stream before the fo
 
 
 ## Optional Shell Features (not graded)
-
-### History
+ 
+### History (optional; not scored)
 
 Your shell should support storing the history of commands executed across shell sessions (but for course grading purposes does not have to). The command is as follows:
 
@@ -386,7 +388,7 @@ bar
 0       echo foo && echo bar
 ```
 
-### AND
+### AND (optional; not scored)
 
 `&&` is the AND operator. Usage:
  ```
@@ -417,7 +419,7 @@ Tip: You may want to look into the provided macros to read the status of an exit
 <span class="spec" data-spec-id="shelland" aria-hidden="true"></span>
 
 
-### OR
+### OR (optional; not scored)
 
 `||` is the OR operator. Usage:
 ```
@@ -446,7 +448,7 @@ Boolean algebra: if `x` is true, we can return true right away *without* having 
 <span class="spec" data-spec-id="shellor" aria-hidden="true"></span>
 
 
-### Separator
+### Separator (optional; not scored)
 
 `;` is the command separator. Usage:
 ```
@@ -496,7 +498,7 @@ Note this is not the only way your shell may misalign.
 
 While the shell should be usable after calling the command, after the process finishes, the parent is still responsible for waiting on the child. Avoid creating zombies! Do not catch `SIGCHLD`, as catching `SIGCHLD` comes with all sorts of caveats and subtleties that are hard to work around. Instead regularly check to see if your children need reaping (think about placement of this piece of code: where should you put this, and why). Think about what happens when multiple children finish around the same time, and what happens if a foreground/background process finish around the same time.  
 
-Backgrounding will **not** be chained with the logical operators nor with redirection operators.
+Backgrounding will **not** be chained with redirection operators (nor logical operators, if you choose to implement that optional feature).
 
 ## `ps`
 
@@ -539,6 +541,8 @@ Your boss wants some way for your shell commands to be able to link together. Yo
 **Important**: each input can have at most *one* of `>>`, `>` or `<`. You do *not* have to support chaining (e.g. `x >> y < z > w`).
 
 **Important**: you should *not* try to handle the combination of the `cd`, `!history`, `#<n>`, `!<prefix>`, `ps`, or `exit` commands with any redirection operators. Rather, you can assume these commands will always be run on a line by themselves.
+
+(note: !history, #<n>, and !<prefix> are only relevant if you've implemented the optional history feature)
 
 **Note**: Assume that the redirection operator commands will be formatted correctly. Any incorrectly formatted redirection commands is considered undefined behavior.
 
@@ -637,8 +641,10 @@ Use the appropriate prints from `format.h` for:
 
 Note: Any `<pid>` used in `kill`, `stop`, or, `cont` will either be a process that is a direct child of your shell or a non-existent process. You do not have to worry about killing other processes.
 
-## Summary of History Storing
+## Summary of History Storing (optional, only applies if you implement the optional History feature)
 In case you are still confused about what exactly to store in history, here are relevant examples. The last row corresponds to an "invalid command", a histori-cally troublesome case.
+
+
 
 | **Examples:**| **What should I store?**|
 |----------------|----------------|
@@ -655,5 +661,5 @@ In case you are still confused about what exactly to store in history, here are 
 
 ## Grading
 
-More details will be posted here.
+Your grade on this part of the Shell assignment is fully comprised of your output score on the Broadway On-Demand autograder. This part of the project will comprise of 20% of the full Shell project grade.
 
