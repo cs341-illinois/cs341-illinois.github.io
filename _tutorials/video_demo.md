@@ -22,6 +22,7 @@ title: Video Demos
 
 ## Expectations
 * Words you speak **must be your own words**; In the rare case that you are quoting a source (which we don't normally expect you to do) such as a textbook, search result, website, AI result etc then you need to clearly cite that so that it is clear it is not your own words. For example, you might cite the material, "The course textbook says _technical-stuff_. To me this means _your own explanation using your words_". You will not be graded on your ability to cite sources but rather how you reason about the concept, etc. yourself, so if the "your own explanation" part is not included or is just a reiteration of something you quoted this will reflect badly on your grade.
+* Whatever the corresponding assignment prompt to the videos are, make sure to clearly state and show the deliverable for that throughout the duration of your demo as that is also a key piece of demonstrating you are actually doing the work outside of just your explanation. For example, showing all relevant terminal inputs, code blocks being analyzed/talked about, etc. throughout the whole process. 
 
 ## Tips
 * There are several steps and technology components that need to work; create practice test record to confirm audio, camera, screensharing and publishing work as expected before committing to a full question recording.
