@@ -14,7 +14,7 @@ wikibook:
   - "Forking, Part 2: Fork, Exec, Wait"
   - "Process Control, Part 1: Wait macros, using signals"
 ---
-See [Part1] (shell_part1.md), [Part 2](shell_part2.md) and [Part 3](shell_part3.md).
+See [Part1](shell_part1.md), [Part 2](shell_part2.md) and [Part 3](shell_part3.md).
 
 ## Backstory
 
@@ -33,11 +33,12 @@ In part 3, you'll dig into some common ways shells can have errors by creating y
 ## Deliverable Submission
 
 The 'home base' for this project will be you and your partners corresponding Github Repo. 
-***Insert instructions on how to make their github repo***
 
-Check out video how to + expectations here -- link to video_demo.md page of website 
+*** UDAY :Insert instructions on how to make and use the partner github repo***
 
-Check out the autograder here -- link to broadway autograder
+See the video demo - [how to record, publish, and expectations]({% link _tutorials/video_demo.md %}) 
+
+The CS341 autograder is [Broadway]({{ site.data.constants.broadway_on_demand_link }}). Broadway will also tell you who your partner is.
 
 ## Important Things to Note - Interview Clinic / Knowledge Assessment
 
@@ -48,8 +49,8 @@ At the completion of the shell project there will be a 30 minute in-person inter
 Each portion of this project will comprise of the following percentage of the project 1 grade:
 
 Part 1 Videos + Part 2 Videos - 25%
-Part 2 Autograder score - 20%
+Part 2 Autograder score - 25%
 'Shell' Debrief Portion of Interview Clinic - 50%
 
-Project 1 itself will comprise X percentage of your total project grade/total grade in course. 
+Projects are worth 18% of the course total and all projects will be equally weighted. We expect to release 4 (maybe 3) projects. Thus this project is worth approximately 5% of your total grade in this course. 
 
