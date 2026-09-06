@@ -14,7 +14,7 @@ wikibook:
   - "Forking, Part 2: Fork, Exec, Wait"
   - "Process Control, Part 1: Wait macros, using signals"
 ---
-See [Part1](shell_part1.md), [Part 2](shell_part2.md) and [Part 3](shell_part3.md).
+See [Part1](shell_part1.html), [Part 2](shell_part2.html) and [Part 3](shell_part3.html).
 
 ## Backstory
 
