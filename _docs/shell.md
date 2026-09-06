@@ -35,10 +35,11 @@ In part 3, you'll dig into some common ways shells can have errors by creating y
 The 'home base' for this project will be you and your partners corresponding Github Repo. 
 
 *** UDAY :Insert instructions on how to make and use the partner github repo***
+NOTE: if you haven't created your own individual repo for the course yet, the shared process will not work. Make sure to do this before these next steps. 
 
 See the video demo - [how to record, publish, and expectations]({% link _tutorials/video_demo.md %}) 
 
-The CS341 autograder is [Broadway]({{ site.data.constants.broadway_on_demand_link }}). Broadway will also tell you who your partner is.
+The CS341 autograder is [Broadway]({{ site.data.constants.broadway_on_demand_link }}). The specific assignment page on Broadway will also tell you who your partner is and provide a link to your shared Github repo.
 
 ## Important Things to Note - Interview Clinic / Knowledge Assessment
 
