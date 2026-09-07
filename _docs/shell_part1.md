@@ -30,7 +30,7 @@ We suggest you record one video for each section (i.e. 3 videos in total). For y
 5.  How do you use `man`, `which`, `env`, and `echo $HOME`?
 6.  Why are `CTRL-A` `CTRL-E` `CTRL-U` and `CTRL-R` useful terminal shortcuts? 
 7.  What do `!`, `!cl`, and `history` do?
-8.  What do `head -5` `tail -f` `less` `wc -l` do and why might you use them?
+8.  What do `head -5` , `tail -f` , `less` ,and `wc -l` do and why might you use them?
 
 # Process Control (Pick 2 each)
 As a computer scientist who understands POSIX you are proficient and can use, explain, and demonstrate the following in an interview. Tip: You may need to create a simple shell program (e.g., mywork.sh) or example .c program (e.g., dotwriter.c) to create an effective demo.
