@@ -36,12 +36,17 @@ In part 3, you'll dig into some common ways shells can have errors by creating y
 
 The 'home base' for this project will be you and your partners corresponding Github Repo. 
 
-*** UDAY :Insert instructions on how to make and use the partner github repo***
-NOTE: if you haven't created your own individual repo for the course yet, the shared process will not work. Make sure to do this before these next steps. 
-
 See the video demo - [how to record, publish, and expectations]({% link _tutorials/video_demo.md %}) 
 
 The CS341 autograder is [Broadway]({{ site.data.constants.broadway_on_demand_link }}). The specific assignment page on Broadway will also tell you who your partner is and provide a link to your shared Github repo.
+
+To access your Github repo for the project:
+1. Go to the Shell project on Broadway 
+2. Check "Project Repo" section for the link, you should already be assigned and have access rights with your partner to the repo linked here.
+3. If not added to the repo or can't access it, talk to a discussion TA. 
+
+**Note**: If you aren't able to access your Github repo, make sure you've made your own illinois-cs-coursework repo for the course as a first line of defense.
+**Note**: If you need to in the future make changes to your partner project repo configuration for any reason (i.e. rearranged or absent partner), speak to a discussion TA.
 
 ### What should be in my Github Repo?
 Each assignment page will go more in depth on the specific file namings or folders you'll need to submit, but here is an overall checklist for you:

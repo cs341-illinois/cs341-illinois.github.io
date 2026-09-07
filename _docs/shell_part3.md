@@ -8,6 +8,7 @@ wikibook:
   - "Forking, Part 2: Fork, Exec, Wait"
   - "Process Control, Part 1: Wait macros, using signals"
 ---
+See [Shell Home](shell.html).
 
 ## Backstory
 
