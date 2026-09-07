@@ -58,7 +58,7 @@ To access your Github repo for the project:
    ```
 3. Add the base course repository as a remote named `upstream`:
   ```bash
-  git remote add upstream git@github.com:illinois-cs-coursework/fa26_cs341_shell.release.git
+  git remote add upstream git@github.com:illinois-cs-coursework/fa26_cs341_.release.git
   
   ```
 
