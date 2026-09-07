@@ -8,7 +8,6 @@ learning_objectives:
   - Fork, Exec, Wait
   - Signals
   - Processes
-  - Zombie Processes
 wikibook:
   - "Forking, Part 1: Introduction"
   - "Forking, Part 2: Fork, Exec, Wait"
@@ -18,7 +17,7 @@ See [Part 2](shell_part2.md) and [Part 3](shell_part3.md).
 
 ## Part 1 Objective / Deliverable / Checkpoint
 
-The purpose of this assignment is not to give you course points (like <tt>++</tt> or <tt>fork(2)</tt> that's a side effect!) but to encourage you to become competent in using a terminal shell to accomplish things
+The purpose of this assignment is not to give you course points (like <tt>++</tt> or <tt>fork(2)</tt> - that's a side effect!) but to encourage you to become competent in using a terminal shell and shell commands.
 
 By the end of the week you should have explored how to use a shell to accomplish different tasks and then recorded your videos. 
 
@@ -48,13 +47,14 @@ As a computer scientist who understands POSIX you are proficient and can use, ex
 5. Use `time` and `sleep`
 6. Use `ulimit` to prevent a forkbomb from making a Linux system unusable.
 
-# Finding, Grepping, git amend, and others  (Pick 2 each)
+# Finding, Grepping, git amend, and others (Pick 2 each)
 1. Use `find` (give two different uses)?
 2. Use `grep` recursively search multiple files that match your search pattern and show 1 line before and 2 lines after each match.
 3. Use `git` to _add_ and _commit_ from the shell
 4. Use `git` in the shell to fix the last local commit to include an extra file changes you'd forgotten
 5. What do `lscpu`, `df -h /`, `free -h` and `htop` tell me about my system?
 6. Explain each part of the shell line `strace -T bash -c 'echo hello>>log.txt'` (e.g. "what does the "-T" mean?)
+7. Demonstrate if one wanted to just run commands in the current directory (e.g. "a.out" instead of "./a.out") how would you change `$PATH` ?
 
 ## Grading and Submission
 
