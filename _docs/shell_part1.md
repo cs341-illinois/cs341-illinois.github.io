@@ -20,7 +20,7 @@ By the end of the week you should have explored how to use a shell to accomplish
 This first part is about _using_ the shell, and interacting with processs, signals.
 In preparation for your course staff interview, each student in the study group should be sufficiently prepared to answer _any_ of the questions from any section below i.e. Course staff will ask each of you directly in turn, a question chosen at random. They may deliberately choose items that you didn't present in your zoom recording. (i.e. our intent is that everyone is encouraged to learns-all-the-things!)
 
-For your recorded Zoom video(s), each student will present on *two items from each section*. Each student must present different items (so as a group decide in advance who presents what). We suggest you record one video for each section (i.e. 3 videos in total).
+We suggest you record one video for each section (i.e. 3 videos in total). For your recorded Zoom video(s), each student will present on *two items from each section*. Each student must present different items (so as a group decide in advance who presents what!). No need to stop the video to change who presents; you can huddle around one laptop, or be in a real Zoom call - either works. 
 
 # Shell and Terminal Basics (Pick 2 each)
 1.  What does `echo export KEY=123 >> .bashrc` do and how does it work ?
@@ -29,7 +29,7 @@ For your recorded Zoom video(s), each student will present on *two items from ea
 4.  What does `source ~/.bashrc` (equivalently, `. ~/.bashrc`) do and why might you use it?
 5.  How do you use `man`, `which`, `env`, and `echo $HOME`?
 6.  Why are `CTRL-A` `CTRL-E` `CTRL-U` and `CTRL-R` useful terminal shortcuts? 
-7.  What does `!` `!cl` and `history` do?
+7.  What do `!`, `!cl`, and `history` do?
 8.  What do `head -5` `tail -f` `less` `wc -l` do and why might you use them?
 
 # Process Control (Pick 2 each)
