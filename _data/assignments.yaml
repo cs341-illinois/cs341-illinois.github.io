@@ -239,6 +239,8 @@ mps:
   - title: Entire Assignment
     due_date: 2026-09-21 23:59
     releaseDate: 2026-09-07 18:00
+    graded_files:
+    - shell.c
   resources: true
   worksheet: false
   visible: false
