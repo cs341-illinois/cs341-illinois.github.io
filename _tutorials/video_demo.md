@@ -11,9 +11,9 @@ title: Video Demos
 * You will need to share your screen, so that viewers can see your demo.
 * You will need to enable camera and microphone recording. Choose a professional location as if this is an interview for an internship. We ask that you enable your camera so your TA can confirm you made the video. Zoom can hide the camera background.
 
-* ❗ To record to the cloud first login into [illinois.zoom.us](https://illinois.zoom.us).
-* ❗ Don't forget to start recording before you start your presentation
-* After the recording has finished be patient; your video will eventually (typically 20-30 minutes) appear under [My Media](https://mediaspace.illinois.edu/my-media) in MediaSpace. The "My Media" link is found by clicking on your login name.
+* ❗ To record to the cloud first login into [illinois.zoom.us](https://illinois.zoom.us). Make sure you login to Zoom with illinois SSO for this to work. 
+* ❗ Don't forget to start recording before you start your presentation. Start recording, and choose 'record to the cloud' rather than your local computer. Otherwise this will not work. 
+* After the recording has finished be patient; your video will eventually (typically 20-30 minutes) appear under [My Media](https://mediaspace.illinois.edu/my-media) in MediaSpace. The "My Media" link is found by clicking on your login name. You should also receive an email when the recording is finished, but to check it out, go to your mediaspace directly. 
 * ❗ Confirm (by playing a portion) that you have selected the correct video.
 * ❗ Select the video then click "ACTIONS" and "Publish" then select "unlisted" and click SAVE.
 * Use the "Share" tab to copy the URL. It will be similar to <tt>https://mediaspace.illinois.edu/media/t/1_abcdefg</tt> .Paste the link into the required text file of your project (and don't forget to add, commit and push).
