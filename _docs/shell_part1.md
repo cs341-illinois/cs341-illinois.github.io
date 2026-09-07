@@ -50,7 +50,7 @@ As a computer scientist who understands POSIX you are proficient and can use, ex
 4. Use `git` in the shell to fix the last local commit to include an extra file changes you'd forgotten
 5. What do `lscpu`, `df -h /`, `free -h` and `htop` tell me about my system?
 6. Explain each part of the shell line `strace -T bash -c 'echo hello>>log.txt'` (e.g. "what does the "-T" mean?)
-7. Demonstrate if one wanted to just run commands in the current directory (e.g. "a.out" instead of "./a.out") how would you change `$PATH` ?
+7. Demonstrate if one wanted to just run commands in the current directory (e.g. "a.out" instead of "./a.out") how would you change `$PATH` ? Explain why adding the current directory to path is actually a bad idea.
 
 ## Grading and Submission
 
