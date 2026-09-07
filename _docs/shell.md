@@ -48,7 +48,7 @@ Each assignment page will go more in depth on the specific file namings or folde
 - A text file titled "shell_part1.txt" where you'll link all part 1 videos + any other relevant info
 - Source files for part2 (your shell)
 - A text file titled "shell_part3.txt" where you'll link all part 2 videos + any other relevant info
-- A folder containing your "bad shells"
+- A folder containing your "bad_shells"
 
 ## Important Things to Note - Interview Clinic / Knowledge Assessment
 
