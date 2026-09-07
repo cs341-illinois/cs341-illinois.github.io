@@ -12,7 +12,7 @@ wikibook:
   - "Forking, Part 2: Fork, Exec, Wait"
   - "Process Control, Part 1: Wait macros, using signals"
 ---
-See [Part 3](shell_part3.html).
+See [Shell Home](shell.html), [Part 1](shell_part1.html) and [Part 3](shell_part3.html).
 
 ## Backstory
 
@@ -57,7 +57,7 @@ Since a learning objective of this assignment is to use the fork-exec-wait patte
 
 ### Flush all the C File Handles before forking!
 
-Use `fflush` on *all* your input streams and on *all* of your output streams before forking. Hint: read the man pages; Why is `fflush(NULL)` insufficient? If you really want to know the full details and why this is required by the POSIX spec then carefully read https://pubs.opengroup.org/onlinepubs/9699919799/functions/V2_chap02.html#tag_15_05_01 and https://stackoverflow.com/questions/50110992/why-does-forking-my-process-cause-the-file-to-be-read-infinitely
+Use `fflush` on *all* of your output streams **and** on *all* of your input streams before forking. Hint: read the man pages, and note that `fflush(NULL)` only covers the output streams - so what happens to data that has already been buffered from an input stream? See [section 2.5.1 of the Open Group Base Specifications](https://pubs.opengroup.org/onlinepubs/9699919799/functions/V2_chap02.html#tag_15_05_01) for why the POSIX spec requires this, and [this Stack Overflow answer](https://stackoverflow.com/questions/50110992/why-does-forking-my-process-cause-the-file-to-be-read-infinitely) for a concrete example of what goes wrong. (Yes, we agree that section 2.5.1 is challenging to interpret; a full understanding of that part of the POSIX specification is outside the scope of this assignment.)
 
 ### Input Formatting
 
@@ -70,10 +70,6 @@ Since this MP **requires** your shell and the programs you launch to print a var
 If you place print statements in your debugging code, please remember to remove them before autograding, or use the `#define DEBUG` block to place your print statements.
 
 **Note**: don't worry if you don't use all of the functions in `format.h`, but you should use them whenever their documented purpose matches the situation.
-
-### Flush Before Forking
-
-Ensure that you `fflush` all output and all input file handles before forking. See [section 2.5.1 of the Open Group Base Specifications](https://pubs.opengroup.org/onlinepubs/9699919799/functions/V2_chap02.html#tag_15_05) for more information on why this is necessary.  (Yes, we agree that section 2.5.1 is challenging to interpret; a good understanding of this section of the POSIX specification is outside of the scope of this assignment)
 
 ## Overview and To-Dos
 
@@ -103,7 +99,7 @@ The shell should run in a loop like this executing multiple commands:
 * Read the command from standard input
 * Print the PID of the process executing the command (with the exception of built-in commands), and run the command
 
-The shell must support the following two optional arguments, however, *the order of the arguments does not matter, and should not affect the functionality of your shell. Your shell should be able to handle having none, one or both of these arguments*.
+The shell must support the optional `-f` argument described below. *Your shell should work whether or not this argument is supplied, and the position of the argument on the command line should not affect the functionality of your shell.* (If you also implement the optional `-h` argument described later, the order of the two arguments should not matter either.)
 
 
 ### File
@@ -184,7 +180,7 @@ If there are currently stopped or running background processes when your shell r
 :warning: If you don't handle `EOF` or `exit` to exit, you will fail many of our test cases!
 
 :warning: Do **not** store `exit` in history! (This only applies if you've implemented history. Optional, see "Optional Shell Features" section below.)
-<span class="spec" data-spec-id="shellappend" aria-hidden="true"></span>
+<span class="spec" data-spec-id="shellexit" aria-hidden="true"></span>
 
 ### Catching Ctrl+C
 
@@ -328,7 +324,7 @@ echo hello
 
 Tip: It is good practice to flush all input and all outputs stream before the fork to be able to correctly display the output. This will also prevent duplicate printing from the child process.
 
-:bangbang: Please read the disclaimer at the top of the page! We don't want to have to give any failing grades. :bangbang:
+:bangbang: Please re-read the "AI Policy and What You're Responsible For" and "Do Not Use `system`" sections at the top of this page! We don't want to have to give any failing grades. :bangbang:
 
 
 ## Optional Shell Features (not graded)
@@ -351,10 +347,10 @@ Hm
 
 ```
 ./shell -h history.txt
-(pid=1234)/home/user/cs341$ echo Hey!
+(pid=1234)/home/user$ echo Hey!
 Command executed by pid=1235
 Hey!
-(pid=1234)/home/user/cs341$ exit
+(pid=1234)/home/user$ exit
 ```
 
 Updated `history.txt`:
@@ -368,7 +364,7 @@ Notes:
 - If the the `-h` flag is not specified, the shell _will still keep a history of commands run_, but will not read/write from/to a history file. Just think of it like private browsing mode for your terminal.
 - Every command should be stored into the history file, unless specified, so the user can repeat it later if they wish. Every command should be stored unless otherwise noted. A vector may be useful here.
 
-## Logical Operators (optional; not scored)
+### Logical Operators (optional; not scored)
 
 Like `bash`, your shell should support (but for course grading purposes does not have to) `&&`, `||`, and `;` in between two commands. This will require only a minimal amount of string parsing that you have to do yourself.
 
@@ -388,7 +384,7 @@ bar
 0       echo foo && echo bar
 ```
 
-### AND (optional; not scored)
+#### AND (optional; not scored)
 
 `&&` is the AND operator. Usage:
  ```
@@ -407,8 +403,8 @@ bye
 ```
 
 ```
-(pid=27879)/home/mkrzys2/fa19/shell$ cd /asdf && echo short-circuit
-/asdf: No such file or directory!
+(pid=27879)/home/user/semester/shell$ cd /asdf && echo short-circuit
+/asdf: No such file or directory
 ```
 
 This mimics short-circuiting AND in boolean algebra: if `x` is false, we know the result will be false *without* having to run `y`.
@@ -419,7 +415,7 @@ Tip: You may want to look into the provided macros to read the status of an exit
 <span class="spec" data-spec-id="shelland" aria-hidden="true"></span>
 
 
-### OR (optional; not scored)
+#### OR (optional; not scored)
 
 `||` is the OR operator. Usage:
 ```
@@ -448,7 +444,7 @@ Boolean algebra: if `x` is true, we can return true right away *without* having 
 <span class="spec" data-spec-id="shellor" aria-hidden="true"></span>
 
 
-### Separator (optional; not scored)
+#### Separator (optional; not scored)
 
 `;` is the command separator. Usage:
 ```

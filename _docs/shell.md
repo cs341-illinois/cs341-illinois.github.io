@@ -18,7 +18,7 @@ See [Part1](shell_part1.html), [Part 2](shell_part2.html) and [Part 3](shell_par
 
 ## Backstory
 
-Some people know how to click on buttons, use GUIs, and Web Apps. As a computer scientist your time is precious and you have much more power and quicker methods at your fingertips. There is a third way because you can use a shell like a musical instrument. And quickly too. Which is a good thing - you overslept, lost your keys, stubbed your toe, forgot the root password - and they say now it's up to you to _fix-all-the-things!_ and _Save The World_. Maybe.
+Some people know how to click on buttons, use GUIs, and Web Apps. As a computer scientist your time is precious and you have much more power and quicker methods at your fingertips. There is another way, because you can use a shell like a musical instrument. And quickly too. Which is a good thing - you overslept, lost your keys, stubbed your toe, forgot the root password - and they say now it's up to you to _fix-all-the-things!_ and _Save The World_. Maybe.
 
 ## Assignment Overview
 
@@ -34,7 +34,7 @@ In part 3, you'll dig into some common ways shells can have errors by creating y
 
 ## Deliverable Submission
 
-The 'home base' for this project will be you and your partners corresponding Github Repo. 
+The 'home base' for this project will be you and your partner's corresponding Github Repo. 
 
 See the video demo - [how to record, publish, and expectations]({% link _tutorials/video_demo.md %}) 
 
@@ -58,7 +58,7 @@ To access your Github repo for the project:
    ```
 3. Add the base course repository as a remote named `upstream`:
   ```bash
-  git remote add upstream git@github.com:illinois-cs-coursework/fa26_cs341_.release.git
+  git remote add upstream git@github.com:illinois-cs-coursework/fa26_cs341_shell.release.git
   
   ```
 
@@ -74,7 +74,7 @@ To access your Github repo for the project:
 Each assignment page will go more in depth on the specific file namings or folders you'll need to submit, but here is an overall checklist for you:
 - A text file titled "shell_part1.txt" where you'll link all part 1 videos + any other relevant info
 - Source files for part2 (your shell)
-- A text file titled "shell_part3.txt" where you'll link all part 2 videos + any other relevant info
+- A text file titled "shell_part3.txt" where you'll link all part 3 videos + any other relevant info
 - A folder containing your "bad_shells"
 
 ## Important Things to Note - Interview Clinic / Knowledge Assessment

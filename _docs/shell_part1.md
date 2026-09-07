@@ -7,7 +7,7 @@ learning_objectives:
   - Using signals
   - Working with Processes
 ---
-See [Part 2](shell_part2.html) and [Part 3](shell_part3.html).
+See [Shell Home](shell.html), [Part 2](shell_part2.html) and [Part 3](shell_part3.html).
 
 ## Part 1 Objective
 
@@ -17,7 +17,7 @@ By the end of the week you should have explored how to use a shell to accomplish
 
 ## Important Things to Note
 
-This first part is about _using_ the shell, and interacting with processs, signals.
+This first part is about _using_ the shell, and interacting with processes and signals.
 In preparation for your course staff interview, each student in the study group should be sufficiently prepared to answer _any_ of the questions from any section below i.e. Course staff will ask each of you directly in turn, a question chosen at random. They may deliberately choose items that you didn't present in your zoom recording. (i.e. our intent is that everyone is encouraged to learn-all-the-things!)
 
 We suggest you record one video for each of the 3 sections below (i.e. 3 videos in total). For your recorded Zoom video(s), each student will present on *two items from each section*. Each student must present different items (so as a group decide in advance who presents what!). No need to stop the video to change who presents; you can huddle around one laptop, or be in a real Zoom call - either works. 
@@ -39,9 +39,9 @@ As a computer scientist who understands POSIX you are proficient and can use, ex
 1. Use `pkill` to send `SIGKILL` to all of your processes named 'bash' ?
 2. Use `ps` or `pgrep` to find out the pid and command line of your already running process (e.g. bash)?
 3. Send `SIGSTOP` to pause a running program and then open it in the debugger.
-4. Use `sighup` and `&` together
+4. Use `nohup` and `&` together
 5. Use `time` and `sleep`
-6. Use `ulimit` to prevent a process from using too many resouces (e.g. too many open files, too much memory).
+6. Use `ulimit` to prevent a process from using too many resources (e.g. too many open files, too much memory).
 
 ### 3. Finding, Grepping, git amend, and others (Pick 2 each per partner)
 1. Use `find` (give two different uses)?
@@ -60,6 +60,6 @@ In your shell repo create a file 'shell_part1.txt' and include ~3 link(s) (assum
 
 Don't forget to `git add`, `commit`, and `push`, and check that the links you provide play for anyone when not logged in to mediaspace.
 
-You should plan to complete your videos in the first week of this MP, so you have enough time to work on part 2 and part 3; but this is not fixed deadline; they will not be graded until after this assignment closes.
+You should plan to complete your videos in the first week of this MP, so you have enough time to work on part 2 and part 3; but this is not a fixed deadline; they will not be graded until after this assignment closes.
 
 

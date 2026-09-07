@@ -8,7 +8,7 @@ wikibook:
   - "Forking, Part 2: Fork, Exec, Wait"
   - "Process Control, Part 1: Wait macros, using signals"
 ---
-See [Shell Home](shell.html).
+See [Shell Home](shell.html), [Part 1](shell_part1.html) and [Part 2](shell_part2.html).
 
 ## Backstory
 
@@ -25,6 +25,8 @@ For each common shell issue in the bulleted list down below, you are tasked with
 - Fork bombs caused by unhandled `exec()` errors
 - Not flushing input and output before forking, when stdin and stdout are both redirected to files
 
+For each issue, a different student should take the lead - i.e. rotate who is leading the presentation. However, these can be presented in a more conversational style if you like, with more than one student explaining the problem or introducing the code.
+
 ## Grading / Deliverables
 
 It is expected that in your project repo, you provide all 'bad shell' files you created and utilize in your demo video in a folder titled 'bad_shells', with each file named the following, respectively: 
@@ -37,7 +39,7 @@ It is expected that in your project repo, you provide all 'bad shell' files you 
 In each file, provide a comment at the top listing the proper command used to demo the problem (i.e. the command you used in your final demo, that a course staff could run as well and get the same result).
 Your .c files (above) should compile without error using a recent version of `clang` on your CS341 VM.
 
-In a text file titled "shell_part3" put links to all demo videos, recorded per instructions/expectations found [here]({% link _tutorials/video_demo.md %})  
+In a text file titled "shell_part3.txt" put links to all demo videos, recorded per instructions/expectations found [here]({% link _tutorials/video_demo.md %})  
 
 ## Interview Clinic Expectations
 
