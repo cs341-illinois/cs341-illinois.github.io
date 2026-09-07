@@ -18,7 +18,7 @@ See [Part1](shell_part1.html), [Part 2](shell_part2.html) and [Part 3](shell_par
 
 ## Backstory
 
-Some people only know how to click on buttons, use GUIs, and Web Apps. As a computer scientist you know time is precious and you have much more power at your fingertips. There is a third way; you can use a shell like a musical instrument. And quickly too. Which is a good thing; you overslept, lost your keys, and now it's up to you to fix-all-the-things and save the world.
+Some people only know how to click on buttons, use GUIs, and Web Apps. As a computer scientist you know time is precious and you have much more power at your fingertips. There is a third way; you can use a shell like a musical instrument. And quickly too. Which is a good thing; you overslept, lost your keys, stubbed your tow, hurt your hand, but now it's up to you to _fix-all-the-things!_ and _Save The World_. Maybe.
 
 ## Assignment Overview
 
