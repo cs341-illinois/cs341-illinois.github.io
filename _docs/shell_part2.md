@@ -657,4 +657,5 @@ In case you are still confused about what exactly to store in history, here are 
 
 ## Grading
 
-Your grade on this part of the Shell assignment is fully comprised of your output score on the Broadway On-Demand autograder. This part of the project will comprise of 25% of the full Shell project grade.
+Your grade on this part of the Shell assignment is fully comprised of your output score on the Broadway On-Demand autograder. This part of the project will comprise of 25% of the full Shell project grade. 
+Submit your shell.c file; changes to other files (or submitting additional .c files) will be ignored and excluded from the build. 
