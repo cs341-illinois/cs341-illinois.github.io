@@ -83,7 +83,7 @@ All students are bound by the University's academic integrity policy, [Article 1
 This course has two different rules for AI use, and which one applies depends on the assignment:
 
 * **Weekly programming assignments (no AI).** These must be your own work. Do not use AI assistants or agentic coding tools to write, complete, or debug your solution. You may work with one partner; both of you must be able to explain every line you submit.
-* **System projects (with AI).** We expect you to use agentic AI on these projects. Using AI here is not a violation - it is the point of the assignment. You remain responsible for everything you submit, including code that an AI tool wrote for you.
+* **System projects (with AI).** We expect you to use agentic or in-chat AI on these projects. Using AI here is not a violation; however, you are prohibited from directly pasting/feeding assignment text into an AI. Instead, you should be sharing the project spec in your own words. In addition, You remain responsible for everything you submit, including code that an AI tool wrote for you.
 
 Regardless of which rule applies, do not submit work that is not yours to submit: do not copy from another student, from a previous semester's solution, or from a public repository of course solutions, and do not share or publish your own solutions where other students can find them.
 
