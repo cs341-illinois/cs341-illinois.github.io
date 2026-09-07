@@ -1,7 +1,7 @@
 labs:
 - name: Luscious Locks
   releaseDate: Week 1
-  dueDate: Week 2
+  dueDate: Week 3
   url: lockpicking_lab
   submissions:
   - title: Lab Assignment
@@ -232,8 +232,8 @@ mps:
   worksheet: false
   visible: false
 - name: Shell
-  releaseDate: Week 4
-  dueDate: Week 6
+  releaseDate: Week 3
+  dueDate: Week 5
   url: shell
   submissions:
   - title: Entire Assignment
