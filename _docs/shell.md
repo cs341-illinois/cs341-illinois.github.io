@@ -41,6 +41,12 @@ See the video demo - [how to record, publish, and expectations]({% link _tutoria
 
 The CS341 autograder is [Broadway]({{ site.data.constants.broadway_on_demand_link }}). The specific assignment page on Broadway will also tell you who your partner is and provide a link to your shared Github repo.
 
+### What should be in my Github Repo?
+Each assignment page will go more in depth on the specific file namings or folders you'll need to submit, but here is an overall checklist for you:
+- A text file titled "shell_part1" where you'll link all part 1 videos + any other relevant info
+- A text file titled "shell_part3" where you'll link all part 2 videos + any other relevant info
+- A folder containing your "bad shells"
+
 ## Important Things to Note - Interview Clinic / Knowledge Assessment
 
 At the completion of the shell project there will be a 30 minute in-person interview with you and your partner(s) by course staff. Part of the interview will the 'shell debrief' where you will be asked to demonstrate your knowledge about using shells, creating shells, and diagnosing 'bad shells'. Our goal with these interviews is to keep you accountable to what you know and don't know in the course, as well as encourage a culture of truly learning this content deeply through curiosity, exploration, and discussion rather than only rote memorization and point gathering. 
@@ -49,9 +55,11 @@ At the completion of the shell project there will be a 30 minute in-person inter
 
 Each portion of this project will comprise of the following percentage of the project 1 grade:
 
-Part 1 Videos + Part 2 Videos - 25%
-Part 2 Autograder score - 25%
-'Shell' Debrief Portion of Interview Clinic - 50%
+| Component                                  | Weight |
+|---------------------------------------------|--------|
+| Part 1 Videos + Part 2 Videos                | 25%    |
+| Part 2 Autograder score                      | 25%    |
+| 'Shell' Debrief Portion of Interview Clinic  | 50%    |
 
 Projects are worth 18% of the course total and all projects will be equally weighted. We expect to release 4 (maybe 3) projects. Thus this project is worth approximately 5% of your total grade in this course. 
 
