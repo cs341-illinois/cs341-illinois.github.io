@@ -11,7 +11,7 @@ wikibook:
 
 ## Backstory
 
-Oh my! It turns out creating a :fire: shell was insufficient. The best team wants just one new person and its likely to be you or that frenemy from *your neighboring town*. They like your shell but to really test your knowledge the team wants to see if you understand and can explain how shell things can go wrong too.
+Oh my! It turns out creating a :fire: shell was insufficient. The best team at _ACME_COMPANY_ only wants one new person and its likely going to be either you or your frenemy from *insert your neighboring town here*. The team like your shell but to really test your knowledge, they want to see if you understand and can explain how shell things can go wrong too.
 
 ## Overview and To-Do
 
@@ -34,6 +34,7 @@ It is expected that in your project repo, you provide all 'bad shell' files you 
 - noflush_before_fork.c
 
 In each file, provide a comment at the top listing the proper command used to demo the problem (i.e. the command you used in your final demo, that a course staff could run as well and get the same result).
+Your .c files (above) should compile without error using a recent version of `clang` on your CS341 VM.
 
 In a text file titled "shell_part3" put links to all demo videos, recorded per instructions/expectations found [here]({% link _tutorials/video_demo.md %})  
 
