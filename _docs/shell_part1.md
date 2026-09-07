@@ -16,8 +16,6 @@ wikibook:
 ---
 See [Part 2](shell_part2.md) and [Part 3](shell_part3.md).
 
-# WORK IN PROGRESS - LA is still working on this
-
 ## Part 1 Objective / Deliverable / Checkpoint
 
 The purpose of this assignment is not to give you course points (like <tt>++</tt> or <tt>fork(2)</tt> that's a side effect!) but to encourage you to become competent in using a terminal shell to accomplish things
@@ -27,9 +25,9 @@ By the end of the week you should have explored how to use a shell to accomplish
 ## Important Things to Note
 
 This first part is about _using_ the shell, and interacting with processs, signals.
-In preparation for your couse staff interview, each student in the study group should be sufficiently prepared to answer _any_ of the questions from any section below i.e. Course staff will ask each of you directly in turn, a question chosen at random. They may deliberately choose items that you didn't present in your zoom recording. (i.e. our intent is that everyone is encouraged to learns-all-the-things!)
+In preparation for your course staff interview, each student in the study group should be sufficiently prepared to answer _any_ of the questions from any section below i.e. Course staff will ask each of you directly in turn, a question chosen at random. They may deliberately choose items that you didn't present in your zoom recording. (i.e. our intent is that everyone is encouraged to learns-all-the-things!)
 
-For the recorded Zoom video, each student will present on *two items from each section*. Each student must present different items (so as a group decide in advance who presents what).
+For your recorded Zoom video(s), each student will present on *two items from each section*. Each student must present different items (so as a group decide in advance who presents what). We suggest you record one video for each section (i.e. 3 videos in total).
 
 # Shell and Terminal Basics (Pick 2 each)
 1.  What does `echo export KEY=123 >> .bashrc` do and how does it work ?
@@ -37,8 +35,8 @@ For the recorded Zoom video, each student will present on *two items from each s
 3.  A reddit thread suggested compilation is much faster using `CC=true make`. What does this do?
 4.  What does `source ~/.bashrc` (equivalently, `. ~/.bashrc`) do and why might you use it?
 5.  How do you use `man`, `which`, `env`, and `echo $HOME`?
-6.  Why are CTRL-A CTRL-E CTRL-U and CTRL-R useful terminal shortcuts? 
-7.  What does `!c` and `history` do?
+6.  Why are `CTRL-A` `CTRL-E` `CTRL-U` and `CTRL-R` useful terminal shortcuts? 
+7.  What does `!` `!cl` and `history` do?
 8.  What do `head -5` `tail -f` `less` `wc -l` do and why might you use them?
 
 # Process Control (Pick 2 each)
@@ -56,7 +54,7 @@ As a computer scientist who understands POSIX you are proficient and can use, ex
 3. Use `git` to _add_ and _commit_ from the shell
 4. Use `git` in the shell to fix the last local commit to include an extra file changes you'd forgotten
 5. What do `lscpu`, `df -h /`, `free -h` and `htop` tell me about my system?
-6. Explain each part of the shell line `strace -T bash -c 'echo hello>>log.txt'` (e.g. "what does the "-T" do?)
+6. Explain each part of the shell line `strace -T bash -c 'echo hello>>log.txt'` (e.g. "what does the "-T" mean?)
 
 ## Grading and Submission
 
