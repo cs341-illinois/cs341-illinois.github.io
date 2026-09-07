@@ -30,6 +30,8 @@ In part 2, you'll implement your own shell (most reminiscent to the 'old CS341 M
 
 In part 3, you'll dig into some common ways shells can have errors by creating your own 'bad' shells and explaining what/how they are bad. Your main deliverable will be video demos/discussions.
 
+**Note**: Start this assignment early! Read the specifications early! Connect with your partner early! These projects will be multi-week, so it is important to keep yourselves accountable and on track. There are many different aspects to digest and account for in this assignment, so starting early is essential for both your sanity and your learning! Would you rather do this right and learn a lot, or do this badly last minute and then have to scramble "re-learn" things for your interview clinic? The choice is yours... ;)
+
 ## Deliverable Submission
 
 The 'home base' for this project will be you and your partners corresponding Github Repo. 
