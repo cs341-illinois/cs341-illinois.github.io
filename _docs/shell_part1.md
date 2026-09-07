@@ -3,7 +3,7 @@ layout: doc
 title: "Shell (part 1 of 3)"
 learning_objectives:
   - Using a shell
-  - Shell coa
+  - Shell commands
   - Learning How a Shell Works
   - Fork, Exec, Wait
   - Signals
@@ -29,35 +29,34 @@ By the end of the week you should have explored how to use a shell to accomplish
 This first part is about _using_ the shell, and interacting with processs, signals.
 In preparation for your couse staff interview, each student in the study group should be sufficiently prepared to answer _any_ of the questions from any section below i.e. Course staff will ask each of you directly in turn, a question chosen at random. They may deliberately choose items that you didn't present in your zoom recording. (i.e. our intent is that everyone is encouraged to learns-all-the-things!)
 
-For the recorded Xoom video, each student will present on *two items from each section*. Each student must present different items (so as a group decide in advance who presents what).
+For the recorded Zoom video, each student will present on *two items from each section*. Each student must present different items (so as a group decide in advance who presents what).
 
-# Shell skills (work in progress - LA working on this)
+# Shell and Terminal Basics (Pick 2 each)
+1.  What does `echo export KEY=123 >> .bashrc` do and how does it work ?
+2.  What does `cat *.c | sort | uniq -c | sort -nr | head -5`  do and how does it work?
+3.  A reddit thread suggested compilation is much faster using `CC=true make`. What does this do?
+4.  What does `source ~/.bashrc` (equivalently, `. ~/.bashrc`) do and why might you use it?
+5.  How do you use `man`, `which`, `env`, and `echo $HOME`?
+6.  Why are CTRL-A CTRL-E CTRL-U and CTRL-R useful terminal shortcuts? 
+7.  What does `!c` and `history` do?
+8.  What do `head -5` `tail -f` `less` `wc -l` do and why might you use them?
 
-# Process Control Questions
-(Pick 2 each) As a computer scientist who understands POSIX you are proficient and can use, explain, and demonstrate the following in an interview. Tip: You will need to create shell program (mywork.sh) or example .c program to create an effective demo.
-* How would send SIGKILL to all of your processes named 'bash' ?
-* Show how run a long running program in the background.
-* In the shell how would you use `ps` to find out the pid and command line of your already running process (e.g. bash)?
-* Send SIGSTOP to pause a running program and then open it in the debugger. Can you use CTRL-Z, sigkill from within a C program or from a shell to send this signal?
-* What's the purpose of sighup; Show me how I can run a program even after I log out?
-  
+# Process Control (Pick 2 each)
+As a computer scientist who understands POSIX you are proficient and can use, explain, and demonstrate the following in an interview. Tip: You will need to create shell program (mywork.sh) or example .c program (dotwriter.c) to create an effective demo.
+1. Use `pkill` to send `SIGKILL` to all of your processes named 'bash' ?
+2. Use `ps` or `pgrep` to find out the pid and command line of your already running process (e.g. bash)?
+3. Send `SIGSTOP` to pause a running program and then open it in the debugger.
+4. Use `sighup` and `&` together
+5. Use `time` and `sleep`
+6. Use `ulimit` to prevent a forkbomb from making a Linux system unusable.
 
-Processes | Start and control foreground and background processes | See below. |
-| Process Control | Start processes, send signals | `ps a` `kill` `killall python` | 
-| Shell Redirection | Redirect standard input, output, error | `./myshell < commands.txt > output.log` and `>>` to append output |
-| grep | Use grep to match | I could find examples of malloc in the source dir  `grep -r malloc src` |
-| compile | Use a c compile | To compile a debug build I'd use `clang -g -o hello hello.c` |
-| git | Show file differences that haven't been staged | I'd use `git diff` and `git status` |
-
-## Example advanced questions - putting it all together. "Carefully explain each part of the following"
-
-`strace clang-18 2>&1 | grep write`
-`echo "export secretkey=123" >> ~/.bashrc`
-`source .env`
-`kill -SIGKILL 123`
-`killall python`
-
-
+# Finding, Grepping, git amend, and others  (Pick 2 each)
+1. Use `find` (give two different uses)?
+2. Use `grep` recursively search multiple files that match your search pattern and show 1 line before and 2 lines after each match.
+3. Use `git` to _add_ and _commit_ from the shell
+4. Use `git` in the shell to fix the last local commit to include an extra file changes you'd forgotten
+5. What do `lscpu`, `df -h /`, `free -h` and `htop` tell me about my system?
+6. Explain each part of the shell line `strace -T bash -c 'echo hello>>log.txt'` (e.g. "what does the "-T" do?)
 
 ## Grading and Submission
 
