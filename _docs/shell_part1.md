@@ -22,6 +22,8 @@ In preparation for your course staff interview, each student in the study group 
 
 We suggest you record one video for each of the 3 sections below (i.e. 3 videos in total). For your recorded Zoom video(s), each student will present on *two items from each section*. Each student must present different items (so as a group decide in advance who presents what!). No need to stop the video to change who presents; you can huddle around one laptop, or be in a real Zoom call - either works. 
 
+## The Assignment
+
 ### 1. Shell and Terminal Foundation (Pick 2 each per partner)
 1.  What does `echo export KEY=123 >> .bashrc` do and how does it work ?
 2.  What does `cat *.c | sort | uniq -c | sort -nr | head -5`  do and how does it work?
