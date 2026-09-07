@@ -57,7 +57,7 @@ Each portion of this project will comprise of the following percentage of the pr
 
 | Component                                  | Weight |
 |---------------------------------------------|--------|
-| Part 1 Videos + Part 2 Videos                | 25%    |
+| Part 1 Videos + Part 3 Videos                | 25%    |
 | Part 2 Autograder score                      | 25%    |
 | 'Shell' Debrief Portion of Interview Clinic  | 50%    |
 
