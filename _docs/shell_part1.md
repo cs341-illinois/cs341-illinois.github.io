@@ -7,7 +7,7 @@ learning_objectives:
   - Using signals
   - Working with Processes
 ---
-See [Part 2](shell_part2.md) and [Part 3](shell_part3.md).
+See [Part 2](shell_part2.html) and [Part 3](shell_part3.html).
 
 ## Part 1 Objective
 
@@ -18,7 +18,7 @@ By the end of the week you should have explored how to use a shell to accomplish
 ## Important Things to Note
 
 This first part is about _using_ the shell, and interacting with processs, signals.
-In preparation for your course staff interview, each student in the study group should be sufficiently prepared to answer _any_ of the questions from any section below i.e. Course staff will ask each of you directly in turn, a question chosen at random. They may deliberately choose items that you didn't present in your zoom recording. (i.e. our intent is that everyone is encouraged to learns-all-the-things!)
+In preparation for your course staff interview, each student in the study group should be sufficiently prepared to answer _any_ of the questions from any section below i.e. Course staff will ask each of you directly in turn, a question chosen at random. They may deliberately choose items that you didn't present in your zoom recording. (i.e. our intent is that everyone is encouraged to learn-all-the-things!)
 
 We suggest you record one video for each section (i.e. 3 videos in total). For your recorded Zoom video(s), each student will present on *two items from each section*. Each student must present different items (so as a group decide in advance who presents what!). No need to stop the video to change who presents; you can huddle around one laptop, or be in a real Zoom call - either works. 
 
