@@ -31,7 +31,7 @@ For your recorded Zoom video(s), each student will present on *two items from ea
 # Shell and Terminal Basics (Pick 2 each)
 1.  What does `echo export KEY=123 >> .bashrc` do and how does it work ?
 2.  What does `cat *.c | sort | uniq -c | sort -nr | head -5`  do and how does it work?
-3.  A reddit thread suggested compilation is much faster using `CC=true make`. What does this do?
+3.  A reddit thread suggested compilation is much faster using "`CC=true make`". What does this do?
 4.  What does `source ~/.bashrc` (equivalently, `. ~/.bashrc`) do and why might you use it?
 5.  How do you use `man`, `which`, `env`, and `echo $HOME`?
 6.  Why are `CTRL-A` `CTRL-E` `CTRL-U` and `CTRL-R` useful terminal shortcuts? 
@@ -39,7 +39,7 @@ For your recorded Zoom video(s), each student will present on *two items from ea
 8.  What do `head -5` `tail -f` `less` `wc -l` do and why might you use them?
 
 # Process Control (Pick 2 each)
-As a computer scientist who understands POSIX you are proficient and can use, explain, and demonstrate the following in an interview. Tip: You may need to create a simple shell program (mywork.sh) or example .c program (dotwriter.c) to create an effective demo.
+As a computer scientist who understands POSIX you are proficient and can use, explain, and demonstrate the following in an interview. Tip: You may need to create a simple shell program (e.g., mywork.sh) or example .c program (e.g., dotwriter.c) to create an effective demo.
 1. Use `pkill` to send `SIGKILL` to all of your processes named 'bash' ?
 2. Use `ps` or `pgrep` to find out the pid and command line of your already running process (e.g. bash)?
 3. Send `SIGSTOP` to pause a running program and then open it in the debugger.
