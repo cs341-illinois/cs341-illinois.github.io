@@ -7,7 +7,6 @@ learning_objectives:
   - Fork, Exec, Wait
   - Signals
   - Processes
-  - Zombie Processes
 wikibook:
   - "Forking, Part 1: Introduction"
   - "Forking, Part 2: Fork, Exec, Wait"
