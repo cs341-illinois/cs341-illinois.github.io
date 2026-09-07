@@ -15,7 +15,7 @@ wikibook:
 ---
 See [Part 2](shell_part2.md) and [Part 3](shell_part3.md).
 
-## Part 1 Objective / Deliverable / Checkpoint
+## Part 1 Objective
 
 The purpose of this assignment is not to give you course points (like <tt>++</tt> or <tt>fork(2)</tt> - that's a side effect!) but to encourage you to become competent in using a terminal shell and shell commands.
 
@@ -59,5 +59,9 @@ As a computer scientist who understands POSIX you are proficient and can use, ex
 ## Grading and Submission
 
 You will demonstrate your competency by first recording a video or videos. Later, at the completion of this project you will also be interviewed and asked questions by course staff.
+
+In your shell repo create a file 'part1-videos.txt'
+Include ~3 link(s) (assuming you recorded one video per section) to your mediaspace videos.
+Don't forget to git add, commit, and push
 
 
