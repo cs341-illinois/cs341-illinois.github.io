@@ -3,15 +3,9 @@ layout: doc
 title: "Shell (part 1 of 3)"
 learning_objectives:
   - Using a shell
-  - Shell commands
-  - Learning How a Shell Works
-  - Fork, Exec, Wait
-  - Signals
-  - Processes
-wikibook:
-  - "Forking, Part 1: Introduction"
-  - "Forking, Part 2: Fork, Exec, Wait"
-  - "Process Control, Part 1: Wait macros, using signals"
+  - Useful shell commands
+  - Using signals
+  - Working with Processes
 ---
 See [Part 2](shell_part2.md) and [Part 3](shell_part3.md).
 
