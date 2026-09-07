@@ -28,12 +28,6 @@ This semester, you will be allowed to use AI on the autograded coding portion of
 
 In addition, while you aren't 'responsible' for knowing your code line-by-line if you do choose to complete this assignment with AI-assistance, you ARE responsible for the general design decisions and structure of your code, which can be assessed in interview clinic or quiz settings. 
 
-### Submitting your code
-
-For this part of the project, use your own illinois-cs-coursework repos to grab the starter files from the release repository, and update this repo as this is what will be ran against the autograder (exactly like what you do for the weekly programming assignments).
-
-However, before the end of the project when you have completed your code, copy over the source files in you/your partner's repos over to your shared projct repo to serve as an artifact in that repo as well. 
-
 ### Fork Bombs
 
 :fork_and_knife: :bomb: :bangbang:
