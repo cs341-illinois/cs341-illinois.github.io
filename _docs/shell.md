@@ -64,5 +64,5 @@ Each portion of this project will comprise of the following percentage of the pr
 | Part 2 Autograder score                      | 25%    |
 | 'Shell' Debrief Portion of Interview Clinic  | 50%    |
 
-Projects are worth 18% of the course total and all projects will be equally weighted. We expect to release 4 (maybe 3) projects. Thus this project is worth approximately 5% of your total grade in this course. 
+Projects are worth 18% of the course total and all AI-assisted exploration projects will be equally weighted. We expect to release 4 (maybe 3) projects. Thus this project is worth approximately 5% of your total grade.
 
