@@ -46,6 +46,7 @@ The CS341 autograder is [Broadway]({{ site.data.constants.broadway_on_demand_lin
 ### What should be in my Github Repo?
 Each assignment page will go more in depth on the specific file namings or folders you'll need to submit, but here is an overall checklist for you:
 - A text file titled "shell_part1.txt" where you'll link all part 1 videos + any other relevant info
+- Source files for part2 (your shell)
 - A text file titled "shell_part3.txt" where you'll link all part 2 videos + any other relevant info
 - A folder containing your "bad shells"
 
