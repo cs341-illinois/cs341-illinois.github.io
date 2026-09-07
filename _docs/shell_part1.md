@@ -20,9 +20,9 @@ By the end of the week you should have explored how to use a shell to accomplish
 This first part is about _using_ the shell, and interacting with processs, signals.
 In preparation for your course staff interview, each student in the study group should be sufficiently prepared to answer _any_ of the questions from any section below i.e. Course staff will ask each of you directly in turn, a question chosen at random. They may deliberately choose items that you didn't present in your zoom recording. (i.e. our intent is that everyone is encouraged to learn-all-the-things!)
 
-We suggest you record one video for each section (i.e. 3 videos in total). For your recorded Zoom video(s), each student will present on *two items from each section*. Each student must present different items (so as a group decide in advance who presents what!). No need to stop the video to change who presents; you can huddle around one laptop, or be in a real Zoom call - either works. 
+We suggest you record one video for each of the 3 sections below (i.e. 3 videos in total). For your recorded Zoom video(s), each student will present on *two items from each section*. Each student must present different items (so as a group decide in advance who presents what!). No need to stop the video to change who presents; you can huddle around one laptop, or be in a real Zoom call - either works. 
 
-# Shell and Terminal Basics (Pick 2 each)
+# 1. Shell and Terminal Foundation (Pick 2 each)
 1.  What does `echo export KEY=123 >> .bashrc` do and how does it work ?
 2.  What does `cat *.c | sort | uniq -c | sort -nr | head -5`  do and how does it work?
 3.  A reddit thread suggested compilation is much faster using "`CC=true make`". What does this do?
@@ -32,7 +32,7 @@ We suggest you record one video for each section (i.e. 3 videos in total). For y
 7.  What do `!`, `!cl`, and `history` do?
 8.  What do `head -5` , `tail -f` , `less` ,and `wc -l` do and why might you use them?
 
-# Process Control (Pick 2 each)
+# 2. Process Control (Pick 2 each)
 As a computer scientist who understands POSIX you are proficient and can use, explain, and demonstrate the following in an interview. Tip: You may need to create a simple shell program (e.g., mywork.sh) or example .c program (e.g., dotwriter.c) to create an effective demo.
 1. Use `pkill` to send `SIGKILL` to all of your processes named 'bash' ?
 2. Use `ps` or `pgrep` to find out the pid and command line of your already running process (e.g. bash)?
@@ -41,7 +41,7 @@ As a computer scientist who understands POSIX you are proficient and can use, ex
 5. Use `time` and `sleep`
 6. Use `ulimit` to prevent a process from using too many resouces (e.g. too many open files, too much memory).
 
-# Finding, Grepping, git amend, and others (Pick 2 each)
+# 3. Finding, Grepping, git amend, and others (Pick 2 each)
 1. Use `find` (give two different uses)?
 2. Use `grep` recursively search multiple files that match your search pattern and show 1 line before and 2 lines after each match.
 3. Use `git` to _add_ and _commit_ from the shell
