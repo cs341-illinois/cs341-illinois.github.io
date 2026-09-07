@@ -52,10 +52,12 @@ As a computer scientist who understands POSIX you are proficient and can use, ex
 
 ## Grading and Submission
 
-You will demonstrate your competency by first recording a video or videos. Later, at the completion of this project you will also be interviewed and asked questions by course staff.
+You will demonstrate your competency by first recording a video or videos.  Later, at the completion of this project you will also be interviewed and asked questions by course staff.
 
-In your shell repo create a file 'part1-videos.txt'
-Include ~3 link(s) (assuming you recorded one video per section) to your mediaspace videos.
-Don't forget to git add, commit, and push
+In your shell repo create a file 'shell_part1.txt' and include ~3 link(s) (assuming you recorded one video per section) to your mediaspace videos. See the video demo - [how to record, publish, and expectations]({% link _tutorials/video_demo.md %}) for further information.
+
+Don't forget to `git add`, `commit`, and `push`, and check that the links you provide play for anyone when not logged in to mediaspace.
+
+You should plan to complete your videos in the first week of this MP, so you have enough time to work on part 2 and part 3; but this is not fixed deadline; they will not be graded until after this assignment closes.
 
 
