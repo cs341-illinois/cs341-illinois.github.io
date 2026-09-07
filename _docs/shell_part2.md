@@ -52,7 +52,7 @@ This assignment marks the beginning of a series of projects where you will be gi
 
 ### Do Not Use `system`
 
-Since a learning objective of this assignment is to use the fork-exec-wait pattern, if you use `system`, you will automatically fail this MP.
+Since a learning objective of this assignment is to use the fork-exec-wait pattern, if you use `system`, you will automatically fail this part.
 
 ### Flush all the C File Handles before forking!
 
@@ -72,7 +72,7 @@ If you place print statements in your debugging code, please remember to remove 
 
 ### Flush Before Forking
 
-Ensure that you `fflush` output file handles before forking. See [section 2.5.1 of the Open Group Base Specifications](https://pubs.opengroup.org/onlinepubs/9699919799/functions/V2_chap02.html#tag_15_05) for more information on why this is necessary.
+Ensure that you `fflush` all output and all input file handles before forking. See [section 2.5.1 of the Open Group Base Specifications](https://pubs.opengroup.org/onlinepubs/9699919799/functions/V2_chap02.html#tag_15_05) for more information on why this is necessary.
 
 ## Overview and To-Dos
 
