@@ -48,6 +48,28 @@ To access your Github repo for the project:
 **Note**: If you aren't able to access your Github repo, make sure you've made your own illinois-cs-coursework repo for the course as a first line of defense.
 **Note**: If you need to in the future make changes to your partner project repo configuration for any reason (i.e. rearranged or absent partner), speak to a discussion TA.
 
+### How do I pull in the Release files?
+
+1. Navigate to your project repository on GitHub (using the link provided on Broadway) and copy the clone URL by clicking the **Code** button.
+2. In your terminal, clone your shared repository locally:
+   ```bash
+   git clone <YOUR_REPOSITORY_URL>
+   cd <YOUR_REPOSITORY_DIRECTORY>
+   ```
+3. Add the base course repository as a remote named `upstream`:
+  ```bash
+  git remote add upstream git@github.com:illinois-cs-coursework/fa26_cs341_.release.git
+  
+  ```
+
+
+4. Fetch and pull the base starter files from the `project` branch of the upstream remote:
+  ```bash
+  git fetch upstream
+  git pull upstream project
+  
+  ```
+
 ### What should be in my Github Repo?
 Each assignment page will go more in depth on the specific file namings or folders you'll need to submit, but here is an overall checklist for you:
 - A text file titled "shell_part1.txt" where you'll link all part 1 videos + any other relevant info
