@@ -8,7 +8,7 @@ wikibook:
   - "Forking, Part 2: Fork, Exec, Wait"
   - "Process Control, Part 1: Wait macros, using signals"
 ---
-See [Shell Home](shell.html), [Part 1](shell_part1.html) and [Part 2](shell_part2.html).
+See [Shell Home]({% link _docs/shell.md %}), [Part 1]({% link _docs/shell_part1.md %}) and [Part 2]({% link _docs/shell_part2.md %}).
 
 ## Backstory
 

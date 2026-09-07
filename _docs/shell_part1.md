@@ -7,7 +7,7 @@ learning_objectives:
   - Using signals
   - Working with Processes
 ---
-See [Shell Home](shell.html), [Part 2](shell_part2.html) and [Part 3](shell_part3.html).
+See [Shell Home]({% link _docs/shell.md %}), [Part 2]({% link _docs/shell_part2.md %}) and [Part 3]({% link _docs/shell_part3.md %}).
 
 ## Part 1 Objective
 
