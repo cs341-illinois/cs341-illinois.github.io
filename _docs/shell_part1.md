@@ -40,7 +40,7 @@ For your recorded Zoom video(s), each student will present on *two items from ea
 8.  What do `head -5` `tail -f` `less` `wc -l` do and why might you use them?
 
 # Process Control (Pick 2 each)
-As a computer scientist who understands POSIX you are proficient and can use, explain, and demonstrate the following in an interview. Tip: You will need to create shell program (mywork.sh) or example .c program (dotwriter.c) to create an effective demo.
+As a computer scientist who understands POSIX you are proficient and can use, explain, and demonstrate the following in an interview. Tip: You may need to create a simple shell program (mywork.sh) or example .c program (dotwriter.c) to create an effective demo.
 1. Use `pkill` to send `SIGKILL` to all of your processes named 'bash' ?
 2. Use `ps` or `pgrep` to find out the pid and command line of your already running process (e.g. bash)?
 3. Send `SIGSTOP` to pause a running program and then open it in the debugger.
