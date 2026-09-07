@@ -3,7 +3,7 @@ layout: doc
 title: "Shell (Overview)"
 learning_objectives:
   - Using a shell
-  - Shell coa
+  - Shell commands
   - Learning How a Shell Works
   - Fork, Exec, Wait
   - Signals
