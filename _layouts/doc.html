@@ -3,6 +3,10 @@
 {% include head.html %}
 {% assign split_url = page.url | split: '/' %}
 {% assign name_no_md = split_url[-1] | replace: '.html','' %}
+{% if name_no_md contains 'part' %}
+  {% assign name_parts = name_no_md | split: '_' %}
+  {% assign name_no_md = name_parts[0] %}
+{% endif %}
 {% assign lab_matches = site.data.assignments['labs'] | where: "url", name_no_md %}
 {% assign is_lab = lab_matches.size %}
 
