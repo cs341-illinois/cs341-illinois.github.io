@@ -45,7 +45,7 @@ As a computer scientist who understands POSIX you are proficient and can use, ex
 3. Send `SIGSTOP` to pause a running program and then open it in the debugger.
 4. Use `sighup` and `&` together
 5. Use `time` and `sleep`
-6. Use `ulimit` to prevent a forkbomb from making a Linux system unusable.
+6. Use `ulimit` to prevent a process from using too many resouces (e.g. too many open files, too much memory).
 
 # Finding, Grepping, git amend, and others (Pick 2 each)
 1. Use `find` (give two different uses)?
