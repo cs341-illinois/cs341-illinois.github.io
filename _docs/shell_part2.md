@@ -16,7 +16,7 @@ See [Part 3](shell_part3.html).
 
 ## Backstory
 
-Well, we'll keep it short – You applied to work at *insert hot tech company*, and you got the entry job! However, due to some questionable hires in the past there's a catch - all newhires, especially ones from*your home town* apparently have to go through a newcomers test to see which team they will join. The task? Write a shell. So, you're going to drop a :fire: :fire: shell that is so much better than one created by *previous hire from your home town*.
+Well, we'll keep it short – You applied to work at *insert hot tech company*, and you got the entry job! However, due to some questionable hires in the past there's a catch - all newhires, especially ones from *your home town* apparently have to go through a newcomers test to see which team they will join. The task? Write a shell. So, you're going to drop a :fire: :fire: shell that is so much better than one created by *previous hire from your home town*.
 
 The basic function of a shell is to accept commands as inputs and execute the corresponding programs in response. You will be provided the `vector`, `sstring` and `format.h` libraries for your use. Hopefully, this will make things right and you can secure your foothold at *insert hot tech company here*. Feel free to refer to the Unix shell as a rough reference.
 
@@ -662,4 +662,3 @@ In case you are still confused about what exactly to store in history, here are 
 ## Grading
 
 Your grade on this part of the Shell assignment is fully comprised of your output score on the Broadway On-Demand autograder. This part of the project will comprise of 25% of the full Shell project grade.
-
