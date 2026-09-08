@@ -61,7 +61,7 @@ To access your Github repo for the project:
 
 3. Add the base course repository as a remote named `upstream`:
   ```bash
-  git remote add upstream git@github.com:illinois-cs-coursework/fa26_cs341_.release.git
+  git remote add upstream https://github.com/illinois-cs-coursework/fa26_cs341_.release.git
   ```
 
 4. Fetch and pull the base starter files from the `project` branch of the upstream remote:
@@ -92,4 +92,3 @@ Each portion of this project will comprise of the following percentage of the pr
 | 'Shell' Debrief Portion of Interview Clinic  | 50%    |
 
 Projects are worth 18% of the course total and all AI-assisted exploration projects will be equally weighted. We expect to release 4 (maybe 3) projects. Thus this project is worth approximately 5% of your total grade.
-
