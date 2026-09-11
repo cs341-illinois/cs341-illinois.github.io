@@ -9,11 +9,19 @@ See [Malloc Home]({% link _docs/malloc.md %}), [Part 1]({% link _docs/malloc_par
 
 ## Backstory
 
-I have no memory of what happened or how I got here. I was day dreaming about heap allocators; walking into that post and hitting my head wasn't my brightest moment.
+I have no detailed memory of what happened or how I got here. I remember day dreaming about heap allocators and not looking where I was going ... walking into that post and hitting my head wasn't my brightest moment.
 
 ## Overview and To-Do
 
-For each common shell issue in the bulleted list down below, you are tasked with creating a "bad shell" with that issue present. After creating each shell, you must record a video that demonstrates the process that causes the issue to appear, and explains why it is problematic.
+Sentinel. Underflow overflow.
+
+Debugging malloc
+Debugging application that uses malloc. Using glibc instrumentation options
+
+Benchmarking implementations
+Test performance of jq using tcmalloc/jemalloc//glibcmalloc,no-opfree,onepool/yourmalloc
+Example json data: https://jsonlint.com/datasets/http-status-codes https://microsoftedge.github.io/Demos/json-dummy-data/
+
 
 
 ## Grading / Deliverables
