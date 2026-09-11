@@ -9,7 +9,7 @@ See [Malloc Home]({% link _docs/malloc.md %}), [Part 1]({% link _docs/malloc_par
 
 ## Backstory
 
-I have no memory of what happened. Perhaps walking into that post and hitting my head wasn't the brightest moment.
+I have no memory of what happened or how I got here. I was day dreaming about heap allocators; walking into that post and hitting my head wasn't my brightest moment.
 
 ## Overview and To-Do
 
