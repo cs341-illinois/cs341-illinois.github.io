@@ -297,16 +297,14 @@ global variables static. If you encounter a program for which this fix doesn't w
 
 ## Grading
 
-Here is the grading breakdown:
+Autograder points for part 2 are divided as follows
 
-* Correctness (75%)
-  * Part 1 (25%): tests 1-6 complete successfully.
-  * Part 2 (50%): tests 1-12 complete successfully.
-* Performance (25%): Points only awarded if all part 2 testers complete
-  successfully - due with part2
+* 25 points Correctness Challenge 1 : tests 1-6 complete successfully.
+* 50 points Correctness Challenge 2 : tests 1-12 complete successfully.
+* 25 points Performance Challenge, awarded only if all Challenge 2 tests complete successfully.
 
-There are 12 testcases in total. For part 1, you will be graded using tests 1
-through 6. For part 2, you will be graded using tests 1 to 12 (tests 1 through 6
+There are 12 testcases in total. For challenge 1, you will be graded using tests 1
+through 6. For challenge 2, you will be graded using tests 1 to 12 (tests 1 through 6
 get graded twice). Tester 13 is not graded.
 
 There are also performance points, which you are only eligible for if you pass
@@ -324,24 +322,24 @@ are better. Performance points are then awarded in buckets:
 
 So, let's work out some scenarios:
 
-* Scenario 1: A student gets tests 1 through 6 working for part1 and misses 2
-  tests on part2. Then they get all of the correctness points for part1, 10/12
-  of the correctness points for part2 and none of the performance points. Thus
+* Scenario 1: A student gets tests 1 through 6 working for challenge-1 and misses 2
+  tests on challenge-2. Then they get all of the correctness points for challenge-1, 10/12
+  of the correctness points for challenge-2 and none of the performance points. Thus
   this student will receive a `(6 / 6) * 25 + (10 / 12) * 50 + 0 = 66.67%`.
-* Scenario 2: A student gets none of the tests working for part1 and gets
-  everything working for part2 and beats `glibc`. Then they get none of the
-  correctness points for part1, 12/12 of the correctness points for part2, and
+* Scenario 2: A student gets none of the tests working for challege-1 and gets
+  everything working for challenge-2 and beats `glibc`. Then they get none of the
+  correctness points for challenge-1, 12/12 of the correctness points for challenge-2, and
   the performance points. This student will receive a
   `(0 / 6) * 25 + (12 / 12) * 50 + 25 = 75.00%`.
-* Scenario 3: A student gets tests 1 through 6 working for part1, then they get
-  all the tests except test 4 working for part2. Then they get all of the
-  correctness points for part1, 11/12 of the correctness points for part2, but
+* Scenario 3: A student gets tests 1 through 6 working for challenge-1, then they get
+  all the tests except test 4 working for challenge-2. Then they get all of the
+  correctness points for challenge-1, 11/12 of the correctness points for challenge-, but
   they will not receive any of the performance points. This student will
   receive a `(6 / 6) * 25 + (11 / 12) * 50 + 0 = 70.83%`.
-* Scenario 4: A student gets tests 1 through 6 working for part1, then they get
-  all of the tests working for part2, but they can only get to `65%` of
-  `glibc`. In this case, they get all of the correctness points for part 1, all
-  of the correctness points for part 2, but only 15% performance points. So,
+* Scenario 4: A student gets tests 1 through 6 working for challenge-1, then they get
+  all of the tests working for challenge-2, but they can only get to `65%` of
+  `glibc`. In this case, they get all of the correctness points for challenge-1, all
+  of the correctness points for challenge-2, but only 15% performance points. So,
   they get `(6 / 6) * 25 + (12 / 12) * 50 + 15 = 90.00%`
 
 * We modify the allocation numbers slightly when we actually grade.
