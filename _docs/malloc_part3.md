@@ -13,7 +13,9 @@ I have no detailed memory of what happened or how I got here. I remember day dre
 
 ## Overview and To-Do
 
-Sentinel. Underflow overflow.
+Malloc extensions
+Sentinel. Padding Detect Underflow overflow.
+securefree() memset
 
 Debugging malloc
 Debugging application that uses malloc. Using glibc instrumentation options
