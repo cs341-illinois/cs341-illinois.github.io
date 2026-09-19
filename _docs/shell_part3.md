@@ -18,7 +18,7 @@ Oh my! It turns out creating a :fire: shell was insufficient. The best team at _
 
 For each common shell issue in the bulleted list down below, you are tasked with creating a "bad shell" with that issue present. After creating each shell, you must record a video that demonstrates the process that causes the issue to appear, and explains why it is problematic.
 
-> ⚠️ Before demoing a fork bomb, set a limit on the number of processes you can create with `ulimit -u <limit>` (100–200 is reasonable) in your terminal session. This prevents the fork bomb from taking down your entire VM. If you fork bomb your CS Cloud VM anyway, notify course staff with your VM number.
+> ⚠️ Before demoing a fork bomb, set a limit on the number of processes you can create with `ulimit -u <limit>` (~1024 is reasonable) in your terminal session. This prevents the fork bomb from taking down your entire VM. If you fork bomb your CS Cloud VM anyway, notify course staff with your VM number.
 
 - Zombie processes (and how to observe them using `ps`)
 - Calling unsafe functions (e.g. `printf`) inside a signal handler
