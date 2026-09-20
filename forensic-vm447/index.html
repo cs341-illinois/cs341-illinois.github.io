@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forensic VM 447 — Windows 11 (snapshot)</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="vm">
+
+  <div id="start-screen">
+    <div class="start-card">
+      <div class="start-badge">
+        <svg viewBox="0 0 24 24" width="28" height="28"><path fill="#4cc2ff" d="M3 3h8.5v8.5H3zM12.5 3H21v8.5h-8.5zM3 12.5h8.5V21H3zM12.5 12.5H21V21h-8.5z"/></svg>
+      </div>
+      <h1>Forensic VM 447</h1>
+      <p class="start-sub">Windows 11 Pro &mdash; forensic snapshot (read-only)</p>
+      <p class="start-meta">Image: <code>forensic-vm447.img</code> &middot; No network adapter attached</p>
+      <button id="start-vm-btn" disabled>Start VM image</button>
+      <p id="start-status" class="start-status">Loading image data&hellip;</p>
+    </div>
+  </div>
+
+  <div id="boot-screen" class="hidden">
+    <div class="boot-logo">
+      <svg viewBox="0 0 24 24" width="96" height="96"><path fill="#4cc2ff" d="M3 3h8.5v8.5H3zM12.5 3H21v8.5h-8.5zM3 12.5h8.5V21H3zM12.5 12.5H21V21h-8.5z"/></svg>
+    </div>
+    <div class="spinner"></div>
+  </div>
+
+  <div id="login-screen" class="hidden">
+    <div class="login-bg"></div>
+    <svg class="login-art" id="drone-art" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="#fff" stroke-opacity="0.15">
+        <path d="M60 64h30M75 49v30"/>
+        <path d="M1510 64h30M1525 49v30"/>
+        <path d="M60 816h30M75 801v30"/>
+        <path d="M1510 816h30M1525 801v30"/>
+      </g>
+      <text x="1360" y="52" font-family="ui-monospace,Menlo,monospace" font-size="15" letter-spacing="3" fill="#fff" fill-opacity="0.18">DDS-ENG-447 REV C</text>
+
+      <g fill="none" stroke="#fff" stroke-opacity="0.22" transform="translate(150,120)">
+        <line x1="200" y1="120" x2="110" y2="60"/>
+        <line x1="200" y1="120" x2="290" y2="60"/>
+        <line x1="200" y1="120" x2="110" y2="180"/>
+        <line x1="200" y1="120" x2="290" y2="180"/>
+        <rect x="178" y="98" width="44" height="44" rx="8"/>
+        <circle cx="110" cy="60" r="34"/>
+        <circle cx="290" cy="60" r="34"/>
+        <circle cx="110" cy="180" r="34"/>
+        <circle cx="290" cy="180" r="34"/>
+        <circle cx="110" cy="60" r="4" fill="#fff" fill-opacity="0.35" stroke="none"/>
+        <circle cx="290" cy="60" r="4" fill="#fff" fill-opacity="0.35" stroke="none"/>
+        <circle cx="110" cy="180" r="4" fill="#fff" fill-opacity="0.35" stroke="none"/>
+        <circle cx="290" cy="180" r="4" fill="#fff" fill-opacity="0.35" stroke="none"/>
+        <line x1="88" y1="48" x2="132" y2="72" stroke-opacity="0.13"/>
+        <line x1="268" y1="48" x2="312" y2="72" stroke-opacity="0.13"/>
+        <line x1="88" y1="168" x2="132" y2="192" stroke-opacity="0.13"/>
+        <line x1="268" y1="168" x2="312" y2="192" stroke-opacity="0.13"/>
+        <line x1="200" y1="18" x2="200" y2="256" stroke-opacity="0.1" stroke-dasharray="6 8"/>
+        <line x1="54" y1="120" x2="346" y2="120" stroke-opacity="0.1" stroke-dasharray="6 8"/>
+        <g stroke-opacity="0.3">
+          <line x1="110" y1="270" x2="110" y2="284"/>
+          <line x1="290" y1="270" x2="290" y2="284"/>
+          <line x1="110" y1="277" x2="290" y2="277"/>
+        </g>
+        <text x="200" y="270" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="16" letter-spacing="2" fill="#fff" stroke="none" fill-opacity="0.35">3200 MM</text>
+        <text x="60" y="316" font-family="ui-monospace,Menlo,monospace" font-size="16" letter-spacing="2" fill="#fff" stroke="none" fill-opacity="0.3">SCOUT Q-2 QUADROTOR &#183; MTOW 38 KG</text>
+      </g>
+
+      <g fill="none" stroke="#fff" stroke-opacity="0.22" transform="translate(1080,300)">
+        <rect x="40" y="60" width="200" height="30" rx="10"/>
+        <line x1="80" y1="60" x2="80" y2="26"/>
+        <line x1="200" y1="60" x2="200" y2="26"/>
+        <line x1="40" y1="26" x2="120" y2="26"/>
+        <line x1="160" y1="26" x2="240" y2="26"/>
+        <circle cx="40" cy="26" r="5"/>
+        <circle cx="120" cy="26" r="5"/>
+        <circle cx="160" cy="26" r="5"/>
+        <circle cx="240" cy="26" r="5"/>
+        <line x1="55" y1="90" x2="55" y2="108"/>
+        <line x1="225" y1="90" x2="225" y2="108"/>
+        <line x1="35" y1="108" x2="75" y2="108"/>
+        <line x1="205" y1="108" x2="245" y2="108"/>
+        <line x1="140" y1="90" x2="140" y2="150" stroke-dasharray="5 6" stroke-opacity="0.3"/>
+        <path d="M132 150h16l-8 12z" fill="#fff" fill-opacity="0.3" stroke="none"/>
+        <rect x="104" y="166" width="72" height="48"/>
+        <line x1="104" y1="166" x2="176" y2="214" stroke-opacity="0.16"/>
+        <line x1="176" y1="166" x2="104" y2="214" stroke-opacity="0.16"/>
+        <g stroke-opacity="0.3">
+          <line x1="286" y1="60" x2="286" y2="214"/>
+          <line x1="279" y1="60" x2="293" y2="60"/>
+          <line x1="279" y1="214" x2="293" y2="214"/>
+        </g>
+        <text x="300" y="142" font-family="ui-monospace,Menlo,monospace" font-size="16" letter-spacing="2" fill="#fff" stroke="none" fill-opacity="0.35">3.1 M</text>
+        <text x="40" y="252" font-family="ui-monospace,Menlo,monospace" font-size="16" letter-spacing="2" fill="#fff" stroke="none" fill-opacity="0.3">SKYHAULER H-9 &#183; SLUNG PAYLOAD 120 KG</text>
+      </g>
+
+      <g fill="none" stroke="#fff" stroke-opacity="0.2">
+        <path d="M170 700 C 330 620, 470 760, 640 690" stroke-dasharray="10 10"/>
+        <circle cx="170" cy="700" r="6" fill="#fff" stroke="none" fill-opacity="0.35"/>
+        <circle cx="640" cy="690" r="6" fill="#fff" stroke="none" fill-opacity="0.35"/>
+        <polygon points="196,686 220,693 199,705" fill="#fff" stroke="none" fill-opacity="0.35"/>
+        <text x="405" y="650" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="16" letter-spacing="2" fill="#fff" stroke="none" fill-opacity="0.32">RANGE 240 KM &#183; BVLOS CORRIDOR</text>
+      </g>
+
+      <g fill="none" stroke="#fff" stroke-opacity="0.18">
+        <circle cx="1380" cy="170" r="120" stroke-dasharray="4 10"/>
+        <circle cx="1380" cy="170" r="5" fill="#fff" stroke="none" fill-opacity="0.35"/>
+        <line x1="1380" y1="170" x2="1468" y2="102" stroke-dasharray="3 6" stroke-opacity="0.25"/>
+        <text x="1428" y="120" font-family="ui-monospace,Menlo,monospace" font-size="15" letter-spacing="2" fill="#fff" stroke="none" fill-opacity="0.32">LINK 42 KM</text>
+      </g>
+
+      <g transform="rotate(-12 800 680)">
+        <g fill="none" stroke="#fff" stroke-opacity="0.26">
+          <polygon points="548,680 523,723 473,723 448,680 473,637 523,637" stroke-width="2.5"/>
+          <rect x="486" y="672" width="24" height="16" rx="3" stroke-width="2"/>
+          <line x1="490" y1="676" x2="478" y2="664" stroke-width="2"/>
+          <line x1="506" y1="676" x2="518" y2="664" stroke-width="2"/>
+          <line x1="490" y1="684" x2="478" y2="696" stroke-width="2"/>
+          <line x1="506" y1="684" x2="518" y2="696" stroke-width="2"/>
+          <circle cx="476" cy="662" r="8" stroke-width="2"/>
+          <circle cx="520" cy="662" r="8" stroke-width="2"/>
+          <circle cx="476" cy="698" r="8" stroke-width="2"/>
+          <circle cx="520" cy="698" r="8" stroke-width="2"/>
+        </g>
+        <text x="575" y="698" font-family="'Segoe UI',system-ui,sans-serif" font-size="46" letter-spacing="7" font-weight="300" fill="#fff" fill-opacity="0.22">DISCREET DRONE SERVICES</text>
+        <line x1="578" y1="720" x2="1390" y2="720" stroke="#fff" stroke-opacity="0.14"/>
+        <text x="580" y="748" font-family="'Segoe UI',system-ui,sans-serif" font-size="16" letter-spacing="6" fill="#fff" fill-opacity="0.16">AERIAL LOGISTICS &#183; HEAVY LIFT &#183; BEYOND LINE OF SIGHT</text>
+      </g>
+    </svg>
+    <div id="login-card" class="login-card">
+      <div class="login-avatar" id="login-avatar"></div>
+      <div class="login-name" id="login-name"></div>
+      <div class="login-email" id="login-email"></div>
+      <div class="login-user-row">
+        <input id="login-user" type="text" readonly spellcheck="false" autocomplete="username" aria-label="Username">
+      </div>
+      <div class="login-error hidden" id="login-error">The password is incorrect. Try again.</div>
+      <div class="login-input-row">
+        <input id="login-password" type="password" placeholder="Password" autocomplete="current-password" aria-label="Password">
+        <button id="login-submit" aria-label="Sign in">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <button class="login-options" id="login-options">Sign-in options</button>
+      <div class="login-note hidden" id="login-note">Other sign-in methods are unavailable on this device.</div>
+    </div>
+    <div class="login-corner left">
+      <svg viewBox="0 0 24 24" width="17" height="17"><path d="M2 8.5C8 3 16 3 22 8.5M5 12c4-3.8 10-3.8 14 0M8.5 15.4c2-1.9 5-1.9 7 0" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/><path d="M3 3l18 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      <span>Not connected</span>
+    </div>
+    <button class="login-corner" id="login-power" title="Power">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 3v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M6.6 6.2a7.5 7.5 0 1 0 10.8 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+    </button>
+  </div>
+
+  <div id="welcome-screen" class="hidden">
+    <div class="login-bg"></div>
+    <div class="welcome-text">Welcome</div>
+    <div class="spinner"></div>
+  </div>
+
+  <div id="desktop" class="hidden">
+    <div id="wallpaper"></div>
+
+    <div id="desktop-icons"></div>
+
+    <div id="windows"></div>
+
+    <div id="start-menu" class="hidden">
+      <div class="sm-search"><input id="sm-search-input" type="text" placeholder="Search for apps, settings, and documents" spellcheck="false"></div>
+      <div class="sm-section-label">Pinned</div>
+      <div id="sm-pinned" class="sm-pinned"></div>
+      <div class="sm-footer">
+        <div class="sm-user">
+          <span id="sm-avatar" class="sm-avatar"></span>
+          <span id="sm-username">User</span>
+        </div>
+        <button id="sm-power" title="Power">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 3v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M6.6 6.2a7.5 7.5 0 1 0 10.8 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="quick-settings" class="hidden">
+      <div class="qs-grid">
+        <button class="qs-tile" id="qs-wifi">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M2 8.5C8 3 16 3 22 8.5M5 12c4-3.8 10-3.8 14 0M8.5 15.4c2-1.9 5-1.9 7 0" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M3 3l18 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span>Wi-Fi<br><em>Not connected</em></span>
+        </button>
+        <button class="qs-tile off">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M7 7l10 10M12 2a3 3 0 0 1 3 3v5M9 9v3l-4 4h8" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Bluetooth<br><em>Off</em></span>
+        </button>
+        <button class="qs-tile off">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M10.5 13.5L21 3M2 14l3-3 11 8-2 3-5-3H6l-2-2z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Airplane mode<br><em>Off</em></span>
+        </button>
+        <button class="qs-tile off">
+          <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+          <span>Battery saver<br><em>Off</em></span>
+        </button>
+      </div>
+      <div class="qs-slider">
+        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/></svg>
+        <input type="range" min="0" max="100" value="70">
+      </div>
+      <div class="qs-slider">
+        <svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" fill="none"/><circle cx="12" cy="12" r="3.5" fill="currentColor"/></svg>
+        <input type="range" min="0" max="100" value="40">
+      </div>
+      <div class="qs-footer"><span id="qs-battery-label">Battery &mdash; 87%</span></div>
+    </div>
+
+    <div id="taskbar">
+      <div class="tb-center">
+        <button class="tb-icon" id="tb-start" title="Start">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="#4cc2ff" d="M3 3h8.5v8.5H3zM12.5 3H21v8.5h-8.5zM3 12.5h8.5V21H3zM12.5 12.5H21V21h-8.5z"/></svg>
+        </button>
+        <button class="tb-icon" id="tb-search" title="Search">
+          <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="tb-tray">
+        <button class="tb-tray-group" id="tb-tray-group" title="No internet connection">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M2 8.5C8 3 16 3 22 8.5M5 12c4-3.8 10-3.8 14 0M8.5 15.4c2-1.9 5-1.9 7 0" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/><path d="M3 3l18 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" width="20" height="20"><rect x="2" y="8" width="17" height="8" rx="1.5" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="4" y="10" width="11" height="4" fill="currentColor"/><path d="M21 10.5v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="tb-clock">
+          <div id="clock-time">--:--</div>
+          <div id="clock-date">--/--/----</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast" class="hidden"></div>
+  </div>
+
+</div>
+<noscript>This simulation requires JavaScript.</noscript>
+<script src="js/vm.js"></script>
+</body>
+</html>
