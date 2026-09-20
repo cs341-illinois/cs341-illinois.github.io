@@ -9,7 +9,12 @@ See [Malloc Home]({% link _docs/malloc.md %}), [Part 1]({% link _docs/malloc_par
 
 ## Backstory
 
-I have no detailed memory of what happened or how I got here. I remember day dreaming about heap allocators and not looking where I was going ... walking into that post and hitting my head wasn't my brightest moment.
+Perhaps the pay raise was too good to be true? This is your second day at <em>Discreet Drone Services</em> and probably the wildest startup company you've ever had the misfortune to work at. Rumors are flying about your boss -  where is he? Why is he hiding? Someone claims that he is being blackmailed by Ren - the shady HR person who was weirdly aggressive to you on your first day who took your picture for you ID badge and then kept on talking about AI pics while staring at your photo?No one seems to have time for you, and they're all just running around madly. Will the company even survive 2 weeks so that you get a paycheck? Maybe it's time to already move one but at least one paycheck would be nice, given the current state of your bank balance.
+
+The CEO walks up to you and asks two things. Firstly "Are you smart enough to solve the Jay Queue thing - It seems important - at least your boss Thaddeus mentioned that he wanted you on it as soon as you arrived" Secondly, would you mind looking at virtual machine capture of Thadius's machine? He needs someone that can report directly to them and he doesn't trust the employees to be impartial"
+
+He hands your thumb drive.
+"Thadius's password probably started with Drone. 
 
 ## Overview and To-Do
 
