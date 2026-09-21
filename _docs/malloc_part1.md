@@ -24,12 +24,13 @@ We suggest you record one video for each of the 3 sections below (i.e. 3 videos 
 1. What are the difference between `malloc` and `calloc`; when would you choose `malloc` one? When would you choose `calloc`?
 2. Measure the speed difference in a function using 4KB stack memory v temporarily reserving heap (see code examples below)? Hint: Why must you be careful about compiler optimizations in the code below?
 
-`C
+```c
 void use_stack() { char data[4096]; memset(data, 0, 4096); return;}
 void use_malloc() { char* data = malloc(4096); memset(data, 0, 4096); free(data); return;}
 void use_calloc() { char* data = calloc(4096,1); free(data); return;}
 `
-3. What is the Heap area called in the POSIX process model. What is the purpose of `sbrk()`/`brk`? What do real memory allocators use instead?
+
+3. What is the Heap area called in the POSIX process model. What is the purpose of `sbrk()`? What do real memory allocators use instead?
 
 
 ### 1. Memory Allocation Basics
@@ -46,7 +47,8 @@ void use_calloc() { char* data = calloc(4096,1); free(data); return;}
 3. How does a SLAB allocator work, and where would you typically find it?  What are the advantages / disadvantages?
 
 # Memory allocation techniques in other languages
-What is special about how 
+What is special about how -
+
 4. Java allocates and frees-up memory for objects?
 5. Rust allocates and releases memory for objects?
 6. Ruby allocates and releases memory for objects?
