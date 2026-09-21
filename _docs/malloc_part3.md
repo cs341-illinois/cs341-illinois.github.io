@@ -19,7 +19,7 @@ He hands you a small USB drive and a slip of paper with "sha256: ebddfa36f5af477
 
 Open [Thad's Laptop Image]({% link forensic-vm447/index.html %})
 
-## Overview and To-Do
+## Overview and To-Do (Under construction)
 
 In 3 days you'll present to the senior drone engineering team. They will want to see your report, results of your experiments, your findings of using different jq with different allocators and different allocator settings. It will be a long session and the team will pour over your work. You need to be prepared.
 
@@ -39,13 +39,7 @@ Thadius suggested a different allocater, mimalloc for the Web App because, "We c
 Example json data: https://jsonlint.com/datasets/http-status-codes https://microsoftedge.github.io/Demos/json-dummy-data/
 
 
-## Grading / Deliverables
+## Grading / Deliverables (Under construction)
 
 
-Your .c files (above) should compile without error using a recent version of `clang` on your CS341 VM.
-
-## Interview Clinic Expectations
-
-You are expected to be able to speak on the knowledge you gained during this section, i.e. it is fair game for the interview clinic discussions. 
-
-This means things including but not limited to:
+## Interview Clinic Expectations (Under construction)
