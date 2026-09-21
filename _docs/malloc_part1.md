@@ -4,6 +4,10 @@ title: "Malloc (part 1 of 3)"
 learning_objectives:
   - Memory Allocation and Management
   - Performance Optimization
+  - Iterative Design
+wikibook:
+  - "Memory, Part 1: Heap Memory Introduction"
+  - "Memory, Part 2: Implementing a Memory Allocator"    
 ---
 See [Malloc Home]({% link _docs/malloc.md %}), [Part 2]({% link _docs/malloc_part2.md %}) and [Part 3]({% link _docs/malloc_part3.md %}).
 
