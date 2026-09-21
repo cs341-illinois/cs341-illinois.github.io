@@ -13,9 +13,9 @@ See [Part 1]({% link _docs/malloc_part1.md %}), [Part 2]({% link _docs/malloc_pa
 
 ## Backstory
 
-This page and part 1 has no backstory. It's just you, your partners, and memory allocation. Human beings and a System Programming concept. Deal with it.
+This page and part 1 has no backstory. It's just you, your partner(s), and memory allocation; Human beings being human and a System Programming concept being ... well a concept. Deal with it.
 
-Part 2 and part 3 for their backstory.
+See Part 2 and part 3 for their backstory.
 
 ## Assignment Overview
 
