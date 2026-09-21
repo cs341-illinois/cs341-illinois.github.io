@@ -10,42 +10,46 @@ See [Malloc Home]({% link _docs/malloc.md %}), [Part 1]({% link _docs/malloc_par
 
 ## Backstory
 
-This is only your second day at <em>Discreet Drone Services</em> and it's chaos. Wild rumors and questions are flying about the company's future and Thaddea who was supposed to meet you yesterday and get you started. Where is he? Why is he hiding? Was he kidnapped? Did he flee to Mexico because of some deal gone bad or for love? Everyone has a pet theory. Will the company even survive 2 weeks? Will you even get paid? Whatever happened, it's pretty clear that the company and Thadius are in a <em>heap of trouble</em>.
+This is only your second day at <em>Discreet Drone Services</em>. Not only is it crazy hot outside it's chaos inside. Wild rumors and questions are flying about the company's future and Thaddea, who was supposed to meet you yesterday and get you started. Where is she? Why is she hiding? Was she kidnapped? Did she flee to Mexico for love? Everyone has their own wild theory about Thaddea and the state of the company. Will the company even survive 2 weeks? You're not so sure. Will you get a letter of recommendation at the end, or even get paid in 2 weeks? Whatever happened, it's starting to become clear that <em>Discreet Drone Services</em> and Thaddea are in a <em>heap of trouble</em>.
 
-The CEO interrupts your day-dreaming and asks "I need you to solve the Jay Queue Allocation thing; Thaddea wanted you on it ASAP and said we need solid defensible auditable engineering answers yesterday." And, "Look none of this makes sense and I don't know who to trust right now, so I'm turning to you. IT imaged Thaddea's laptop," he hands you a USB drive, "and pulled the sha256 of her password. So I need you to login and tell me what happened to my friend Thaddea. It's not like her to just run away from problems."
+The CEO interrupts your day-dreaming and asks, "I need you to solve the Jay Queue Allocation thing; I know Thaddea wanted you working on it ASAP and said we need solid defensible auditable engineering answers yesterday." And, "Look none of this makes sense to me. I don't know who to trust right now, so I'm turning to you. My IT wiz imaged Thaddea's laptop,"  - the CEO hands you a USB drive - "And pulled the sha256 of her password, it's here on some paper somewhere. So I need you to login and tell me what happened to my friend Thaddea. It's not like her to just run away from problems."
 
-He hands you a small USB drive and a slip of paper with "sha256: ebddfa36f5af47714dd1a1591fa5ead58b613f13ac78e88f90ab00e353856a00" plus some notes about the jq project.
-From creating your own login account, you know Discreet Drone Services' password rules. Each password must be 10 characters, have upper and lowercase characters, digits, and a punctuation character."
+The CEO hands you a small USB drive and a slip of baldy coffee-stained paper with "sha256: ebddfa36f5af..." - the rest of the hexadecimal digits are unreadable, plus some unreadable scratch notes taken from Thaddea's desk about memory allocators, the word <tt>memset</tt> and various doodles of different Drones.
+You recently created your own password for your login, so you recall Discreet Drone Services' rules. Each password must be 10 characters, have upper and lowercase characters, digits, and a punctuation character. People don't seem too concerned about security around here; maybe brute-forcing attempts or some smart guessing is possible? You mentally start designing a C program. But you also will try a few obvious guesses that come to mind...
 
-That's not much but the company name has given you some ideas; maybe brute-forcing or smart guessing is possible? You mentally start designing a C program but also will try a few obvious guesses.
+After the CEO leaves, you start a VM using Thaddea's [Laptop Image Memory Snapshot]({% link forensic-vm447/index.html %})
 
-Start a VM using [Thaddea's Laptop Image]({% link forensic-vm447/index.html %})
+## Overview and To-Do
 
-## Overview and To-Do (Under construction)
+This evening you'll present to the senior drone engineering team. They urgently want to see your report on jq optimization, the results of your experiments, your findings of using different jq with different allocators and different allocator settings. It will be a long session; expect the team will to review your work carefully and grill you; you need to be prepared.
 
-In 3 days you'll present to the senior drone engineering team. They will want to see your report on jq optimization, results of your experiments, your findings of using different jq with different allocators and different allocator settings. It will be a long session and the team will pour over your work and grill you; you need to be prepared.
+Here are some example questions that the team may ask you -
+1. Was Thaddea's <tt>jq</tt> drone warnings correct? Can you show us how to reproduce the OOM bug when heap memory is limited to 96 MB for mimalloc heap alloctors? For example, we expect the following to fail with OOM,
+<tt>ulimit -v 98304; LD_PRELOAD=$PWD/mimalloc/build/libmimalloc.so.3 jq "length" batch-99-2m.json'</tt>
+2. Between glibc, jemalloc and mimalloc which allocator would you recommend for the drone? Prove to us that you verified that your choice can parse the given geo json data within the 96 MB limit.
+3. The team ask you to explain the "ulimit -v" and "LD_PRELOAD" parts i.e. what does that line do?
+4. How does the performance of your owb part2 allocator compare to jemalloc, mimalloc on this data? Do you have any good reasons to recommend or not recommend your own allocator? 
+5. If we cleaned up the json file ie., removed the unnecessary null entries, are there good reasons (e.g. processing time, memory usage) to recommend jemalloc, glibc, or mimalloc over the other allocators?
+6. In case the drone is captured, the security team wants sensitive data to be erased (overwritten) from heap memory as soon as possible. After doing some research what do you recommend i.e. how should they implement this?
 
+Later, after you figured out what happened, you burst into see the CEO's office barely able to speak while you catch your breath...
 
-Here are some of the questions that the team may ask you -
-1. Was Thaddea's jq drone warning correct? Can you reproduce OOM when heap memory is limited to 96 MB for certain heap alloctors?
-2. Which allocator would you recommend for the Drone? Have you verified that it can parse 10 MB of json data within the 96 MB limit?
+ * What will you tell the CEO? Where is Thaddea and what actions do you recommend they immediately do for her?
 
-Thaddea suggested a different allocater, mimalloc for the Web App because, "We care about the tail. No user should ever see a slow response - watch p99, not the mean" 
+## Grading / Deliverables
+All reports and experiments for part3 should be inside the repo directory './Drone'
+For each of the 6 allocator questions above, provide evidence of your understanding and work that supports your findings-
 
-3. Can you experimentally confirm mimalloc is a good choice if you care about p99 for the web service?
-4. Another team uses jq in a script and cares about start up time and processing small data files and will ask which allocator they should use, or does it not matter?
-5. Another team works with classified data and wants <tt>free</tt> to also clean the heap memory. If you want to ensure that json data is removed from RAM when heap memory is freed, which allocator would be a good choice? Is the overhead significant if working with 10 MB of data.
-6. How does you allocator compare to jemalloc, tcmalloc? Is it competitive? Why / Why not?
-7. Did Thaddea make any mistakes in this research notes?
-8. What will you tell the CEO? In particular where is Thaddea and can he be saved?
+i) A Short video demonstrations in Mediaspace of your code and findings.
+ii) In to your repo the results of your work and any small test source and data files used to support your findings. 
+The engineering team are suspicious of claims without evidence; you repo will need to contain enough items that they can reproduce your results, or at at least trust you.
 
-Example json data: https://jsonlint.com/datasets/http-status-codes https://microsoftedge.github.io/Demos/json-dummy-data/
+* Include a file './Drone/videos.txt' with the 6 links in to your shared video files on MediaSpace (don't forget to make each video public and unlisted, and create a shared link).
+* Do not add large files > 10MB (large json files, mp4s) to your git repo. large data should be hosted elsewhere
 
-There are multiple allocators that you will explore using with jq. These include glibc, tcmalloc, jemalloc, and mimalloc. 
-Create a report that gives an example scenario for each allocator where it would be best (or great) choice and the worst (or a poor) choice.
+You may co-present with your partner(s) on each question; however you must present an equal amount of content and "air time."
 
+## Interview Clinic Expectations
 
-## Grading / Deliverables (Under construction)
-All reports and experiments should be inside a directory 'jq-drone'
+Your interview may include questions similar to any of the 6 allocator questions above.
 
-## Interview Clinic Expectations (Under construction)
