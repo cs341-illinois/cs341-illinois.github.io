@@ -44,8 +44,8 @@ i) A Short video demonstrations in Mediaspace of your code and findings.
 ii) In to your repo the results of your work and any small test source and data files used to support your findings. 
 The engineering team are suspicious of claims without evidence; you repo will need to contain enough items that they can reproduce your results, or at at least trust you.
 
-* Include a file './Drone/videos.txt' with the 6 links in to your shared video files on MediaSpace (don't forget to make each video public and unlisted, and create a shared link).
-* Do not add large files > 10MB (large json files, mp4s) to your git repo. large data should be hosted elsewhere
+* Include a file in the root of your repo, './malloc_part3.txt'' with the 6 links in to your shared video files on MediaSpace (don't forget to make each video public and unlisted, and create a shared link).
+* Do not add large files > 10MB (large json files, mp4s) to your git repo. large data should be hosted elsewhere and downloadedor generated with a script.
 
 You may co-present with your partner(s) on each question; however you must present an equal amount of content and "air time."
 
