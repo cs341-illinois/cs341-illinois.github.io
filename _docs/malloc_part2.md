@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: "Malloc (part 2)"
+title: "Malloc (part 2 of 3)"
 learning_objectives:
   - Memory Allocation and Management
   - Performance Optimization
