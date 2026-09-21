@@ -18,6 +18,8 @@ In preparation for your course staff interview, each student in the study group 
 
 We suggest you record one video for each of the 5 sections below (i.e. 5 videos in total). Each student must present different items (so as a group decide in advance who presents what!). No need to stop the video to change who presents; you can huddle around one laptop, or be in a real Zoom call - either works. For some sections, we require that you use a **whiteboard** to draw out a given concept as you explain it. You may use Zoom's whiteboard feature, websites like [Excalidraw](https://excalidraw.com/), or simply record you and your partner in front of a physical whiteboard!
 
+Ultimately, your videos need to be Mediaspace. Don't forget to i) Make the videos unlisted and public. ii) Create and use a shareable link for each Mediaspace video.
+
 ## The Assignment
 
 ### 0. POSIX Heap Memory (Select one topic per partner)
