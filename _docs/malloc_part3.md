@@ -3,7 +3,7 @@ layout: doc
 title: "Malloc (part 3 of 3)"
 learning_objectives:
   - Benchmarking
-  - Debugging memory issues
+  - Comparing different memory allocators in a real application
   - System Forensics
 ---
 See [Malloc Home]({% link _docs/malloc.md %}), [Part 1]({% link _docs/malloc_part1.md %}) and [Part 2]({% link _docs/malloc_part2.md %}).
