@@ -83,7 +83,10 @@ At the completion of the malloc project there will be a 30 minute in-person inte
 Each portion of this project will comprise of the following percentage of the project 2 grade:
 
 | Component                                  | Weight |
-|--------------------------------------------|--------|
-TODO
+|---------------------------------------------|--------|
+| Part 1 Videos + Part 3 Videos and Supporting Docs   | 25%    |
+| Part 2 Autograder score                      | 25%    |
+| 'Malloc' Debrief Portion of Interview Clinic  | 50%    |
+
 
 Projects are worth 18% of the course total and all AI-assisted exploration projects will be equally weighted. We expect to release 4 projects. Thus this project is worth approximately 5% of your total grade.
