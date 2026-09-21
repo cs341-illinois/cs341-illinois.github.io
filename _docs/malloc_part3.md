@@ -27,17 +27,17 @@ In 3 days you'll present to the senior drone engineering team. They will want to
 
 
 Here are some of the questions that the team may ask you -
-1. Was Thadius's jq drone warning correct? Can you reproduce OOM when heap memory is limited to 96 MB for certain heap alloctors?
+1. Was Thaddea's jq drone warning correct? Can you reproduce OOM when heap memory is limited to 96 MB for certain heap alloctors?
 2. Which allocator would you recommend for the Drone? Have you verified that it can parse 10 MB of json data within the 96 MB limit?
 
-Thadius suggested a different allocater, mimalloc for the Web App because, "We care about the tail. No user should ever see a slow response - watch p99, not the mean" 
+Thaddea suggested a different allocater, mimalloc for the Web App because, "We care about the tail. No user should ever see a slow response - watch p99, not the mean" 
 
 3. Can you experimentally confirm mimalloc is a good choice if you care about p99 for the web service?
 4. Another team uses jq in a script and cares about start up time and processing small data files and will ask which allocator they should use, or does it not matter?
 5. Another team works with classified data and wants <tt>free</tt> to also clean the heap memory. If you want to ensure that json data is removed from RAM when heap memory is freed, which allocator would be a good choice? Is the overhead significant if working with 10 MB of data.
 6. How does you allocator compare to jemalloc, tcmalloc? Is it competitive? Why / Why not?
-7. Did Thadius make any mistakes in this research notes?
-8. What will you tell the CEO? In particular where is Thadius and can he be saved?
+7. Did Thaddea make any mistakes in this research notes?
+8. What will you tell the CEO? In particular where is Thaddea and can he be saved?
 
 Example json data: https://jsonlint.com/datasets/http-status-codes https://microsoftedge.github.io/Demos/json-dummy-data/
 

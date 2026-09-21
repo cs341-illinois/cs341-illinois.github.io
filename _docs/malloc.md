@@ -9,19 +9,19 @@ See [Part 1]({% link _docs/malloc_part1.md %}), [Part 2]({% link _docs/malloc_pa
 
 ## Backstory
 
-Some people know how to click on buttons, use GUIs, and Web Apps. As a computer scientist your time is precious and you have much more power and quicker methods at your fingertips. There is another way, because you can use a shell like a musical instrument. And quickly too. Which is a good thing - you overslept, lost your keys, stubbed your toe, forgot the root password - and they say now it's up to you to _fix-all-the-things!_ and _Save The World_. Maybe.
+_reserved for angrave to write_
 
 ## Assignment Overview
 
-This is a 3-part assignment, with each section strengthening and assessing different aspects of your work with a shell in CS341. 
+This is a 3-part assignment, with each section strengthening and assessing different aspects of your understanding of memory allocators. 
 
-In part 1, 
+In part 1, you'll explore a series of fundamental topics/concepts regarding the design & implementation of memory allocators. For each section within the associated page, you and your partner will demonstrate your understanding through video explanations. Your main deliverable will be these video demos/discussions.
 
-In part 2, you'll implement your own malloc (most reminiscent to the 'old CS341 MPs'). You will be able to use AI to help you out in this endeavor, but you are NOT allowed to copy any text verbatim from the assignment page. This will be enforced strictly, encouraging you to frame the problem statement(s) in your own words in order to build an application. Your main deliverable will be your own output score from running your shell on our Broadway On Demand autograder. 
+In part 2, you'll implement your own malloc. You will be able to use AI to help you out in this endeavor, but you are NOT allowed to copy any text verbatim from the assignment page. This will be enforced strictly, encouraging you to frame the problem statement(s) in your own words in order to build an application. Your main deliverable will be your own output score from running your shell on our Broadway On Demand autograder. 
 
-In part 3, you'll 
+In part 3, you'll extend your conceptual & practical knowledge of malloc even further! Within this section, you are tasked with examining a set of memory allocator implementations, that each have unique cases under which they perform better/worse than others. Your task will be to evaluate each allocator, creating reports for each one that detail best & worst use scenarios.
 
-**Note**: Start this assignment early! Read the specifications early! Connect with your partner early! These projects will be multi-week, so it is important to keep yourselves accountable and on track. There are many different aspects to digest and account for in this assignment, so starting early is essential for both your sanity and your learning! Would you rather do this right and learn a lot, or do this badly last minute and then have to scramble "re-learn" things for your interview clinic? The choice is yours... ;)
+**Note**: Start this assignment early! Read the specifications early! Connect with your partner early! These projects will be multi-week, so it is important to keep yourselves accountable and on track. There are many different aspects to digest and account for in this assignment, so starting early is essential for both your sanity and your learning! Would you rather do this right and learn a lot, or do this badly last minute and then have to scramble "re-learn" things for your interview clinic? The choice is yours... 
 
 ## Deliverable Submission
 
@@ -70,7 +70,7 @@ Each assignment page will go more in depth on the specific file namings or folde
 
 ## Important Things to Note - Interview Clinic / Knowledge Assessment
 
-At the completion of the malloc project there will be a 30 minute in-person interview with you and your partner(s) by course staff. Part of the interview will the 'shell debrief' where you will be asked to demonstrate your knowledge about using shells, creating shells, and diagnosing 'bad shells'. Our goal with these interviews is to keep you accountable to what you know and don't know in the course, as well as encourage a culture of truly learning this content deeply through curiosity, exploration, and discussion rather than only rote memorization and point gathering. 
+At the completion of the malloc project there will be a 30 minute in-person interview with you and your partner(s) by course staff. Part of the interview will the 'debrief', where you will be asked to demonstrate your knowledge about memory allocatator concepts, implementation details, and real-world allocators. Note that you may be asked to draw out (on whiteboard or otherwise) visuals to accompany your explanations! Our goal with these interviews is to keep you accountable to what you know and don't know in the course, as well as encourage a culture of truly learning this content deeply through curiosity, exploration, and discussion rather than only rote memorization and point gathering. 
 
 ## Grading
 
@@ -80,4 +80,4 @@ Each portion of this project will comprise of the following percentage of the pr
 |--------------------------------------------|--------|
 TODO
 
-Projects are worth 18% of the course total and all AI-assisted exploration projects will be equally weighted. We expect to release 4 (maybe 3) projects. Thus this project is worth approximately 5% of your total grade.
+Projects are worth 18% of the course total and all AI-assisted exploration projects will be equally weighted. We expect to release 4 projects. Thus this project is worth approximately 5% of your total grade.

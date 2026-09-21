@@ -9,7 +9,7 @@ See [Malloc Home]({% link _docs/malloc.md %}), [Part 2]({% link _docs/malloc_par
 
 ## Part 1 Objective
 
-The purpose of this assignment is for you to learn about memory allocation.
+The purpose of this assignment part is for you to learn the fundamental concepts behind memory allocation. By the end of the week, our expectation is that you will have build up a strong understanding of malloc internals, and be prepared to make informed design choices when implementing your own allocator!
 
 ## Important Things to Note
 
