@@ -29,6 +29,14 @@ In part 3, you'll extend your conceptual & practical knowledge of malloc even fu
 
 **Note**: Start this assignment early! Read the specifications early! Connect with your partner early! These projects will be multi-week, so it is important to keep yourselves accountable and on track. There are many different aspects to digest and account for in this assignment, so starting early is essential for both your sanity and your learning! Would you rather do this right and learn a lot, or do this badly last minute and then have to scramble "re-learn" things for your interview clinic? The choice is yours... 
 
+## Lumen AI requirements 
+
+For this assignment AI / LLM models will be limited to any model available on Lumen.ncsa.illinois.edu -
+
+* Enable Qwen3.8, Deepseek V4, and GLM5.3 `https://lumen.ncsa.illinois.edu/models`
+* Install opencode as the harness. On your VM, `curl -fsSL https://opencode.ai/v2/install | bash`
+Then see `https://lumen.ncsa.illinois.edu/connect`
+In OpenCode type /models and type "Lumen" to find models running on Lumen
 
 ## CS341 Partners have changed
 
