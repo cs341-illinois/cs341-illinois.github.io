@@ -26,6 +26,7 @@ const ICONS = {
   thisPC: (s = 34) => `<svg viewBox="0 0 24 24" width="${s}" height="${s}"><rect x="2" y="4" width="20" height="13" rx="1.5" fill="#5f789c"/><rect x="3.5" y="5.5" width="17" height="10" fill="#9cc3e8"/><path d="M8 19.5h8M12 17v2.5" stroke="#5f789c" stroke-width="1.5"/></svg>`,
   drive: (s = 30) => `<svg viewBox="0 0 24 24" width="${s}" height="${s}"><rect x="3" y="9" width="18" height="7" rx="1.5" fill="#b8c6d9"/><circle cx="18" cy="12.5" r="1" fill="#3d6b3d"/><rect x="5" y="11.7" width="8" height="1.6" fill="#7d8da3"/></svg>`,
   fileDoc: (s = 30) => `<svg viewBox="0 0 24 24" width="${s}" height="${s}"><path d="M6 2h9l5 5v15H6z" fill="#f3f3f3" stroke="#c8c8c8"/><path d="M15 2v5h5" fill="none" stroke="#c8c8c8"/><path d="M9 11h8M9 14h8M9 17h5" stroke="#9a9a9a" stroke-width="1.4"/></svg>`,
+  fileZip: (s = 30) => `<svg viewBox="0 0 24 24" width="${s}" height="${s}"><path d="M6 2h9l5 5v15H6z" fill="#fff3d4" stroke="#d7b96a"/><path d="M15 2v5h5" fill="none" stroke="#d7b96a"/><rect x="10" y="2" width="2.6" height="2.4" fill="#d7b96a"/><rect x="12.6" y="4.4" width="2.6" height="2.4" fill="#d7b96a"/><rect x="10" y="6.8" width="2.6" height="2.4" fill="#d7b96a"/><rect x="10.6" y="11.4" width="3.4" height="4.2" rx="0.7" fill="#d7b96a"/><rect x="11.9" y="12.6" width="0.9" height="1.7" fill="#fff3d4"/></svg>`,
 };
 
 const GLYPHS = {
@@ -43,7 +44,7 @@ const state = {
   winSeq: 0,
   mails: [],
   profile: {
-    name: "Thaddeus Wexler",
+    name: "Thaddea Wexler",
     login: "t.wexler@discreetdroneservices.com",
     email: "t.wexler@discreetdroneservices.com",
     device: "DESKTOP-VM447",
@@ -304,6 +305,27 @@ function snapshotDialog(appName) {
   );
 }
 
+// Files present on the snapshot's desktop. These are real downloads: the archive
+// sits next to index.html and is served with the rest of the app.
+const DESKTOP_FILES = [
+  {
+    name: "drone-geodata-2m.json.zip",
+    url: "drone-geodata-2m.json.zip",
+    sub: "Compressed (zipped) Folder \u00b7 660 KB",
+  },
+];
+
+function downloadFile(file) {
+  const a = el("a");
+  a.href = file.url;
+  a.download = file.name;
+  a.rel = "noopener";
+  document.body.append(a);
+  a.click();
+  a.remove();
+  toast(`Downloading ${file.name}\u2026`);
+}
+
 function openExplorer() {
   const existing = [...state.windows.values()].find((w) => w.appId === "explorer");
   if (existing) return existing.restore();
@@ -339,13 +361,18 @@ function openExplorer() {
     left: 120, top: 110,
     content: body,
   });
+  const desktopEntries = DESKTOP_FILES.map((f) => ({
+    name: f.name, sub: f.sub, kind: "fileZip", open: () => downloadFile(f),
+  }));
   draw("This PC", [
     { name: "Local Disk (C:)", sub: "118 GB free of 237 GB", kind: "drive", open: () => draw("Local Disk (C:)", [
       { name: "Program Files", kind: "explorer" },
       { name: "Users", kind: "explorer" },
       { name: "Windows", kind: "explorer" },
     ]) },
-    { name: "Downloads", kind: "explorer", open: () => draw("C:\\Users\\student\\Downloads", []) },
+    { name: "Desktop", kind: "explorer",
+      open: () => draw("C:\\Users\\t.wexler\\Desktop", desktopEntries) },
+    { name: "Downloads", kind: "explorer", open: () => draw("C:\\Users\\t.wexler\\Downloads", []) },
   ]);
 }
 
@@ -536,6 +563,9 @@ function initDesktopIcons() {
     { name: "Microsoft Outlook", icon: ICONS.outlook(38), open: () => openOutlook() },
     { name: "Microsoft Edge", icon: ICONS.edge(38), open: openEdge },
     { name: "This PC", icon: ICONS.thisPC(38), open: openExplorer },
+    ...DESKTOP_FILES.map((f) => ({
+      name: f.name, icon: ICONS.fileZip(38), open: () => downloadFile(f),
+    })),
   ];
   for (const d of defs) {
     const b = el("button", "desk-icon", `${d.icon}<span class="di-label">${d.name}</span>`);
@@ -814,6 +844,19 @@ function openOutlook() {
         ev.preventDefault();
         openEdge(a.dataset.url);
       }));
+    if (m.attachments && m.attachments.length) {
+      const bar = el("div", "r-attachments");
+      bar.append(el("div", "r-attach-label",
+        `${m.attachments.length} attachment${m.attachments.length > 1 ? "s" : ""}`));
+      for (const att of m.attachments) {
+        const chip = el("button", "r-attach",
+          `${ICONS.fileZip(28)}<span class="ra-text"><span class="ra-name">${escapeHtml(att.name)}</span><span class="ra-size">${escapeHtml(att.size || "")}</span></span>`);
+        chip.title = `Download ${att.name}`;
+        chip.addEventListener("click", () => downloadFile(att));
+        bar.append(chip);
+      }
+      reading.append(bar);
+    }
     const replyBtn = el("button", "ol-reply-btn", "Reply");
     replyBtn.addEventListener("click", () => openCompose({
       to: m.from || "",
@@ -1008,12 +1051,6 @@ async function init() {
 }
 
 function initLogin() {
-  const art = $("#drone-art");
-  if (art) {
-    const clone = art.cloneNode(true);
-    clone.removeAttribute("id");
-    $("#welcome-screen .login-bg").insertAdjacentElement("afterend", clone);
-  }
   const attempt = async () => {
     const pw = $("#login-password");
     const digest = await sha256Hex(pw.value);
