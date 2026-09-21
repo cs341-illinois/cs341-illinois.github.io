@@ -10,6 +10,8 @@ wikibook:
   - "Memory, Part 2: Implementing a Memory Allocator"
 ---
 
+See [Malloc Home]({% link _docs/malloc.md %}), [Part 1]({% link _docs/malloc_part1.md %}) and [Part 3]({% link _docs/malloc_part3.md %}).
+
 ## Backstory
 
 Well, color me impressed! Your shell was so fancy that you actually received that pay raise! However, you *may* have gone too far with your shell. Your boss is now so impressed at your skills that they sent you to the $$n$$th Inter-Company Turbo Malloc Contest - even though you're just a new hire! But hey, a business trip doesn't sound that bad, right?
