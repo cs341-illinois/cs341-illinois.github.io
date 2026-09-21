@@ -4,7 +4,7 @@ title: "Malloc (part 2)"
 learning_objectives:
   - Memory Allocation and Management
   - Performance Optimization
-  - Developing in a Restricted Environment
+  - Iterative Design
 wikibook:
   - "Memory, Part 1: Heap Memory Introduction"
   - "Memory, Part 2: Implementing a Memory Allocator"
