@@ -29,16 +29,19 @@ In part 3, you'll extend your conceptual & practical knowledge of malloc even fu
 
 **Note**: Start this assignment early! Read the specifications early! Connect with your partner early! These projects will be multi-week, so it is important to keep yourselves accountable and on track. There are many different aspects to digest and account for in this assignment, so starting early is essential for both your sanity and your learning! Would you rather do this right and learn a lot, or do this badly last minute and then have to scramble "re-learn" things for your interview clinic? The choice is yours... 
 
+
+## CS341 Partners have changed
+
+You will have a **new partner** for this project. The CS341 autograder is [Broadway]({{ site.data.constants.broadway_on_demand_link }}). The specific assignment page on Broadway will also tell you who your partner is and provide a link to your shared Github repo.
+
 ## Deliverable Submission
 
 The 'home base' for this project will be you and your partner's corresponding Github Repo. 
 
 See the video demo - [how to record, publish, and expectations]({% link _tutorials/video_demo.md %}) 
 
-The CS341 autograder is [Broadway]({{ site.data.constants.broadway_on_demand_link }}). The specific assignment page on Broadway will also tell you who your partner is and provide a link to your shared Github repo.
-
 To access your Github repo for the project:
-1. Go to the Shell project on Broadway 
+1. Go to the Shell project on [Broadway]({{ site.data.constants.broadway_on_demand_link }})
 2. Check "Project Repo" section for the link, you should already be assigned and have access rights with your partner to the repo linked here.
 3. If not added to the repo or can't access it, talk to a discussion TA. 
 
