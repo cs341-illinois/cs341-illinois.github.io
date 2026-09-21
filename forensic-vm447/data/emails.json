@@ -5,6 +5,7 @@
     "email": "t.wexler@discreetdroneservices.com",
     "device": "DESKTOP-VM447"
   },
+  "fictionalToday": "2026-09-20T00:00:00",
   "messages": [
     {
       "id": "in-spam-1",
@@ -61,10 +62,10 @@
       "folder": "inbox",
       "from": "Learning & Development <training-noreply@discreetdroneservices.com>",
       "to": "Thaddea Wexler <t.wexler@discreetdroneservices.com>",
-      "subject": "Annual Cybersecurity Awareness Training - due Sept 30",
+      "subject": "Annual Cybersecurity Awareness Training - due at the end of the month",
       "date": "2026-09-12T08:00:00",
       "read": false,
-      "body": "Hello Thaddea,\n\nYour 2026 Cybersecurity Awareness training is due by September 30. The module takes about 35 minutes and covers phishing recognition and safe data handling.\n\nComplete it in the LMS under Training > Mandatory Courses.\n\n- Learning & Development (automated notice)"
+      "body": "Hello Thaddea,\n\nYour 2026 Cybersecurity Awareness training is due by the end of the month. The module takes about 35 minutes and covers phishing recognition and safe data handling.\n\nComplete it in the LMS under Training > Mandatory Courses.\n\n- Learning & Development (automated notice)"
     },
     {
       "id": "in-corp-2",
@@ -74,27 +75,27 @@
       "subject": "Action required: Annual Ethics & Reporting attestation",
       "date": "2026-09-10T09:15:00",
       "read": false,
-      "body": "All employees must complete the 2026 Ethics & Reporting certification by October 15.\n\nThe attestation covers conflicts of interest, export controls for flight hardware, and use of the confidential reporting line.\n\n- Compliance Office (automated notice)"
+      "body": "All employees must complete the 2026 Ethics & Reporting certification by the middle of next month.\n\nThe attestation covers conflicts of interest, export controls for flight hardware, and use of the confidential reporting line.\n\n- Compliance Office (automated notice)"
     },
     {
       "id": "in-corp-3",
       "folder": "inbox",
       "from": "People Ops <peopleops@discreetdroneservices.com>",
       "to": "All Staff <all-staff@discreetdroneservices.com>",
-      "subject": "Benefits open enrollment opens Monday",
+      "subject": "Benefits open enrollment opens in 12 days",
       "date": "2026-09-09T12:30:00",
       "read": false,
-      "body": "Open enrollment for 2027 benefits runs September 21 - October 2.\n\nMedical, dental, vision, and the new field-ops wellness stipend. Elections carry over automatically if you take no action.\n\n- People Ops"
+      "body": "Open enrollment for 2027 benefits opens in 12 days and runs for two weeks.\n\nMedical, dental, vision, and the new field-ops wellness stipend. Elections carry over automatically if you take no action.\n\n- People Ops"
     },
     {
       "id": "in-corp-4",
       "folder": "inbox",
       "from": "Facilities <facilities@discreetdroneservices.com>",
       "to": "All Staff <all-staff@discreetdroneservices.com>",
-      "subject": "North lot repaving Sept 22-24",
+      "subject": "North lot repaving in two weeks",
       "date": "2026-09-08T16:45:00",
       "read": false,
-      "body": "The north parking lot will be repaved September 22-24.\n\nPlease park in the south lot or take the shuttle from the park-and-ride. Badge access to the north entrance is unaffected.\n\n- Facilities"
+      "body": "The north parking lot will be repaved in two weeks.\n\nPlease park in the south lot or take the shuttle from the park-and-ride. Badge access to the north entrance is unaffected.\n\n- Facilities"
     },
     {
       "id": "in-bc-1",
@@ -124,7 +125,7 @@
       "subject": "HEX-9 Skyhauler - certified range vs load (for the VIP brief)",
       "date": "2026-09-10T09:14:00",
       "read": true,
-      "body": "For the VIP brief Thursday, here are the certified numbers for the HEX-9 Skyhauler: max flight distance vs load, zero wind, no reserve.\n\nLoad (% of 120 kg max)   Max distance\n  0%                     148 km\n 25%                     121 km\n 50%                      96 km\n 75%                      73 km\n100%                      54 km\n\nCruise is 18 m/s. Figures are still-air; brief the VIPs that any wind shortens these.\n\n- Lena"
+      "body": "For next week's VIP brief, here are the certified numbers for the HEX-9 Skyhauler: max flight distance vs load, zero wind, no reserve.\n\nLoad (% of 120 kg max)   Max distance\n  0%                     148 km\n 25%                     121 km\n 50%                      96 km\n 75%                      73 km\n100%                      54 km\n\nCruise is 18 m/s. Figures are still-air; brief the VIPs that any wind shortens these.\n\n- Lena"
     },
     {
       "id": "in-rng-2",
@@ -181,30 +182,30 @@
       "folder": "inbox",
       "from": "Devon Marsh <devon.marsh@discreetdroneservices.com>",
       "to": "Flight Ops <flight-ops@discreetdroneservices.com>",
-      "subject": "Demo Day confirmed - Thursday Sept 17, Red Mesa South (Lat/Long)",
+      "subject": "Demo Day confirmed - Red Mesti South (Lat/Long)",
       "date": "2026-09-14T10:26:00",
       "read": true,
-      "body": "Team,\n\nDemo Day is confirmed for Thursday Sept 17 at Red Mesa South - 31.7894 N, 107.6187 W, near the Village of Columbus, NM, a few miles from the border fence.\n\nVIP guests on site 10:00-14:00. We're showing the HEX-9 slung-load story: 120 kg max, precision hook, long legs.\n\nRunning order to follow.\n\n- Devon"
+      "body": "Team,\n\nDemo Day is confirmed for later this week at Red Mesti South - 31.7894 N, 107.6187 W, near the Village of Columbus, NM, a few miles from the border fence.\n\nMap: https://maps.google.com/?q=31.7894,-107.6187\n\nVIP guests on site 10:00-14:00. We're showing the HEX-9 slung-load story: 120 kg max, precision hook, long legs.\n\nRunning order to follow.\n\n- Devon"
     },
     {
       "id": "in-demo-2",
       "folder": "inbox",
       "from": "Sofia Alvarez <sofia.alvarez@discreetdroneservices.com>",
       "to": "Flight Ops <flight-ops@discreetdroneservices.com>",
-      "subject": "Red Mesa South logistics for Thursday",
+      "subject": "Red Mesti South logistics for Demo Day",
       "date": "2026-09-16T14:05:00",
       "read": true,
-      "body": "Site logistics for Thursday:\n\n- Forecast looks great - calm, under 3 knots all afternoon\n- Shade tent and water at the pad, VIP parking off the north track\n- Border patrol liaison confirmed for the fence-side road\n\nThaddea - can you confirm the hoist rig inspection Thursday morning before the VIP flight?\n\n- Sofia"
+      "body": "Site logistics for Demo Day:\n\n- Forecast looks great - calm, under 3 knots all afternoon\n- Shade tent and water at the pad, VIP parking off the north track\n- Border patrol liaison confirmed for the fence-side road\n\nThaddea - can you confirm the hoist rig inspection on Demo Day morning before the VIP flight?\n\n- Sofia"
     },
     {
       "id": "in-int-1",
       "folder": "inbox",
       "from": "People Ops <peopleops@discreetdroneservices.com>",
       "to": "Thaddea Wexler <t.wexler@discreetdroneservices.com>",
-      "subject": "Fall intern starts Monday - approvals needed",
+      "subject": "Fall intern starts in 5 days - approvals needed",
       "date": "2026-09-16T09:30:00",
       "read": true,
-      "body": "Thaddea,\n\nReminder that our fall intern starts Monday Sept 21. As the sponsoring engineer you'll need to sign off on:\n\n- IT access (standard new-employee package)\n- Badge and site access for Red Mesa days\n- A desk near your team\n\nCan you approve the request so helpdesk can provision before Monday?\n\n- People Ops"
+      "body": "Thaddea,\n\nReminder that our fall intern starts in 5 days. As the sponsoring engineer you'll need to sign off on:\n\n- IT access (standard new-employee package)\n- Badge and site access for Red Mesti days\n- A desk near your team\n\nCan you approve the request so helpdesk can provision in time for the first day?\n\n- People Ops"
     },
     {
       "id": "in-int-2",
@@ -214,17 +215,17 @@
       "subject": "[DDS-2291] awaiting your approval - new employee provisioning",
       "date": "2026-09-16T11:12:00",
       "read": true,
-      "body": "Ticket DDS-2291 - provisioning for the new intern / new employee (starts Sept 21).\n\nIT access is pending your approval as the sponsoring engineer. Badge photo is done; a desk is reserved.\n\n- IT Helpdesk"
+      "body": "Ticket DDS-2291 - provisioning for the new intern / new employee (starts in 5 days).\n\nIT access is pending your approval as the sponsoring engineer. Badge photo is done; a desk is reserved.\n\n- IT Helpdesk"
     },
     {
       "id": "in-demo-3",
       "folder": "inbox",
       "from": "Devon Marsh <devon.marsh@discreetdroneservices.com>",
       "to": "Flight Ops <flight-ops@discreetdroneservices.com>",
-      "subject": "Thursday running order",
+      "subject": "Demo Day running order",
       "date": "2026-09-17T08:12:00",
       "read": true,
-      "body": "Running order for Thursday:\n\n09:00 - unit 1: nav-gripe check flight (Marcus's DDS-2305 repro)\n11:00 - VIP flight, unit 3\n12:30 - slung load demo, unit 2 (full 120 kg water ballast)\n13:40 - post-demo hover reposition, unit 2 (empty hook)\n\nNote: unit 2 flies the reposition with an empty hook.\n\n- Devon"
+      "body": "Running order for today:\n\n09:00 - unit 1: nav-gripe check flight (Marcus's DDS-2305 repro)\n11:00 - VIP flight, unit 3\n12:30 - slung load demo, unit 2 (full 120 kg water ballast)\n13:40 - post-demo hover reposition, unit 2 (empty hook)\n\nNote: unit 2 flies the reposition with an empty hook.\n\n- Devon"
     },
     {
       "id": "in-gnc-1",
@@ -308,30 +309,30 @@
       "folder": "inbox",
       "from": "Devon Marsh <devon.marsh@discreetdroneservices.com>",
       "to": "Thaddea Wexler <t.wexler@discreetdroneservices.com>",
-      "subject": "Nobody's seen you since Thursday",
+      "subject": "Nobody's seen you since Demo Day",
       "date": "2026-09-18T10:05:00",
       "read": false,
-      "body": "Thaddea -\n\nNobody's seen you since Thursday. Last I saw you were at the pad in your climbing harness, fussing with the hoist rig right before the 13:40 reposition - figured you went up the met tower like you kept saying you would, to re-seat that wind sensor.\n\nCall me. Sofia's getting antsy.\n\n- Devon"
+      "body": "Thaddea -\n\nNobody's seen you since Demo Day. Last I saw you were at the pad in your climbing harness, fussing with the hoist rig right before the 13:40 reposition - figured you went up the met tower like you kept saying you would, to re-seat that wind sensor.\n\nCall me. Sofia's getting antsy.\n\n- Devon"
     },
     {
       "id": "in-see-3",
       "folder": "inbox",
       "from": "Sofia Alvarez <sofia.alvarez@discreetdroneservices.com>",
-      "to": "All Red Mesa Staff <flight-ops@discreetdroneservices.com>",
+      "to": "All Red Mesti Staff <flight-ops@discreetdroneservices.com>",
       "subject": "Thaddea - last confirmed sighting (please read)",
       "date": "2026-09-19T09:12:00",
       "read": false,
-      "body": "Everyone -\n\nStatus: last confirmed sighting of Thaddea was ~13:30 Thursday at the Red Mesa South pad, wearing her climbing harness. We've checked the met tower - no sign of her. Gate 3 camera has been out since June, so if she walked out we won't have it on video.\n\nReply all if you saw her after 13:30 Thursday. Even small details help.\n\n- Sofia"
+      "body": "Everyone -\n\nStatus: last confirmed sighting of Thaddea was ~13:30 on Demo Day at the Red Mesti South pad, wearing her climbing harness. We've checked the met tower - no sign of her. Gate 3 camera has been out for months, so if she walked out we won't have it on video.\n\nReply all if you saw her after 13:30 on Demo Day. Even small details help.\n\n- Sofia"
     },
     {
       "id": "in-see-4",
       "folder": "inbox",
       "from": "Ken Ito <ken.ito@discreetdroneservices.com>",
-      "to": "All Red Mesa Staff <flight-ops@discreetdroneservices.com>",
+      "to": "All Red Mesti Staff <flight-ops@discreetdroneservices.com>",
       "subject": "RE: Thaddea - badge log",
       "date": "2026-09-19T10:01:00",
       "read": false,
-      "body": "FWIW - badge logs show Thaddea's badge last scanned 11:52 Thursday at the outer gate (IN). No matching scan-out, and the pedestrian gates don't log direction anyway.\n\n- Ken"
+      "body": "FWIW - badge logs show Thaddea's badge last scanned 11:52 on Demo Day at the outer gate (IN). No matching scan-out, and the pedestrian gates don't log direction anyway.\n\n- Ken"
     },
     {
       "id": "in-bcn-3",
@@ -351,7 +352,7 @@
       "subject": "Search update - nothing yet",
       "date": "2026-09-19T15:44:00",
       "read": false,
-      "body": "Update on unit 2 and Thaddea -\n\nGround team walked an 8 km grid around Red Mesa South and asked the locals. No drone, no sign of Thaddea. Her truck is still at the pad.\n\nThe sheriff's office has been notified and is treating it as a missing person. If anyone has anything - even if it seems trivial - reply to me directly.\n\n- Sofia"
+      "body": "Update on unit 2 and Thaddea -\n\nGround team walked an 8 km grid around Red Mesti South and asked the locals. No drone, no sign of Thaddea. Her truck is still at the pad.\n\nThe sheriff's office has been notified and is treating it as a missing person. If anyone has anything - even if it seems trivial - reply to me directly.\n\n- Sofia"
     },
     {
       "id": "sn-jq-1",
@@ -391,7 +392,7 @@
       "subject": "Automatic reply: RE: mission JSON parsing on the flight computer - READ BEFORE THE 09:00 FLIGHT",
       "date": "2026-09-17T07:47:00",
       "read": false,
-      "body": "I am out of the office this morning (Thursday Sept 17), traveling to the Red Mesa site, and have no access to email until this afternoon. I will respond to your message when I return.\n\nFor urgent flight-ops matters before then, please contact Devon Marsh (devon.marsh@discreetdroneservices.com) or the duty phone.\n\n- Marcus Webb (automatic reply)"
+      "body": "I am out of the office this morning, traveling to the Red Mesti site, and have no access to email until this afternoon. I will respond to your message when I return.\n\nFor urgent flight-ops matters before then, please contact Devon Marsh (devon.marsh@discreetdroneservices.com) or the duty phone.\n\n- Marcus Webb (automatic reply)"
     },
     {
       "id": "del-blk-1",
@@ -421,7 +422,7 @@
       "subject": "Before the demo",
       "date": "2026-09-16T22:58:00",
       "read": true,
-      "body": "Thaddea -\n\nI can be reasonable, and I can be patient - until the end of the week.\n\nAfter Thursday, leadership will be very receptive to a concerned-colleague report. Think about what an investigation would do to the HEX-9 timeline, and to your team.\n\nEveryone will think they are real. Pay up, and I will make this problem go away.\n\n- Rowan"
+      "body": "Thaddea -\n\nI can be reasonable, and I can be patient - until the end of the week.\n\nAfter tomorrow, leadership will be very receptive to a concerned-colleague report. Think about what an investigation would do to the HEX-9 timeline, and to your team.\n\nEveryone will think they are real. Pay up, and I will make this problem go away.\n\n- Rowan"
     },
     {
       "id": "dr-blk-1",
@@ -441,7 +442,7 @@
       "subject": "Last note",
       "date": "2026-09-17T07:31:00",
       "read": false,
-      "body": "Thaddea,\n\nDemo day is a poor week to be careless. My patience ends Friday at noon.\n\nOne gesture and everything I have goes away. If I don't hear from you, I'll assume we're doing this the hard way, and I stop being able to control who sees what.\n\n- R"
+      "body": "Thaddea,\n\nDemo day is a poor week to be careless. My patience ends tomorrow at noon.\n\nOne gesture and everything I have goes away. If I don't hear from you, I'll assume we're doing this the hard way, and I stop being able to control who sees what.\n\n- R"
     },
     {
       "id": "sn-int-1",
@@ -451,17 +452,17 @@
       "subject": "RE: [DDS-2291] approval - new intern",
       "date": "2026-09-16T13:26:00",
       "read": true,
-      "body": "Approving DDS-2291 - the new intern: standard access package, badge, and a desk near the team.\n\nPlease have everything live before Monday morning.\n\n- Thaddea"
+      "body": "Approving DDS-2291 - the new intern: standard access package, badge, and a desk near the team.\n\nPlease have everything live before the intern's start date.\n\n- Thaddea"
     },
     {
       "id": "sn-demo-1",
       "folder": "sent",
       "from": "Thaddea Wexler <t.wexler@discreetdroneservices.com>",
       "to": "Sofia Alvarez <sofia.alvarez@discreetdroneservices.com>",
-      "subject": "RE: Red Mesa South logistics - hoist rig confirmed",
+      "subject": "RE: Red Mesti South logistics - hoist rig confirmed",
       "date": "2026-09-16T16:02:00",
       "read": true,
-      "body": "Sofia -\n\nConfirmed: I'll do the hoist rig inspection Thursday morning before the VIP flight. I'll bring my harness - and while I'm up there I'll re-seat the met tower wind sensor, it's been under-reporting since Tuesday.\n\n- Thaddea"
+      "body": "Sofia -\n\nConfirmed: I'll do the hoist rig inspection on Demo Day morning before the VIP flight. I'll bring my harness - and while I'm up there I'll re-seat the met tower wind sensor, it's been under-reporting since earlier this week.\n\n- Thaddea"
     },
     {
       "id": "dr-mma-1",
@@ -481,7 +482,7 @@
       "subject": "13:40 reposition",
       "date": "2026-09-17T13:22:00",
       "read": true,
-      "body": "Devon -\n\nCan you take the 13:40 reposition? After lunch I'm going up the met tower to re-seat the wind sensor - it's been under-reporting since Tuesday.\n\nBack for the 15:00 wrap-up.\n\n- T"
+      "body": "Devon -\n\nCan you take the 13:40 reposition? After lunch I'm going up the met tower to re-seat the wind sensor - it's been under-reporting since earlier this week.\n\nBack for the 15:00 wrap-up.\n\n- T"
     },
     {
       "id": "del-spam-1",

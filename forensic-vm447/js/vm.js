@@ -1006,16 +1006,22 @@ async function loadData() {
     if (!res.ok) throw new Error("HTTP " + res.status);
     const data = await res.json();
     state.profile = data.profile || state.profile;
-    state.mails = (data.messages || []).map((m, i) => ({
-      id: m.id || "m" + i,
-      folder: m.folder || "inbox",
-      from: m.from || "",
-      to: m.to || "",
-      subject: m.subject || "",
-      date: m.date || "",
-      read: !!m.read,
-      body: m.body || "",
-    }));
+    const anchor = parseDate(data.fictionalToday);
+    const offset = anchor ? startOfDay(new Date()) - startOfDay(anchor) : 0;
+    state.mails = (data.messages || []).map((m, i) => {
+      const d = parseDate(m.date);
+      const shifted = d && offset ? new Date(d.getTime() + offset) : d;
+      return {
+        id: m.id || "m" + i,
+        folder: m.folder || "inbox",
+        from: m.from || "",
+        to: m.to || "",
+        subject: m.subject || "",
+        date: shifted ? shifted.toISOString() : m.date || "",
+        read: !!m.read,
+        body: m.body || "",
+      };
+    });
     return true;
   } catch (err) {
     return false;
