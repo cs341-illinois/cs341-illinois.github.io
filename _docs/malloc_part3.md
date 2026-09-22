@@ -38,7 +38,8 @@ Later,  - a flash of inspiration as you put the pieces together - you suddenly u
 
 ## Grading / Deliverables
 Reports and experiments (but not the video links) for part3 should be inside the repo, in the sub directory './Drone'
-For each of the 6 allocator questions above, your repo will be the supporting evidence of your understanding and work that supports your findings. Your repo will contani
+For each of the 6 allocator questions above, your repo will be the supporting evidence of your understanding and work that supports your findings. 
+Your repo will contain:
 
 i) Links to the Short video demonstrations in Mediaspace of your code and findings.
 ii) In your repo, the results of your work and any small test source and data files used to support your findings. 
