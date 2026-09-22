@@ -245,18 +245,13 @@ mps:
   worksheet: false
   visible: true
 - name: Malloc
-  releaseDate: Week 6
+  releaseDate: Week 5
   dueDate: Week 8
   url: malloc
   submissions:
-  - title: Part 1
-    due_date: 2026-03-02 23:59
-    releaseDate: 2026-02-22 18:00
-    graded_files:
-    - alloc.c
-  - title: Part 2
-    due_date: 2026-03-09 23:59
-    releaseDate: 2026-03-01 18:00
+  - title: Entire Assignment
+    due_date: 2026-10-12 23:59
+    releaseDate: 2026-09-21 18:00
     graded_files:
     - alloc.c
   resources: true

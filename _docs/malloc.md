@@ -87,7 +87,10 @@ Each assignment page will go more in depth on the specific file namings or folde
 
 ## Important Things to Note - Interview Clinic / Knowledge Assessment
 
-At the completion of the malloc project there will be a 30 minute in-person interview with you and your partner(s) by course staff. Part of the interview will the 'debrief', where you will be asked to demonstrate your knowledge about memory allocatator concepts, implementation details, and real-world allocators. Note that you may be asked to draw out (on whiteboard or otherwise) visuals to accompany your explanations! Our goal with these interviews is to keep you accountable to what you know and don't know in the course, as well as encourage a culture of truly learning this content deeply through curiosity, exploration, and discussion rather than only rote memorization and point gathering. 
+At the completion of the malloc project there will be a 30 minute in-person interview with you and your partner(s) by course staff.
+
+
+The first part of the interview will be a 'debrief', where you will be asked a selection of questions from those listed in the part 1 & part 3 sections of this assignment. Note that you may be asked to draw out (on whiteboard or otherwise) visuals to accompany your explanations! In the second part of the interview, you will be asked in detail about your own malloc implementation. Be prepared to speak not only about larger design choices and tradeoffs, but actual snippets of code that you have written. Our goal with these interviews is to keep you accountable to what you know and don't know in the course, as well as encourage a culture of truly learning this content deeply through curiosity, exploration, and discussion rather than only rote memorization and point gathering. 
 
 ## Grading
 
