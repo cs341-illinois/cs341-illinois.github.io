@@ -31,10 +31,10 @@ In part 3, you'll extend your conceptual & practical knowledge of malloc even fu
 
 ## Lumen AI with OpenCode requirements (no Agentic Codex, Claude etc for this assignment)
 
-For this assignment AI / LLM models will be limited to any model available on https://lumen.ncsa.illinois.edu - you will need to enable models, generate an API key, and connect that API to opencode -
+For this assignment AI / LLM models will be limited to any model available on (https://lumen.ncsa.illinois.edu) - you will need to enable models, generate an API key, and connect that API to opencode -
 
 * Disable Copilot AI or any other AI tools.
-* Login and enable Qwen3.8, Deepseek V4, and GLM5.3 `https://lumen.ncsa.illinois.edu/models`
+* Login and enable Qwen3.8, Deepseek V4, and GLM5.3 (https://lumen.ncsa.illinois.edu/models)
 * Generate a Lumen API key (https://lumen.ncsa.illinois.edu/profile) and store it in a env variable.
 ```sh
 # Add to .bashrc (for example)
@@ -46,7 +46,7 @@ For this assignment AI / LLM models will be limited to any model available on ht
 ```sh 
 curl -fsSL https://opencode.ai/v2/install | bash
 ```
-* Copy the opencode config json see https://lumen.ncsa.illinois.edu/connect
+* Copy the opencode config json see [lumen.ncsa.illinois.edu/connect](https://lumen.ncsa.illinois.edu/help/connect#opencode)
 * To have OpenCode only use Lumen's models — and ignore every other installed provider — add an enabled_providers array at the top level of your config:
 ```json
 {
@@ -56,11 +56,12 @@ curl -fsSL https://opencode.ai/v2/install | bash
 }
 ```
 OpenCode will then list only Lumen's models when you select a model.
-* In OpenCode type /models and (if necessary type "Lumen" to filter models running on Lumen)
+* In OpenCode type /models and (if necessary type "Lumen" to filter model list)
+* 
 * You have 10 Lumen Coins on Lumen (they wil slowly refresh every hour upto a max of 10); so don't leave everything until the last minute.
-* Models cost approximately 0.1-1 coins per 1M tokens sent (see Lumen for details)
-* Also be careful about using a long chat with a large context - with a bit of thought you will realize your coin usage will become quadratic.
-* Using AI resources efficiently, trying different models,  using local open-weight models and open tools, is part of the assignment.
+* Models are free for you use but "cost" approximately 0.1-1 coins per 1M tokens sent (see the model page) and you can track how many coints you have on the website. 
+* OpenCode `/clear` is your friend ; some choices will eat up coins quickly e.g. A long chat with a large context becomes quadratic; can you see why?
+* Using AI resources efficiently, trying different openweight models, and open tools, is part of the assignment.
 
 ## CS341 Partners have changed
 
