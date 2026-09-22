@@ -40,10 +40,13 @@ For this assignment AI / LLM models will be limited to any model available on ht
 # Add to .bashrc (for example)
 # export LUMEN_API_Key=...
 # Then run "source .bashrc" or just the line above to set the key in your current shell
-`
+```
 
-* Install opencode as the harness. On your VM, `curl -fsSL https://opencode.ai/v2/install | bash`
-* Copy the json see `https://lumen.ncsa.illinois.edu/connect`
+* Install opencode as the harness. On your VM,
+```sh 
+curl -fsSL https://opencode.ai/v2/install | bash
+```
+* Copy the opencode config json see https://lumen.ncsa.illinois.edu/connect
 * To have OpenCode only use Lumen's models — and ignore every other installed provider — add an enabled_providers array at the top level of your config:
 ```json
 {
