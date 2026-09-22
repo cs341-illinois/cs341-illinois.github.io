@@ -49,7 +49,7 @@ The 'home base' for this project will be you and your partner's corresponding Gi
 See the video demo - [how to record, publish, and expectations]({% link _tutorials/video_demo.md %}) 
 
 To access your Github repo for the project:
-1. Go to the Shell project on [Broadway]({{ site.data.constants.broadway_on_demand_link }})
+1. Go to the Malloc project on [Broadway]({{ site.data.constants.broadway_on_demand_link }})
 2. Check "Project Repo" section for the link, you should already be assigned and have access rights with your partner to the repo linked here.
 3. If not added to the repo or can't access it, talk to a discussion TA. 
 
