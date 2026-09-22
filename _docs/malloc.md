@@ -13,7 +13,7 @@ See [Part 1]({% link _docs/malloc_part1.md %}), [Part 2]({% link _docs/malloc_pa
 
 ## Backstory
 
-This page and part 1 has no backstory. It's just you, your partner(s), and memory allocation; Human beings being human and a System Programming concept being ... well a concept. Deal with it.
+This page and part 1 has no backstory. It's just you, your partner(s), and memory allocation; Human beings being human and a System Programming concept being ... well a concept. Deal with it. Worse, you need to get out of your AI comfort zone and use openmodels for this assignment (see Lumen instructions below).
 
 See Part 2 and part 3 for their backstory.
 
@@ -29,10 +29,11 @@ In part 3, you'll extend your conceptual & practical knowledge of malloc even fu
 
 **Note**: Start this assignment early! Read the specifications early! Connect with your partner early! These projects will be multi-week, so it is important to keep yourselves accountable and on track. There are many different aspects to digest and account for in this assignment, so starting early is essential for both your sanity and your learning! Would you rather do this right and learn a lot, or do this badly last minute and then have to scramble "re-learn" things for your interview clinic? The choice is yours... 
 
-## Lumen AI requirements 
+## Lumen AI with OpenCode requirements (no Agentic Codex, Claude etc for this assignmemtn)
 
 For this assignment AI / LLM models will be limited to any model available on https://lumen.ncsa.illinois.edu - you will need to enable models, generate an API key, and connect that API to opencode -
 
+* Disable Copilot AI or any other AI tools.
 * Login and enable Qwen3.8, Deepseek V4, and GLM5.3 `https://lumen.ncsa.illinois.edu/models` 
 * Install opencode as the harness. On your VM, `curl -fsSL https://opencode.ai/v2/install | bash`
 * Copy the json see `https://lumen.ncsa.illinois.edu/connect`
@@ -47,8 +48,8 @@ For this assignment AI / LLM models will be limited to any model available on ht
 OpenCode will then list only Lumen's models when you select a model.
 * In OpenCode type /models and (if necessary type "Lumen" to find models running on Lumen)
 * You have 10 Lumen Coins on Lumen (it wil slowly refresh every hour upto a max of 10); so don't leave everything until the last minute.
-* Models are approximately 0.1-1 Coins per 1M tokens sent
-* Also be careful about using a long chat with a large context - your coin usage will become quadratic.
+* Models are approximately 0.1-1 coins per 1M tokens sent
+* Also be careful about using a long chat with a large context - with a bit of thought you will realize your coin usage will become quadratic.
 
 ## CS341 Partners have changed
 
