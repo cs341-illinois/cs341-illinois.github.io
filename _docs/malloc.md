@@ -23,7 +23,7 @@ This is a 3-part assignment, with each section strengthening and assessing diffe
 
 In part 1, you'll explore a series of fundamental topics/concepts regarding the design & implementation of memory allocators. For each section within the associated page, you and your partner will demonstrate your understanding through video explanations. Your main deliverable will be these video demos/discussions.
 
-In part 2, you'll implement your own malloc. You will be able to use AI to help you out in this endeavor, but you are NOT allowed to copy any text verbatim from the assignment page. This will be enforced strictly, encouraging you to frame the problem statement(s) in your own words in order to build an application. Your main deliverable will be your own output score from running your shell on our Broadway On Demand autograder. 
+In part 2, you'll implement your own malloc. You will be able to use AI to help you out in this endeavor, but you are NOT allowed to copy any text verbatim from the assignment page. This will be enforced strictly, encouraging you to frame the problem statement(s) in your own words in order to build an application. Your main deliverable will be your own output score from running your malloc implementation on our Broadway On Demand autograder. 
 
 In part 3, you'll extend your conceptual & practical knowledge of malloc even further! Within this section, you are tasked with examining a set of memory allocator implementations, that each have unique cases under which they perform better/worse than others. Your task will be to evaluate each allocator, creating reports for each one that detail best & worst use scenarios.
 
