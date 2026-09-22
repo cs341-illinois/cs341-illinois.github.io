@@ -234,6 +234,9 @@ Here is what some of our error codes mean:
 91: Data allocated outside of heap
 92: Data allocated exceeds heap limit
 ```
+
+Note that we have not provided all test cases that will be run by the autograder in your repository! We recommend studying the structure of the provided test cases, and creating new ones based off of them as needed.
+
 <span class="spec" data-spec-id="mtest" aria-hidden="true"></span>
 
 ### Good Practices
