@@ -114,8 +114,9 @@ Each assignment page will go more in depth on the specific file namings or folde
 
 At the completion of the malloc project there will be a 30 minute in-person interview with you and your partner(s) by course staff.
 
+The first part of the interview will be a 'debrief', where you will be asked a selection of questions from those listed in the part 1 & part 3 sections of this assignment. You may also be asked about what you learned about using openweight models from Lumen. Note that you may be asked to draw out (on whiteboard or otherwise) visuals to accompany your explanations! In the second part of the interview, you will be asked in detail about your own malloc implementation. Be prepared to speak not only about larger design choices and tradeoffs, but actual snippets of code that you have written. 
 
-The first part of the interview will be a 'debrief', where you will be asked a selection of questions from those listed in the part 1 & part 3 sections of this assignment. Note that you may be asked to draw out (on whiteboard or otherwise) visuals to accompany your explanations! In the second part of the interview, you will be asked in detail about your own malloc implementation. Be prepared to speak not only about larger design choices and tradeoffs, but actual snippets of code that you have written. Our goal with these interviews is to keep you accountable to what you know and don't know in the course, as well as encourage a culture of truly learning this content deeply through curiosity, exploration, and discussion rather than only rote memorization and point gathering. 
+The goal with these interviews is to keep you accountable to what you know and don't know in the course, as well as encourage a culture of truly learning this content deeply through curiosity, exploration, and discussion rather than only surface-level rote memorization and point gathering. 
 
 ## Grading
 
