@@ -31,12 +31,24 @@ In part 3, you'll extend your conceptual & practical knowledge of malloc even fu
 
 ## Lumen AI requirements 
 
-For this assignment AI / LLM models will be limited to any model available on Lumen.ncsa.illinois.edu -
+For this assignment AI / LLM models will be limited to any model available on https://lumen.ncsa.illinois.edu - you will need to enable models, generate an API key, and connect that API to opencode -
 
-* Enable Qwen3.8, Deepseek V4, and GLM5.3 `https://lumen.ncsa.illinois.edu/models`
+* Login and enable Qwen3.8, Deepseek V4, and GLM5.3 `https://lumen.ncsa.illinois.edu/models` 
 * Install opencode as the harness. On your VM, `curl -fsSL https://opencode.ai/v2/install | bash`
-Then see `https://lumen.ncsa.illinois.edu/connect`
-In OpenCode type /models and type "Lumen" to find models running on Lumen
+* Copy the json see `https://lumen.ncsa.illinois.edu/connect`
+* To have OpenCode only use Lumen's models — and ignore every other installed provider — add an enabled_providers array at the top level of your config:
+```json
+{
+  "enabled_providers": [
+    "lumen"
+  ]
+}
+```
+OpenCode will then list only Lumen's models when you select a model.
+* In OpenCode type /models and (if necessary type "Lumen" to find models running on Lumen)
+* You have 10 Lumen Coins on Lumen (it wil slowly refresh every hour upto a max of 10); so don't leave everything until the last minute.
+* Models are approximately 0.1-1 Coins per 1M tokens sent
+* Also be careful about using a long chat with a large context - your coin usage will become quadratic.
 
 ## CS341 Partners have changed
 
