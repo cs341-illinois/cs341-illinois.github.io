@@ -25,11 +25,13 @@ We may calculate the quiz out of N-1 questions ie. a raw score of >100% is possi
 
 ### Quiz 2
 * Lectures 5-9
-* weekly programming challenge 2,3: Perilous Pointers, Utilities Unleashed
+* Weekly programming challenge 2,3: Perilous Pointers, Utilities Unleashed
 * Chapter 3, 4, 5 (section 1 & 2 only)
 
 ### Quiz 3
-* Details will be posted in the future./
+* Details will be posted in the future.
+* Weekly programming challenge 4,5: TBA
+  
 
 ## Fall 2026 Schedule
 
