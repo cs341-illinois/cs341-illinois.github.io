@@ -31,22 +31,12 @@ We may calculate the quiz out of N-1 questions ie. a raw score of >100% is possi
 
 ## Fall 2026 Schedule
 
-Quiz 1: 9/10 - 9/13
-Retake 1: 9/17 - 9/20
-
-Quiz 2: 9/24 - 9/27
-Retake 2: 10/1 - 10/4
-
-Quiz 3: 10/8 - 10/11
-Retake 3: 10/15 - 10/18
-
-Quiz 4: 10/22 - 10/25
-Retake 4: 10/29 - 11/1
-
-Quiz 5: 11/5 - 11/8
-Retake 5: 11/12 - 11/15
-
-
-Quiz 6: 11/18 - 11/20
-Retake 6: 12/3 - 12/6
+| Quiz | *CBTF* | Retake |
+| :--- | :--- | :--- |
+| Quiz 1 |  9/10 - 9/13 | 9/17 - 9/20 |
+| Quiz 2 |  9/24 - 9/27 | 10/1 - 10/4 |
+| Quiz 3 | 10/8 - 10/11 | 10/15 - 10/18 |
+| Quiz 4 | 10/22 - 10/25 |  10/29 - 11/1 |
+| Quiz 5 |  11/5 - 11/8 |  11/12 - 11/15 |
+| Quiz 6 |  11/18 - 11/20 |  12/3 - 12/6 |
 
