@@ -28,8 +28,13 @@ We may calculate the quiz out of N-1 questions ie. a raw score of >100% is possi
 * weekly programming challenge 2,3: Perilous Pointers, Utilities Unleashed
 * Chapter 3, 4, 5 (section 1 & 2 only)
 
+### Quiz 3
+* Details will be posted in the future./
 
 ## Fall 2026 Schedule
+
+* There are no drops. 
+* If you are sick, away from campus for both the main date-slot and retake date-slot you may email cs341admin cs illinois to request a conflict/makeup.
 
 | Quiz | *CBTF* | Retake |
 | :--- | :--- | :--- |
