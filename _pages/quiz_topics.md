@@ -1,8 +1,52 @@
 ---
 layout: doc
-title: Quiz Topics
+title: CBTF / PrairieLearn Quizzes 
 ---
 ## Overview
 
-Information for FA26 is not yet available; check back later.
+A practice PrairieLearn quiz will usually be published the prior week to the CBTF Quiz.
+A typical quiz would be 50 minutes and have 22 Multiple Choice Questions and will concentrate on topics covered by recent labs, programming assignment, and lectures. 
+
+If you take both the original quiz and its retake, then the combined score will be 
+```c
+combined_score = max( a , (a+b) / 2 )
+```
+
+We may calculate the quiz out of N-1 questions ie. a raw score of >100% is possible, however the maximum score for course grade purposes will be clamped at 100%.
+
+
+## Topics
+
+### Quiz 1
+* Lectures 1-4
+* Homework 0
+* Weekly programming challenge 1: Luscious labs
+* Chapter 1 - 3 of the coursebook
+
+### Quiz 2
+* Lectures 5-9
+* weekly programming challenge 2,3: Perilous Pointers, Utilities Unleashed
+* Chapter 3, 4, 5 (section 1 & 2 only)
+
+
+## Fall 2026 Schedule
+
+Quiz 1: 9/10 - 9/13
+Retake 1: 9/17 - 9/20
+
+Quiz 2: 9/24 - 9/27
+Retake 2: 10/1 - 10/4
+
+Quiz 3: 10/8 - 10/11
+Retake 3: 10/15 - 10/18
+
+Quiz 4: 10/22 - 10/25
+Retake 4: 10/29 - 11/1
+
+Quiz 5: 11/5 - 11/8
+Retake 5: 11/12 - 11/15
+
+
+Quiz 6: 11/18 - 11/20
+Retake 6: 12/3 - 12/6
 
