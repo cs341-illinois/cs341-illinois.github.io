@@ -106,7 +106,7 @@ To access your Github repo for the project:
 ### What should be in my Github Repo?
 Each assignment page will go more in depth on the specific file namings or folders you'll need to submit, but here is an overall checklist for you:
 - A text file titled "malloc_part1.txt" where you'll link all part 1 videos + any other relevant info
-- Source files for part2 (your malloc implementation)
+- Source file for part2 (alloc.c - your heap allocator implementation)
 - A text file titled "malloc_part3.txt" where you'll link all part 3 videos + any other relevant info/links
 - A folder "Drone" with supporting evidence for your part 3 videos
 
